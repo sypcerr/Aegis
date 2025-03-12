@@ -1,4 +1,4 @@
--- Aegis Version 0.8.3
+-- Aegis Version 0.8.3 BETA
 
 local ScreenGui = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
@@ -258,13 +258,12 @@ Name_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Name_3.BackgroundTransparency = 1.000
 Name_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Name_3.BorderSizePixel = 0
-Name_3.Position = UDim2.new(0, 157, 0, 80)
-Name_3.Size = UDim2.new(0, 153, 0, 25)
+Name_3.Position = UDim2.new(0, 166, 0, 83)
+Name_3.Size = UDim2.new(0, 105, 0, 19)
 Name_3.Font = Enum.Font.SourceSans
 Name_3.Text = "Toggle F to Fly"
 Name_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_3.TextScaled = true
-Name_3.TextSize = 13.000
+Name_3.TextSize = 15.000
 Name_3.TextWrapped = true
 Name_3.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -291,13 +290,12 @@ Name_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Name_4.BackgroundTransparency = 1.000
 Name_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Name_4.BorderSizePixel = 0
-Name_4.Position = UDim2.new(0, 157, 0, 136)
-Name_4.Size = UDim2.new(0, 153, 0, 25)
+Name_4.Position = UDim2.new(0, 166, 0, 139)
+Name_4.Size = UDim2.new(0, 105, 0, 19)
 Name_4.Font = Enum.Font.SourceSans
-Name_4.Text = "Toggle N for Noclip"
+Name_4.Text = "Toggle N to Noclip"
 Name_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_4.TextScaled = true
-Name_4.TextSize = 13.000
+Name_4.TextSize = 15.000
 Name_4.TextWrapped = true
 Name_4.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -845,7 +843,7 @@ UICorner_26.Parent = Main
 
 -- Scripts:
 
-local function ISBSW_fake_script() -- SliderHandle.LocalScript 
+local function TAYK_fake_script() -- SliderHandle.LocalScript 
 	local script = Instance.new('LocalScript', SliderHandle)
 
 	local sliderHandle = script.Parent
@@ -921,8 +919,8 @@ local function ISBSW_fake_script() -- SliderHandle.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ISBSW_fake_script)()
-local function ICBX_fake_script() -- SliderHandle_2.LocalScript 
+coroutine.wrap(TAYK_fake_script)()
+local function OZPHDN_fake_script() -- SliderHandle_2.LocalScript 
 	local script = Instance.new('LocalScript', SliderHandle_2)
 
 	local h = script.Parent
@@ -936,6 +934,7 @@ local function ICBX_fake_script() -- SliderHandle_2.LocalScript
 	
 	local minJ, maxJ = 1, 300
 	local d = false
+	local storedJumpForce = 100 -- Default jump force
 	
 	local function updateJump(x)
 		local sX = b.AbsolutePosition.X
@@ -943,16 +942,13 @@ local function ICBX_fake_script() -- SliderHandle_2.LocalScript
 		local nX = math.clamp(x, sX, eX)
 	
 		local percent = (nX - sX) / b.AbsoluteSize.X
-		local newJumpForce = math.floor(minJ + (maxJ - minJ) * percent)
+		storedJumpForce = math.floor(minJ + (maxJ - minJ) * percent) -- Store the jump force value
 	
-		-- Adjust velocity based on slider position (Y-axis of the velocity)
-		rootPart.Velocity = Vector3.new(rootPart.Velocity.X, newJumpForce, rootPart.Velocity.Z)
-	
-		-- Update the position of the slider handle
+		-- Update slider position
 		h.Position = UDim2.new(percent, 0, h.Position.Y.Scale, h.Position.Y.Offset)
 	
 		if vBox then
-			vBox.Text = tostring(newJumpForce)
+			vBox.Text = tostring(storedJumpForce)
 		end
 	end
 	
@@ -974,102 +970,98 @@ local function ICBX_fake_script() -- SliderHandle_2.LocalScript
 		end
 	end)
 	
+	-- Apply jump force ONLY when the player jumps
+	hmn.Jumping:Connect(function()
+		rootPart.Velocity = Vector3.new(rootPart.Velocity.X, storedJumpForce, rootPart.Velocity.Z)
+	end)
+	
 	-- Handle TextBox input
 	if vBox then
 		vBox.FocusLost:Connect(function()
 			local input = tonumber(vBox.Text)
 			if input then
-				input = math.clamp(input, minJ, maxJ)
-				-- Adjust velocity based on the value entered in the TextBox
-				rootPart.Velocity = Vector3.new(rootPart.Velocity.X, input, rootPart.Velocity.Z)
-				local percent = (input - minJ) / (maxJ - minJ)
+				storedJumpForce = math.clamp(input, minJ, maxJ) -- Store new jump force
+				local percent = (storedJumpForce - minJ) / (maxJ - minJ)
 				h.Position = UDim2.new(percent, 0, h.Position.Y.Scale, h.Position.Y.Offset)
 			else
-				vBox.Text = tostring(rootPart.Velocity.Y)  -- Display current jump force (velocity Y)
+				vBox.Text = tostring(storedJumpForce)
 			end
 		end)
 	end
 	
 end
-coroutine.wrap(ICBX_fake_script)()
-local function IMDD_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(OZPHDN_fake_script)()
+local function DZBSRTB_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
-	-- Fling mode script with button toggle functionality
-	
 	local btn = script.Parent
-	local active = false
+	local uis = game:GetService("UserInputService")
+	local rs = game:GetService("RunService")
+	local p = game.Players.LocalPlayer
+	local c = p.Character or p.CharacterAdded:Wait()
+	local hrp = c:WaitForChild("HumanoidRootPart")
 	
-	-- Helper function to get the root part of the character
-	local function getRoot(character)
-		return character and character:FindFirstChild("HumanoidRootPart")
+	local toggleActive = false  
+	local flying = false  
+	local speed = 75  
+	
+	local bv, bg  
+	
+	local function startFly()
+		if flying or not toggleActive then return end
+		flying = true
+	
+		bv = Instance.new("BodyVelocity")
+		bv.Velocity = Vector3.new(0, 0, 0)
+		bv.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
+		bv.Parent = hrp
+	
+		bg = Instance.new("BodyGyro")
+		bg.MaxTorque = Vector3.new(math.huge, math.huge, math.huge)
+		bg.P = 9e4
+		bg.Parent = hrp
+	
+		rs.RenderStepped:Connect(function()
+			if flying and toggleActive then
+				local cam = workspace.CurrentCamera
+				bg.CFrame = CFrame.new(hrp.Position, hrp.Position + cam.CFrame.LookVector)
+	
+				local move = Vector3.new()
+				if uis:IsKeyDown(Enum.KeyCode.W) then move = move + cam.CFrame.LookVector end
+				if uis:IsKeyDown(Enum.KeyCode.S) then move = move - cam.CFrame.LookVector end
+				if uis:IsKeyDown(Enum.KeyCode.A) then move = move - cam.CFrame.RightVector end
+				if uis:IsKeyDown(Enum.KeyCode.D) then move = move + cam.CFrame.RightVector end
+				if uis:IsKeyDown(Enum.KeyCode.Space) then move = move + Vector3.new(0, 1, 0) end
+				if uis:IsKeyDown(Enum.KeyCode.LeftControl) then move = move - Vector3.new(0, 1, 0) end
+	
+				bv.Velocity = move * speed
+			end
+		end)
 	end
 	
-	local function fling(speaker)
-		-- Apply custom physical properties to make the player flingable
-		for _, child in pairs(speaker.Character:GetDescendants()) do
-			if child:IsA("BasePart") then
-				child.CustomPhysicalProperties = PhysicalProperties.new(math.huge, 0.3, 0.5)
-			end
-		end
-	
-		-- Apply noclip to the player
-		local function noclipLoop()
-			for _, child in pairs(speaker.Character:GetDescendants()) do
-				if child:IsA("BasePart") then
-					child.CanCollide = false
-				end
-			end
-		end
-		noclipLoop()
-	
-		-- Apply BodyAngularVelocity to spin the player
-		local bambam = Instance.new("BodyAngularVelocity")
-		bambam.Parent = getRoot(speaker.Character)
-		bambam.AngularVelocity = Vector3.new(0, 99999, 0)
-		bambam.MaxTorque = Vector3.new(0, math.huge, 0)
-		bambam.P = math.huge
-	
-		-- Make the character parts massless and reset velocity
-		local charParts = speaker.Character:GetChildren()
-		for _, v in pairs(charParts) do
-			if v:IsA("BasePart") then
-				v.CanCollide = false
-				v.Massless = true
-				v.Velocity = Vector3.new(0, 0, 0)
-			end
-		end
+	local function stopFly()
+		if not flying then return end
+		flying = false
+		if bv then bv:Destroy() end
+		if bg then bg:Destroy() end
 	end
 	
-	local function toggle()
-		active = not active
-		btn.Text = active and "ON" or "OFF"
-	
-		if active then
-			-- Activate Fling mode
-			fling(game.Players.LocalPlayer)
-			print("Fling Mode Enabled")
-		else
-			-- Deactivate Fling mode (you can add logic to reset the changes here)
-			-- Reset the character's physical properties to default, if desired.
-			local char = game.Players.LocalPlayer.Character
-			for _, part in pairs(char:GetDescendants()) do
-				if part:IsA("BasePart") then
-					part.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0) -- Reset physical properties
-					part.CanCollide = true
-					part.Massless = false
-					part.Velocity = Vector3.new(0, 0, 0) -- Reset velocity
-				end
-			end
-			print("Fling Mode Disabled")
+	uis.InputBegan:Connect(function(i, g)
+		if g or not toggleActive then return end
+		if i.KeyCode == Enum.KeyCode.F then
+			if flying then stopFly() else startFly() end
 		end
-	end
+	end)
 	
-	btn.MouseButton1Click:Connect(toggle)
+	btn.MouseButton1Click:Connect(function()
+		toggleActive = not toggleActive
+		btn.Text = toggleActive and "ON" or "OFF"
+		if not toggleActive then stopFly() end
+	end)
 	
 end
-coroutine.wrap(IMDD_fake_script)()
-local function DWFNRT_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(DZBSRTB_fake_script)()
+local function HDAQL_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local btn = script.Parent
@@ -1121,8 +1113,8 @@ local function DWFNRT_fake_script() -- TextButton_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(DWFNRT_fake_script)()
-local function MLODO_fake_script() -- Frame.Main 
+coroutine.wrap(HDAQL_fake_script)()
+local function IVKTZ_fake_script() -- Frame.Main 
 	local script = Instance.new('LocalScript', Frame)
 
 	wait(0)
@@ -1251,8 +1243,8 @@ local function MLODO_fake_script() -- Frame.Main
 	
 	start()
 end
-coroutine.wrap(MLODO_fake_script)()
-local function LYYLN_fake_script() -- UserProfile.GetProfile 
+coroutine.wrap(IVKTZ_fake_script)()
+local function UHFMLL_fake_script() -- UserProfile.GetProfile 
 	local script = Instance.new('LocalScript', UserProfile)
 
 	local Players = game:GetService("Players")
@@ -1269,14 +1261,14 @@ local function LYYLN_fake_script() -- UserProfile.GetProfile
 	local imageLabel = script.Parent
 	imageLabel.Image = content
 end
-coroutine.wrap(LYYLN_fake_script)()
-local function CXBXCSN_fake_script() -- Name_5.LocalScript 
+coroutine.wrap(UHFMLL_fake_script)()
+local function APJJPBC_fake_script() -- Name_5.LocalScript 
 	local script = Instance.new('LocalScript', Name_5)
 
 	script.Parent.Text = game.Players.LocalPlayer.Name
 end
-coroutine.wrap(CXBXCSN_fake_script)()
-local function FVWXAY_fake_script() -- MainFrame.open-close 
+coroutine.wrap(APJJPBC_fake_script)()
+local function HZXPGS_fake_script() -- MainFrame.open-close 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local userInputService = game:GetService("UserInputService")
@@ -1307,8 +1299,8 @@ local function FVWXAY_fake_script() -- MainFrame.open-close
 	end)
 	
 end
-coroutine.wrap(FVWXAY_fake_script)()
-local function IQCNCVS_fake_script() -- MainFrame.UIDrag 
+coroutine.wrap(HZXPGS_fake_script)()
+local function NWCOQ_fake_script() -- MainFrame.UIDrag 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	-- Made by Real_IceyDev (@lceyDex) --
@@ -1349,8 +1341,8 @@ local function IQCNCVS_fake_script() -- MainFrame.UIDrag
 		end
 	end)
 end
-coroutine.wrap(IQCNCVS_fake_script)()
-local function SJQD_fake_script() -- KillUI.LocalScript 
+coroutine.wrap(NWCOQ_fake_script)()
+local function DMYM_fake_script() -- KillUI.LocalScript 
 	local script = Instance.new('LocalScript', KillUI)
 
 	local button = script.Parent 
@@ -1360,8 +1352,8 @@ local function SJQD_fake_script() -- KillUI.LocalScript
 		gui:Destroy() -- destroy the entire GUI when the button is clicked
 	end)
 end
-coroutine.wrap(SJQD_fake_script)()
-local function DJNZZ_fake_script() -- ChangeTheme.LocalScript 
+coroutine.wrap(DMYM_fake_script)()
+local function ONQBO_fake_script() -- ChangeTheme.LocalScript 
 	local script = Instance.new('LocalScript', ChangeTheme)
 
 	local button = script.Parent -- Reference to the button
@@ -1517,8 +1509,8 @@ local function DJNZZ_fake_script() -- ChangeTheme.LocalScript
 	updateTextButtons()
 	
 end
-coroutine.wrap(DJNZZ_fake_script)()
-local function ZZDTVTS_fake_script() -- ShadowRunner.LocalScript 
+coroutine.wrap(ONQBO_fake_script)()
+local function ZTELXSP_fake_script() -- ShadowRunner.LocalScript 
 	local script = Instance.new('LocalScript', ShadowRunner)
 
 	local btn = script.Parent
@@ -1658,8 +1650,8 @@ local function ZZDTVTS_fake_script() -- ShadowRunner.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZZDTVTS_fake_script)()
-local function BAQJZRK_fake_script() -- NightVision.LocalScript 
+coroutine.wrap(ZTELXSP_fake_script)()
+local function OKGER_fake_script() -- NightVision.LocalScript 
 	local script = Instance.new('LocalScript', NightVision)
 
 	-- Night Vision Toggle Script with Sound
@@ -1759,8 +1751,8 @@ local function BAQJZRK_fake_script() -- NightVision.LocalScript
 	end)
 	
 end
-coroutine.wrap(BAQJZRK_fake_script)()
-local function FUHBFXX_fake_script() -- HighMode.LocalScript 
+coroutine.wrap(OKGER_fake_script)()
+local function RMJYN_fake_script() -- HighMode.LocalScript 
 	local script = Instance.new('LocalScript', HighMode)
 
 	local btn = script.Parent
@@ -1928,8 +1920,8 @@ local function FUHBFXX_fake_script() -- HighMode.LocalScript
 	btn.MouseButton1Click:Connect(toggle)
 	
 end
-coroutine.wrap(FUHBFXX_fake_script)()
-local function TXMWKYS_fake_script() -- Astronaut.LocalScript 
+coroutine.wrap(RMJYN_fake_script)()
+local function JXBBDB_fake_script() -- Astronaut.LocalScript 
 	local script = Instance.new('LocalScript', Astronaut)
 
 	local btn = script.Parent
@@ -2036,8 +2028,8 @@ local function TXMWKYS_fake_script() -- Astronaut.LocalScript
 	btn.MouseButton1Click:Connect(toggle)
 	
 end
-coroutine.wrap(TXMWKYS_fake_script)()
-local function ONOY_fake_script() -- Main.LocalScript 
+coroutine.wrap(JXBBDB_fake_script)()
+local function SEDC_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	local TweenService = game:GetService("TweenService")
@@ -2083,8 +2075,8 @@ local function ONOY_fake_script() -- Main.LocalScript
 	
 	
 end
-coroutine.wrap(ONOY_fake_script)()
-local function SEWZIW_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(SEDC_fake_script)()
+local function IKSAFP_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
@@ -2135,8 +2127,8 @@ local function SEWZIW_fake_script() -- ScreenGui.LocalScript
 	showPage("Home")
 	
 end
-coroutine.wrap(SEWZIW_fake_script)()
-local function NYSF_fake_script() -- ScreenGui.ButtonClickScript 
+coroutine.wrap(IKSAFP_fake_script)()
+local function TQQGKF_fake_script() -- ScreenGui.ButtonClickScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	-- LocalScript inside your ScreenGui
@@ -2210,4 +2202,4 @@ local function NYSF_fake_script() -- ScreenGui.ButtonClickScript
 	end)
 	
 end
-coroutine.wrap(NYSF_fake_script)()
+coroutine.wrap(TQQGKF_fake_script)()
