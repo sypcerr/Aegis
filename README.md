@@ -1,7 +1,5 @@
--- Gui to Lua
--- Version: 3.2
+--Aegis Version 0.8.2
 
--- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
