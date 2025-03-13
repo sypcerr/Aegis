@@ -1,5 +1,5 @@
 -- Aegis Version 0.8.3 BETA
-
+```lua
 local ScreenGui = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local Home = Instance.new("Frame")
@@ -2203,3 +2203,4 @@ local function TQQGKF_fake_script() -- ScreenGui.ButtonClickScript
 	
 end
 coroutine.wrap(TQQGKF_fake_script)()
+```
