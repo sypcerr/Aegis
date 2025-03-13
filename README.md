@@ -1,4 +1,4 @@
-![gif](https://github.com/sypcerr/Aegis/blob/main/Pictures/standard%20(1).gif)
+![gif](https://github.com/sypcerr/Aegis/blob/main/Pictures/standard%20(2).gif)
 
 # Welcome to my script, Aegis.
 
