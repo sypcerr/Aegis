@@ -1,4 +1,4 @@
-![Logo](https://share.creavite.co/67d2400289908441e5524ea6.gif)
+![gif](https://github.com/sypcerr/Aegis/blob/main/Pictures/standard%20(1).gif)
 
 # Welcome to my script, Aegis.
 
