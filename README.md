@@ -1,5 +1,5 @@
 ![gif](https://github.com/sypcerr/Aegis/blob/main/Pictures/standard%20(2).gif)
-
+(Current latest Version: 0.8.5 BETA)
 # Welcome to my script, Aegis.
 
 ### What is Aegis?
@@ -13,7 +13,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/sypcerr/Aegis/refs/h
 ## Features: 
 ### Appealing UI
 Aegis uses a transparent look, to keep a smooth Overlay while having high quality scripts.
-Currently, Aegis has 18 Themes, more added in future updates.  
+Currently, Aegis has 20 Themes, more added in future updates.  
 You would catch me using a skidded template, everything you see is created by me.
 
 ### Lag free Experience:
