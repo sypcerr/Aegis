@@ -1,5 +1,5 @@
 ![gif](https://github.com/sypcerr/Aegis/blob/main/Pictures/standard%20(2).gif)
-(Current latest Version: 0.8.5 BETA)
+(Current latest Version: 0.8.6 BETA)
 # Welcome to my script, Aegis.
 
 ### What is Aegis?
