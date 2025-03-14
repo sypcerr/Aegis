@@ -1,5 +1,5 @@
--- Aegis Version 0.8.5
--- Do not steal anything
+-- Aegis 0.8.6
+-- do not steal anthing
 
 local ScreenGui = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
@@ -68,7 +68,7 @@ local UICorner_20 = Instance.new("UICorner")
 local ThemeLabel = Instance.new("TextLabel")
 local LoadAudioLogger = Instance.new("TextButton")
 local UICorner_21 = Instance.new("UICorner")
-local LoadDex = Instance.new("TextButton")
+local ToggleFling = Instance.new("TextButton")
 local UICorner_22 = Instance.new("UICorner")
 local Name_8 = Instance.new("TextLabel")
 local Main = Instance.new("Frame")
@@ -93,7 +93,10 @@ local FE_2 = Instance.new("ScrollingFrame")
 local Astronaut = Instance.new("TextButton")
 local UICorner_28 = Instance.new("UICorner")
 local Name_12 = Instance.new("TextLabel")
+local Beat = Instance.new("TextButton")
 local UICorner_29 = Instance.new("UICorner")
+local Name_13 = Instance.new("TextLabel")
+local UICorner_30 = Instance.new("UICorner")
 
 --Properties:
 
@@ -509,7 +512,7 @@ Version.BorderSizePixel = 0
 Version.Position = UDim2.new(0.899999976, 0, 0.899999976, 0)
 Version.Size = UDim2.new(0, 27, 0, 17)
 Version.Font = Enum.Font.SourceSans
-Version.Text = "V0.8.3"
+Version.Text = "V0.8.6"
 Version.TextColor3 = Color3.fromRGB(255, 255, 255)
 Version.TextScaled = true
 Version.TextSize = 26.000
@@ -654,20 +657,20 @@ LoadAudioLogger.TextSize = 19.000
 
 UICorner_21.Parent = LoadAudioLogger
 
-LoadDex.Name = "Load Dex"
-LoadDex.Parent = Other
-LoadDex.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
-LoadDex.BackgroundTransparency = 0.500
-LoadDex.BorderColor3 = Color3.fromRGB(0, 0, 0)
-LoadDex.BorderSizePixel = 0
-LoadDex.Position = UDim2.new(0.0210528355, 0, 0.0350453891, 0)
-LoadDex.Size = UDim2.new(0, 153, 0, 49)
-LoadDex.Font = Enum.Font.SourceSans
-LoadDex.Text = "Currently Unavailable"
-LoadDex.TextColor3 = Color3.fromRGB(255, 255, 255)
-LoadDex.TextSize = 19.000
+ToggleFling.Name = "Toggle Fling"
+ToggleFling.Parent = Other
+ToggleFling.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+ToggleFling.BackgroundTransparency = 0.500
+ToggleFling.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ToggleFling.BorderSizePixel = 0
+ToggleFling.Position = UDim2.new(0.0210528355, 0, 0.0350453891, 0)
+ToggleFling.Size = UDim2.new(0, 153, 0, 49)
+ToggleFling.Font = Enum.Font.SourceSans
+ToggleFling.Text = "Toggle Fling"
+ToggleFling.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleFling.TextSize = 19.000
 
-UICorner_22.Parent = LoadDex
+UICorner_22.Parent = ToggleFling
 
 Name_8.Name = "Name"
 Name_8.Parent = MainFrame
@@ -740,6 +743,7 @@ CS.BackgroundTransparency = 1.000
 CS.BorderColor3 = Color3.fromRGB(0, 0, 0)
 CS.BorderSizePixel = 0
 CS.Size = UDim2.new(0, 327, 0, 245)
+CS.Visible = false
 
 CS_2.Name = "CS"
 CS_2.Parent = CS
@@ -849,7 +853,6 @@ FE.BackgroundTransparency = 1.000
 FE.BorderColor3 = Color3.fromRGB(0, 0, 0)
 FE.BorderSizePixel = 0
 FE.Size = UDim2.new(0, 327, 0, 245)
-FE.Visible = false
 
 FE_2.Name = "FE"
 FE_2.Parent = FE
@@ -892,11 +895,42 @@ Name_12.TextSize = 13.000
 Name_12.TextWrapped = true
 Name_12.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_29.Parent = Main
+Beat.Name = "Beat"
+Beat.Parent = FE_2
+Beat.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+Beat.BackgroundTransparency = 0.500
+Beat.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Beat.BorderSizePixel = 0
+Beat.Position = UDim2.new(-0.00144817121, 0, 0.210766479, 0)
+Beat.Size = UDim2.new(0, 141, 0, 49)
+Beat.Font = Enum.Font.SourceSans
+Beat.Text = "Beat"
+Beat.TextColor3 = Color3.fromRGB(255, 255, 255)
+Beat.TextSize = 19.000
+
+UICorner_29.Parent = Beat
+
+Name_13.Name = "Name"
+Name_13.Parent = Beat
+Name_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_13.BackgroundTransparency = 1.000
+Name_13.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Name_13.BorderSizePixel = 0
+Name_13.Position = UDim2.new(0, 147, 0, 5)
+Name_13.Size = UDim2.new(0, 147, 0, 44)
+Name_13.Font = Enum.Font.SourceSans
+Name_13.Text = "Yes u know what it is. Click again to disable."
+Name_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_13.TextScaled = true
+Name_13.TextSize = 13.000
+Name_13.TextWrapped = true
+Name_13.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_30.Parent = Main
 
 -- Scripts:
 
-local function CBUQVOF_fake_script() -- SliderHandle.LocalScript 
+local function UXOOXAI_fake_script() -- SliderHandle.LocalScript 
 	local script = Instance.new('LocalScript', SliderHandle)
 
 	local sliderHandle = script.Parent
@@ -987,8 +1021,8 @@ local function CBUQVOF_fake_script() -- SliderHandle.LocalScript
 	end)
 	
 end
-coroutine.wrap(CBUQVOF_fake_script)()
-local function NGXF_fake_script() -- SliderHandle_2.LocalScript 
+coroutine.wrap(UXOOXAI_fake_script)()
+local function QFNNI_fake_script() -- SliderHandle_2.LocalScript 
 	local script = Instance.new('LocalScript', SliderHandle_2)
 
 	local h = script.Parent
@@ -1075,8 +1109,8 @@ local function NGXF_fake_script() -- SliderHandle_2.LocalScript
 	end
 	
 end
-coroutine.wrap(NGXF_fake_script)()
-local function XCOWZXR_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(QFNNI_fake_script)()
+local function DEOWNTY_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local btn = script.Parent
@@ -1207,8 +1241,8 @@ local function XCOWZXR_fake_script() -- TextButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(XCOWZXR_fake_script)()
-local function UPNY_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(DEOWNTY_fake_script)()
+local function JNFX_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local btn = script.Parent
@@ -1260,8 +1294,8 @@ local function UPNY_fake_script() -- TextButton_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(UPNY_fake_script)()
-local function OXXHO_fake_script() -- Frame.Main 
+coroutine.wrap(JNFX_fake_script)()
+local function GVUNL_fake_script() -- Frame.Main 
 	local script = Instance.new('LocalScript', Frame)
 
 	wait(0)
@@ -1390,8 +1424,8 @@ local function OXXHO_fake_script() -- Frame.Main
 	
 	start()
 end
-coroutine.wrap(OXXHO_fake_script)()
-local function MLRV_fake_script() -- UserProfile.GetProfile 
+coroutine.wrap(GVUNL_fake_script)()
+local function XZCIZE_fake_script() -- UserProfile.GetProfile 
 	local script = Instance.new('LocalScript', UserProfile)
 
 	local Players = game:GetService("Players")
@@ -1408,14 +1442,14 @@ local function MLRV_fake_script() -- UserProfile.GetProfile
 	local imageLabel = script.Parent
 	imageLabel.Image = content
 end
-coroutine.wrap(MLRV_fake_script)()
-local function IUWR_fake_script() -- Name_5.LocalScript 
+coroutine.wrap(XZCIZE_fake_script)()
+local function MWRC_fake_script() -- Name_5.LocalScript 
 	local script = Instance.new('LocalScript', Name_5)
 
 	script.Parent.Text = game.Players.LocalPlayer.Name
 end
-coroutine.wrap(IUWR_fake_script)()
-local function GTRBQ_fake_script() -- MainFrame.open-close 
+coroutine.wrap(MWRC_fake_script)()
+local function CGCFF_fake_script() -- MainFrame.open-close 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local userInputService = game:GetService("UserInputService")
@@ -1448,8 +1482,8 @@ local function GTRBQ_fake_script() -- MainFrame.open-close
 	end)
 	
 end
-coroutine.wrap(GTRBQ_fake_script)()
-local function LERX_fake_script() -- MainFrame.UIDrag 
+coroutine.wrap(CGCFF_fake_script)()
+local function QWEHSWX_fake_script() -- MainFrame.UIDrag 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	-- Made by Real_IceyDev (@lceyDex) --
@@ -1490,8 +1524,8 @@ local function LERX_fake_script() -- MainFrame.UIDrag
 		end
 	end)
 end
-coroutine.wrap(LERX_fake_script)()
-local function KCMZVD_fake_script() -- KillUI.LocalScript 
+coroutine.wrap(QWEHSWX_fake_script)()
+local function DSXT_fake_script() -- KillUI.LocalScript 
 	local script = Instance.new('LocalScript', KillUI)
 
 	local button = script.Parent 
@@ -1501,8 +1535,8 @@ local function KCMZVD_fake_script() -- KillUI.LocalScript
 		gui:Destroy() -- destroy the entire GUI when the button is clicked
 	end)
 end
-coroutine.wrap(KCMZVD_fake_script)()
-local function QLQOZ_fake_script() -- ChangeTheme.LocalScript 
+coroutine.wrap(DSXT_fake_script)()
+local function LAWZ_fake_script() -- ChangeTheme.LocalScript 
 	local script = Instance.new('LocalScript', ChangeTheme)
 
 	local button = script.Parent -- Reference to the button
@@ -1666,8 +1700,57 @@ local function QLQOZ_fake_script() -- ChangeTheme.LocalScript
 	updateTextButtons()
 	
 end
-coroutine.wrap(QLQOZ_fake_script)()
-local function HBETDCY_fake_script() -- ShadowRunner.LocalScript 
+coroutine.wrap(LAWZ_fake_script)()
+local function CXZZDEV_fake_script() -- ToggleFling.LocalScript 
+	local script = Instance.new('LocalScript', ToggleFling)
+
+	local btn = script.Parent
+	local rs = game:GetService("RunService")
+	local plr = game.Players.LocalPlayer
+	
+	local enabled = false
+	
+	local function getRoot(c)
+		return c and c:FindFirstChild("HumanoidRootPart")
+	end
+	
+	local function fling()
+		while enabled do
+			rs.Heartbeat:Wait()
+			local c = plr.Character
+			local root = getRoot(c)
+			local vel, movel = nil, 0.1
+	
+			if not (c and root) then continue end
+	
+			vel = root.Velocity
+			root.Velocity = vel * 10000 + Vector3.new(0, 10000, 0)
+	
+			rs.RenderStepped:Wait()
+			if c and root then
+				root.Velocity = vel
+			end
+	
+			rs.Stepped:Wait()
+			if c and root then
+				root.Velocity = vel + Vector3.new(0, movel, 0)
+				movel = movel * -1
+			end
+		end
+	end
+	
+	btn.MouseButton1Click:Connect(function()
+		enabled = not enabled
+		btn.Text = enabled and "Stop Fling" or "Start Fling"
+	
+		if enabled then
+			task.spawn(fling)
+		end
+	end)
+	
+end
+coroutine.wrap(CXZZDEV_fake_script)()
+local function SLWPBWE_fake_script() -- ShadowRunner.LocalScript 
 	local script = Instance.new('LocalScript', ShadowRunner)
 
 	local btn = script.Parent
@@ -1807,8 +1890,8 @@ local function HBETDCY_fake_script() -- ShadowRunner.LocalScript
 	end)
 	
 end
-coroutine.wrap(HBETDCY_fake_script)()
-local function NJLDJ_fake_script() -- NightVision.LocalScript 
+coroutine.wrap(SLWPBWE_fake_script)()
+local function HFEA_fake_script() -- NightVision.LocalScript 
 	local script = Instance.new('LocalScript', NightVision)
 
 	-- Night Vision Toggle Script with Sound
@@ -1908,8 +1991,8 @@ local function NJLDJ_fake_script() -- NightVision.LocalScript
 	end)
 	
 end
-coroutine.wrap(NJLDJ_fake_script)()
-local function SFWMW_fake_script() -- HighMode.LocalScript 
+coroutine.wrap(HFEA_fake_script)()
+local function JHTQWSQ_fake_script() -- HighMode.LocalScript 
 	local script = Instance.new('LocalScript', HighMode)
 
 	local btn = script.Parent
@@ -2077,8 +2160,8 @@ local function SFWMW_fake_script() -- HighMode.LocalScript
 	btn.MouseButton1Click:Connect(toggle)
 	
 end
-coroutine.wrap(SFWMW_fake_script)()
-local function YBMGNMS_fake_script() -- Astronaut.LocalScript 
+coroutine.wrap(JHTQWSQ_fake_script)()
+local function UHEXZ_fake_script() -- Astronaut.LocalScript 
 	local script = Instance.new('LocalScript', Astronaut)
 
 	local btn = script.Parent
@@ -2185,8 +2268,47 @@ local function YBMGNMS_fake_script() -- Astronaut.LocalScript
 	btn.MouseButton1Click:Connect(toggle)
 	
 end
-coroutine.wrap(YBMGNMS_fake_script)()
-local function FUZS_fake_script() -- Main.LocalScript 
+coroutine.wrap(UHEXZ_fake_script)()
+local function MPWFE_fake_script() -- Beat.LocalScript 
+	local script = Instance.new('LocalScript', Beat)
+
+	local btn = script.Parent
+	local plr = game.Players.LocalPlayer
+	local hum = plr.Character and plr.Character:FindFirstChildOfClass("Humanoid")
+	local animTrack
+	
+	local anim = Instance.new("Animation")
+	anim.AnimationId = "rbxassetid://168268306"
+	
+	local playing = false
+	
+	local function toggleAnim()
+		if not hum then return end
+		local animator = hum:FindFirstChild("Animator") or hum:FindFirstChildOfClass("Animator")
+	
+		if playing then
+			if animTrack then
+				animTrack:Stop()
+			end
+			btn.Text = "Start Animation"
+		else
+			if animator then
+				animTrack = animator:LoadAnimation(anim)
+				animTrack.Looped = true
+				animTrack:Play()
+				animTrack:AdjustSpeed(10)
+			end
+			btn.Text = "Stop Animation"
+		end
+	
+		playing = not playing
+	end
+	
+	btn.MouseButton1Click:Connect(toggleAnim)
+	
+end
+coroutine.wrap(MPWFE_fake_script)()
+local function HLPDS_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	local TweenService = game:GetService("TweenService")
@@ -2232,8 +2354,8 @@ local function FUZS_fake_script() -- Main.LocalScript
 	
 	
 end
-coroutine.wrap(FUZS_fake_script)()
-local function PUNS_fake_script() -- ScreenGui.SwitchPage 
+coroutine.wrap(HLPDS_fake_script)()
+local function EZCZ_fake_script() -- ScreenGui.SwitchPage 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
@@ -2284,8 +2406,8 @@ local function PUNS_fake_script() -- ScreenGui.SwitchPage
 	showPage("Home")
 	
 end
-coroutine.wrap(PUNS_fake_script)()
-local function GKAK_fake_script() -- ScreenGui.ButtonClickScript 
+coroutine.wrap(EZCZ_fake_script)()
+local function EPNW_fake_script() -- ScreenGui.ButtonClickScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	-- LocalScript inside your ScreenGui
@@ -2359,8 +2481,8 @@ local function GKAK_fake_script() -- ScreenGui.ButtonClickScript
 	end)
 	
 end
-coroutine.wrap(GKAK_fake_script)()
-local function HSXO_fake_script() -- ScreenGui.FEBYPASS 
+coroutine.wrap(EPNW_fake_script)()
+local function TXQIZ_fake_script() -- ScreenGui.FEBYPASS 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	wait(3)
@@ -2484,4 +2606,4 @@ local function HSXO_fake_script() -- ScreenGui.FEBYPASS
 		print("[Aegis]: FE Bypass failed. Please try again.")
 	end
 end
-coroutine.wrap(HSXO_fake_script)()
+coroutine.wrap(TXQIZ_fake_script)()
