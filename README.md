@@ -1,6 +1,6 @@
 ![gif](https://github.com/sypcerr/Aegis/blob/main/Pictures/standard%20(2).gif)
 (Current latest Version: 0.9.0 BETA) - please scroll down for important news
-# Welcome to my script, Aegis.
+# Welcome to my script, AegisLite.
 
 ### What is Aegis?
 Aegis is my current project, a roblox script, with an amazing UI and multiple ClientSided and FilteringEnabled Scripts. 
@@ -18,19 +18,18 @@ In this update, there are two versions of the script: **AegisLite** and **Aegis+
 ### What’s the Difference?
 
 - **AegisLite:**
-  - A lightweight version of the script with the core features.
-  - Includes the new **Settings Tab** for easy customization.
+  - The base version with the core features.
+  - Includes the **new Settings Tab** for easy configuration.
 
 - **Aegis+:**
   - A more customizable version of **AegisLite**.
-  - Includes everything from **AegisLite**, along with **Beta Updates** and additional features.
-  - Features such as **UI Transparency Slider** and **Rescale UI Dragger**.
-  - Access to experimental and in-progress updates before they are fully released.
+  - Includes everything from **AegisLite**, plus **Beta Updates** and **exclusive features**.
+  - Features like the **UI Transparency Slider** and **Rescale UI Dragger** are only available in **Aegis+**.
 
 ### Where to Get Them?
 
-- **AegisLite**: Available in the [AegisLite repository](link-to-aegislite-repo).
-- **Aegis+**: Available in the [Aegis+ repository](link-to-aegisplus-repo).
+- **AegisLite**: Available right here. (Loadstring above)
+- **Aegis+**: Available in my Discord for an one time payment of 3.99$.
 
 ### Change Log for Version 0.9.0:
 - Both versions now include a **new Settings Tab** for more configuration options.
