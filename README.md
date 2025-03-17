@@ -1,5 +1,5 @@
 ![gif](https://github.com/sypcerr/Aegis/blob/main/Pictures/standard%20(2).gif)
-(Current latest Version: 0.9.0 BETA) - please scroll down for important news
+(Current latest Version: 0.9.0 BETA) - please scroll down for updates
 # Welcome to my script, AegisLite.
 
 ### What is Aegis?
@@ -9,33 +9,20 @@ Aegis is my current project, a roblox script, with an amazing UI and multiple Cl
 ```lua
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/sypcerr/Aegis/refs/heads/main/script'),true))()
 ```
-## Version 0.9.0 Update (important)
+# Aegis+ - Version 0.9.0
 
-### Why Two Versions?
+## New Features:
+- **UI Persistence:** UI stays on the last page after resetting or dying.
+- **Settings Tab:** Added a new settings menu.
+- **Rescale UI Dragger:** Rescale UI with a draggable element.
+- **UI Transparency Slider:** Adjust transparency in settings.
+- **Smooth Drag Speed Adjusted:** Slightly faster feel for smooth drag.
+- **Fly/ Fling Fixes:** Fling disables after death, fly now requires button click.
 
-In this update, there are two versions of the script: **AegisLite** and **Aegis+**. Both versions now come with the new **Settings Tab**, but **Aegis+** includes extra features and **Beta Updates** for users who want access to the latest improvements.
+## Changes:
+- Removed "Beta" from the top-right title.
+- Removed PageSwitch Animation for faster feel.
 
-### What’s the Difference?
-
-- **AegisLite:**
-  - The base version with the core features.
-  - Includes the **new Settings Tab** for easy configuration.
-
-- **Aegis+:**
-  - A more customizable version of **AegisLite**.
-  - Includes everything from **AegisLite**, plus **Beta Updates** and **exclusive features**.
-  - Features like the **UI Transparency Slider** and **Rescale UI Dragger** are only available in **Aegis+**.
-
-### Where to Get Them?
-
-- **AegisLite**: Available right here. (Loadstring above)
-- **Aegis+**: Available in my Discord for an one time payment of 3.99$.
-
-### Change Log for Version 0.9.0:
-- Both versions now include a **new Settings Tab** for more configuration options.
-- **Aegis+** also includes **Beta Updates** with new features like the **UI Transparency Slider** and **Rescale UI Dragger**.
-- Fixed issues with **Fling** and **Fly** functionalities.
-- UI now stays persistent even after resetting or dying.
 
 ## Outro:
 I started working on Aegis on 05.03.2025, have been working nonstop everyday . I am still learning and trying to become better, so no criticism would be appreciated, while I am happy for bug-reports. 
