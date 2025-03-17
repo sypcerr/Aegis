@@ -1,495 +1,520 @@
--- Aegis 0.8.6
--- do not steal anthing
+-- Aegis Version 0.9.0 Beta
 
-local ScreenGui = Instance.new("ScreenGui")
+local Aegis = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
-local Home = Instance.new("Frame")
-local speed = Instance.new("Folder")
-local SliderBar = Instance.new("Frame")
-local SliderHandle = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
-local TextBox = Instance.new("TextBox")
-local UICorner_2 = Instance.new("UICorner")
-local UICorner_3 = Instance.new("UICorner")
-local Name = Instance.new("TextLabel")
-local jump = Instance.new("Folder")
-local SliderBar_2 = Instance.new("Frame")
-local SliderHandle_2 = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
-local TextBox_2 = Instance.new("TextBox")
-local UICorner_5 = Instance.new("UICorner")
-local UICorner_6 = Instance.new("UICorner")
-local Name_2 = Instance.new("TextLabel")
-local ToggleFLight = Instance.new("Folder")
-local TextButton = Instance.new("TextButton")
-local UICorner_7 = Instance.new("UICorner")
-local Name_3 = Instance.new("TextLabel")
-local TextBox_3 = Instance.new("TextBox")
-local UICorner_8 = Instance.new("UICorner")
-local ToggleNoclip = Instance.new("Folder")
-local TextButton_2 = Instance.new("TextButton")
-local UICorner_9 = Instance.new("UICorner")
-local Name_4 = Instance.new("TextLabel")
-local Info = Instance.new("Folder")
-local Frame = Instance.new("Frame")
-local Hr12 = Instance.new("TextButton")
-local Hr24 = Instance.new("TextButton")
-local Sec = Instance.new("TextButton")
-local Date = Instance.new("TextLabel")
-local Time = Instance.new("TextLabel")
-local UserProfile = Instance.new("ImageLabel")
-local UICorner_10 = Instance.new("UICorner")
-local Name_5 = Instance.new("TextLabel")
-local Name_6 = Instance.new("TextLabel")
-local UICorner_11 = Instance.new("UICorner")
-local UICorner_12 = Instance.new("UICorner")
-local Name_7 = Instance.new("TextLabel")
-local Info_2 = Instance.new("Frame")
-local UICorner_13 = Instance.new("UICorner")
-local PressLeftAlt = Instance.new("TextLabel")
-local credits = Instance.new("TextLabel")
-local Version = Instance.new("TextLabel")
 local HomeButton = Instance.new("TextButton")
-local UICorner_14 = Instance.new("UICorner")
-local MainButton = Instance.new("TextButton")
-local UICorner_15 = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
+local SettingsButton = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
 local OtherButton = Instance.new("TextButton")
-local UICorner_16 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
+local MainButton = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
 local InfoButton = Instance.new("TextButton")
-local UICorner_17 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
+local Main = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local csfe = Instance.new("Frame")
+local FE = Instance.new("Frame")
+local FE_2 = Instance.new("ScrollingFrame")
+local Beat = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Name = Instance.new("TextLabel")
+local Astronaut = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local Name_2 = Instance.new("TextLabel")
+local CS = Instance.new("Frame")
+local CS_2 = Instance.new("ScrollingFrame")
+local HighMode = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Name_3 = Instance.new("TextLabel")
+local NightVision = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local Name_4 = Instance.new("TextLabel")
+local ShadowRunner = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local Name_5 = Instance.new("TextLabel")
+local FEB = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local CSB = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
 local Other = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
+local ToggleFling = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local LoadAudioLogger = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local Info = Instance.new("Frame")
 local UICorner_18 = Instance.new("UICorner")
+local Version = Instance.new("TextLabel")
+local credits = Instance.new("TextLabel")
+local PressLeftAlt = Instance.new("TextLabel")
+local Settings = Instance.new("Frame")
 local Killgui = Instance.new("Folder")
 local KillUI = Instance.new("TextButton")
 local UICorner_19 = Instance.new("UICorner")
 local Theme = Instance.new("Folder")
+local ThemeLabel = Instance.new("TextLabel")
 local ChangeTheme = Instance.new("TextButton")
 local UICorner_20 = Instance.new("UICorner")
-local ThemeLabel = Instance.new("TextLabel")
-local LoadAudioLogger = Instance.new("TextButton")
 local UICorner_21 = Instance.new("UICorner")
-local ToggleFling = Instance.new("TextButton")
+local TRPRC = Instance.new("Folder")
+local SliderBar = Instance.new("Frame")
 local UICorner_22 = Instance.new("UICorner")
-local Name_8 = Instance.new("TextLabel")
-local Main = Instance.new("Frame")
-local csfe = Instance.new("Frame")
-local CSB = Instance.new("TextButton")
+local SliderHandle = Instance.new("TextButton")
 local UICorner_23 = Instance.new("UICorner")
-local FEB = Instance.new("TextButton")
+local TBox = Instance.new("TextBox")
 local UICorner_24 = Instance.new("UICorner")
-local CS = Instance.new("Frame")
-local CS_2 = Instance.new("ScrollingFrame")
-local ShadowRunner = Instance.new("TextButton")
+local ThemeLabel_2 = Instance.new("TextLabel")
+local Home = Instance.new("Frame")
 local UICorner_25 = Instance.new("UICorner")
-local Name_9 = Instance.new("TextLabel")
-local NightVision = Instance.new("TextButton")
+local Info_2 = Instance.new("Folder")
+local Name_6 = Instance.new("TextLabel")
+local Name_7 = Instance.new("TextLabel")
+local UserProfile = Instance.new("ImageLabel")
 local UICorner_26 = Instance.new("UICorner")
-local Name_10 = Instance.new("TextLabel")
-local HighMode = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local Time = Instance.new("TextLabel")
+local Date = Instance.new("TextLabel")
+local Sec = Instance.new("TextButton")
+local Hr24 = Instance.new("TextButton")
+local Hr12 = Instance.new("TextButton")
+local ToggleNoclip = Instance.new("Folder")
+local Name_8 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
 local UICorner_27 = Instance.new("UICorner")
-local Name_11 = Instance.new("TextLabel")
-local FE = Instance.new("Frame")
-local FE_2 = Instance.new("ScrollingFrame")
-local Astronaut = Instance.new("TextButton")
+local ToggleFLight = Instance.new("Folder")
+local TextBox = Instance.new("TextBox")
 local UICorner_28 = Instance.new("UICorner")
-local Name_12 = Instance.new("TextLabel")
-local Beat = Instance.new("TextButton")
+local Name_9 = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("TextButton")
 local UICorner_29 = Instance.new("UICorner")
-local Name_13 = Instance.new("TextLabel")
+local jump = Instance.new("Folder")
+local Name_10 = Instance.new("TextLabel")
+local SliderBar_2 = Instance.new("Frame")
 local UICorner_30 = Instance.new("UICorner")
+local TextBox_2 = Instance.new("TextBox")
+local UICorner_31 = Instance.new("UICorner")
+local SliderHandle_2 = Instance.new("TextButton")
+local UICorner_32 = Instance.new("UICorner")
+local speed = Instance.new("Folder")
+local Name_11 = Instance.new("TextLabel")
+local SliderBar_3 = Instance.new("Frame")
+local UICorner_33 = Instance.new("UICorner")
+local TextBox_3 = Instance.new("TextBox")
+local UICorner_34 = Instance.new("UICorner")
+local SliderHandle_3 = Instance.new("TextButton")
+local UICorner_35 = Instance.new("UICorner")
+local Name_12 = Instance.new("TextLabel")
+local Name_13 = Instance.new("TextLabel")
+local ResizeHandle = Instance.new("ImageButton")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Aegis.Name = "Aegis+"
+Aegis.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Aegis.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 MainFrame.Name = "MainFrame"
-MainFrame.Parent = ScreenGui
+MainFrame.Parent = Aegis
 MainFrame.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
 MainFrame.BackgroundTransparency = 0.235
 MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 MainFrame.BorderSizePixel = 0
-MainFrame.Position = UDim2.new(0.162562802, 0, 0.224743411, 0)
+MainFrame.Position = UDim2.new(0.244000003, 0, 0.237000003, 0)
 MainFrame.Size = UDim2.new(0, 425, 0, 258)
 
-Home.Name = "Home"
-Home.Parent = MainFrame
-Home.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
-Home.BackgroundTransparency = 0.700
-Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Home.BorderSizePixel = 0
-Home.Position = UDim2.new(0.214891866, 0, 0.0232558139, 0)
-Home.Size = UDim2.new(0, 327, 0, 245)
+UICorner.Parent = MainFrame
 
-speed.Name = "speed"
-speed.Parent = Home
+HomeButton.Name = "HomeButton"
+HomeButton.Parent = MainFrame
+HomeButton.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+HomeButton.BackgroundTransparency = 0.600
+HomeButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HomeButton.BorderSizePixel = 0
+HomeButton.Position = UDim2.new(0.0166981425, 0, 0.122093022, 0)
+HomeButton.Size = UDim2.new(0, 77, 0, 38)
+HomeButton.Font = Enum.Font.SourceSans
+HomeButton.Text = "Home"
+HomeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+HomeButton.TextSize = 19.000
 
-SliderBar.Name = "SliderBar"
-SliderBar.Parent = speed
-SliderBar.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
-SliderBar.BackgroundTransparency = 0.500
-SliderBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SliderBar.BorderSizePixel = 0
-SliderBar.Position = UDim2.new(0.344036698, -100, 0.0632653087, 0)
-SliderBar.Size = UDim2.new(0, 131, 0, 10)
+UICorner_2.Parent = HomeButton
 
-SliderHandle.Name = "SliderHandle"
-SliderHandle.Parent = SliderBar
-SliderHandle.BackgroundColor3 = Color3.fromRGB(139, 141, 146)
-SliderHandle.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SliderHandle.BorderSizePixel = 0
-SliderHandle.Position = UDim2.new(0, 0, 0.5, -7)
-SliderHandle.Size = UDim2.new(0, 15, 0, 15)
-SliderHandle.Font = Enum.Font.SourceSans
-SliderHandle.Text = ""
-SliderHandle.TextColor3 = Color3.fromRGB(0, 0, 0)
-SliderHandle.TextSize = 14.000
+SettingsButton.Name = "SettingsButton"
+SettingsButton.Parent = MainFrame
+SettingsButton.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+SettingsButton.BackgroundTransparency = 0.600
+SettingsButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SettingsButton.BorderSizePixel = 0
+SettingsButton.Position = UDim2.new(0.0166981425, 0, 0.656191587, 0)
+SettingsButton.Size = UDim2.new(0, 77, 0, 38)
+SettingsButton.Font = Enum.Font.SourceSans
+SettingsButton.Text = "Settings"
+SettingsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+SettingsButton.TextSize = 19.000
 
-UICorner.Parent = SliderHandle
+UICorner_3.Parent = SettingsButton
 
-TextBox.Parent = SliderBar
-TextBox.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
-TextBox.BackgroundTransparency = 0.500
-TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextBox.BorderSizePixel = 0
-TextBox.Position = UDim2.new(1.10305345, 0, -0.200000003, 0)
-TextBox.Size = UDim2.new(0, 63, 0, 14)
-TextBox.Font = Enum.Font.Unknown
-TextBox.PlaceholderText = "AnySpeed"
-TextBox.Text = ""
-TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextBox.TextSize = 11.000
-TextBox.TextWrapped = true
+OtherButton.Name = "OtherButton"
+OtherButton.Parent = MainFrame
+OtherButton.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+OtherButton.BackgroundTransparency = 0.600
+OtherButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OtherButton.BorderSizePixel = 0
+OtherButton.Position = UDim2.new(0.0166981425, 0, 0.476191789, 0)
+OtherButton.Size = UDim2.new(0, 77, 0, 38)
+OtherButton.Font = Enum.Font.SourceSans
+OtherButton.Text = "Other"
+OtherButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+OtherButton.TextSize = 19.000
 
-UICorner_2.CornerRadius = UDim.new(0, 3)
-UICorner_2.Parent = TextBox
+UICorner_4.Parent = OtherButton
 
-UICorner_3.Parent = SliderBar
+MainButton.Name = "MainButton"
+MainButton.Parent = MainFrame
+MainButton.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+MainButton.BackgroundTransparency = 0.600
+MainButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainButton.BorderSizePixel = 0
+MainButton.Position = UDim2.new(0.0166981425, 0, 0.299142063, 0)
+MainButton.Size = UDim2.new(0, 77, 0, 38)
+MainButton.Font = Enum.Font.SourceSans
+MainButton.Text = "Main"
+MainButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainButton.TextSize = 19.000
+
+UICorner_5.Parent = MainButton
+
+InfoButton.Name = "InfoButton"
+InfoButton.Parent = MainFrame
+InfoButton.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+InfoButton.BackgroundTransparency = 0.600
+InfoButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfoButton.BorderSizePixel = 0
+InfoButton.Position = UDim2.new(0.0166930426, 0, 0.829291523, 0)
+InfoButton.Size = UDim2.new(0, 77, 0, 38)
+InfoButton.Font = Enum.Font.SourceSans
+InfoButton.Text = "Info"
+InfoButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfoButton.TextSize = 19.000
+
+UICorner_6.Parent = InfoButton
+
+Main.Name = "Main"
+Main.Parent = MainFrame
+Main.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+Main.BackgroundTransparency = 1.000
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.215000004, 0, 0.023, 0)
+Main.Size = UDim2.new(0, 327, 0, 245)
+Main.Visible = false
+
+UICorner_7.Parent = Main
+
+csfe.Name = "csfe"
+csfe.Parent = Main
+csfe.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+csfe.BackgroundTransparency = 1.000
+csfe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+csfe.BorderSizePixel = 0
+csfe.Position = UDim2.new(-0.00223347615, 0, -0.00531553943, 0)
+csfe.Size = UDim2.new(0, 327, 0, 245)
+
+FE.Name = "FE"
+FE.Parent = csfe
+FE.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+FE.BackgroundTransparency = 1.000
+FE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FE.BorderSizePixel = 0
+FE.Size = UDim2.new(0, 327, 0, 245)
+FE.Visible = false
+
+FE_2.Name = "FE"
+FE_2.Parent = FE
+FE_2.Active = true
+FE_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FE_2.BackgroundTransparency = 1.000
+FE_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FE_2.BorderSizePixel = 0
+FE_2.Position = UDim2.new(0.0244648326, 0, 0.0244897958, 0)
+FE_2.Size = UDim2.new(0, 313, 0, 231)
+
+Beat.Name = "Beat"
+Beat.Parent = FE_2
+Beat.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+Beat.BackgroundTransparency = 0.500
+Beat.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Beat.BorderSizePixel = 0
+Beat.Position = UDim2.new(-0.00144817121, 0, 0.210766479, 0)
+Beat.Size = UDim2.new(0, 141, 0, 49)
+Beat.Font = Enum.Font.SourceSans
+Beat.Text = "Beat"
+Beat.TextColor3 = Color3.fromRGB(255, 255, 255)
+Beat.TextSize = 19.000
+
+UICorner_8.Parent = Beat
 
 Name.Name = "Name"
-Name.Parent = speed
+Name.Parent = Beat
 Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Name.BackgroundTransparency = 1.000
 Name.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Name.BorderSizePixel = 0
-Name.Position = UDim2.new(0, 228, 0, 15)
-Name.Size = UDim2.new(0, 91, 0, 13)
+Name.Position = UDim2.new(0, 147, 0, 5)
+Name.Size = UDim2.new(0, 147, 0, 44)
 Name.Font = Enum.Font.SourceSans
-Name.Text = "Change Walkspeed"
+Name.Text = "Yes u know what it is. Click again to disable."
 Name.TextColor3 = Color3.fromRGB(255, 255, 255)
 Name.TextScaled = true
 Name.TextSize = 13.000
 Name.TextWrapped = true
 Name.TextXAlignment = Enum.TextXAlignment.Left
 
-jump.Name = "jump"
-jump.Parent = Home
+Astronaut.Name = "Astronaut"
+Astronaut.Parent = FE_2
+Astronaut.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+Astronaut.BackgroundTransparency = 0.500
+Astronaut.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Astronaut.BorderSizePixel = 0
+Astronaut.Position = UDim2.new(-0.00144817121, 0, 0.0769123584, 0)
+Astronaut.Size = UDim2.new(0, 141, 0, 49)
+Astronaut.Font = Enum.Font.SourceSans
+Astronaut.Text = "Astronaut"
+Astronaut.TextColor3 = Color3.fromRGB(255, 255, 255)
+Astronaut.TextSize = 19.000
 
-SliderBar_2.Name = "SliderBar"
-SliderBar_2.Parent = jump
-SliderBar_2.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
-SliderBar_2.BackgroundTransparency = 0.500
-SliderBar_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SliderBar_2.BorderSizePixel = 0
-SliderBar_2.Position = UDim2.new(0.344036698, -100, 0.18571429, 0)
-SliderBar_2.Size = UDim2.new(0, 131, 0, 10)
-
-SliderHandle_2.Name = "SliderHandle"
-SliderHandle_2.Parent = SliderBar_2
-SliderHandle_2.BackgroundColor3 = Color3.fromRGB(139, 141, 146)
-SliderHandle_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SliderHandle_2.BorderSizePixel = 0
-SliderHandle_2.Position = UDim2.new(0, 0, 0.5, -7)
-SliderHandle_2.Size = UDim2.new(0, 15, 0, 15)
-SliderHandle_2.Font = Enum.Font.SourceSans
-SliderHandle_2.Text = ""
-SliderHandle_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-SliderHandle_2.TextSize = 14.000
-
-UICorner_4.Parent = SliderHandle_2
-
-TextBox_2.Parent = SliderBar_2
-TextBox_2.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
-TextBox_2.BackgroundTransparency = 0.500
-TextBox_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextBox_2.BorderSizePixel = 0
-TextBox_2.Position = UDim2.new(1.09923661, 0, -0.200000003, 0)
-TextBox_2.Size = UDim2.new(0, 63, 0, 14)
-TextBox_2.Font = Enum.Font.Unknown
-TextBox_2.PlaceholderText = "AnyHeight"
-TextBox_2.Text = ""
-TextBox_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextBox_2.TextSize = 10.000
-TextBox_2.TextWrapped = true
-
-UICorner_5.CornerRadius = UDim.new(0, 3)
-UICorner_5.Parent = TextBox_2
-
-UICorner_6.Parent = SliderBar_2
+UICorner_9.Parent = Astronaut
 
 Name_2.Name = "Name"
-Name_2.Parent = jump
+Name_2.Parent = Astronaut
 Name_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Name_2.BackgroundTransparency = 1.000
 Name_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Name_2.BorderSizePixel = 0
-Name_2.Position = UDim2.new(0, 228, 0, 44)
-Name_2.Size = UDim2.new(0, 91, 0, 13)
+Name_2.Position = UDim2.new(0, 147, 0, 5)
+Name_2.Size = UDim2.new(0, 147, 0, 44)
 Name_2.Font = Enum.Font.SourceSans
-Name_2.Text = "Change JumpHight"
+Name_2.Text = "Makes you float. Hold space to go upwards."
 Name_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Name_2.TextScaled = true
-Name_2.TextSize = 1.000
+Name_2.TextSize = 13.000
 Name_2.TextWrapped = true
 Name_2.TextXAlignment = Enum.TextXAlignment.Left
 
-ToggleFLight.Name = "Toggle FLight"
-ToggleFLight.Parent = Home
+CS.Name = "CS"
+CS.Parent = csfe
+CS.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+CS.BackgroundTransparency = 1.000
+CS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CS.BorderSizePixel = 0
+CS.Size = UDim2.new(0, 327, 0, 245)
 
-TextButton.Parent = ToggleFLight
-TextButton.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
-TextButton.BackgroundTransparency = 0.500
-TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.0519877672, 0, 0.306122452, 0)
-TextButton.Size = UDim2.new(0, 126, 0, 36)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Off"
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextSize = 14.000
+CS_2.Name = "CS"
+CS_2.Parent = CS
+CS_2.Active = true
+CS_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CS_2.BackgroundTransparency = 1.000
+CS_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CS_2.BorderSizePixel = 0
+CS_2.Position = UDim2.new(0.0244648326, 0, 0.0244897958, 0)
+CS_2.Size = UDim2.new(0, 313, 0, 231)
 
-UICorner_7.Parent = TextButton
+HighMode.Name = "High Mode"
+HighMode.Parent = CS_2
+HighMode.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+HighMode.BackgroundTransparency = 0.500
+HighMode.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HighMode.BorderSizePixel = 0
+HighMode.Position = UDim2.new(-0.00144817121, 0, 0.36228171, 0)
+HighMode.Size = UDim2.new(0, 141, 0, 49)
+HighMode.Font = Enum.Font.SourceSans
+HighMode.Text = "High Mode"
+HighMode.TextColor3 = Color3.fromRGB(255, 255, 255)
+HighMode.TextSize = 19.000
+
+UICorner_10.Parent = HighMode
 
 Name_3.Name = "Name"
-Name_3.Parent = ToggleFLight
+Name_3.Parent = HighMode
 Name_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Name_3.BackgroundTransparency = 1.000
 Name_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Name_3.BorderSizePixel = 0
-Name_3.Position = UDim2.new(0, 228, 0, 83)
-Name_3.Size = UDim2.new(0, 99, 0, 19)
+Name_3.Position = UDim2.new(0, 147, 0, 2)
+Name_3.Size = UDim2.new(0, 147, 0, 44)
 Name_3.Font = Enum.Font.SourceSans
-Name_3.Text = "Toggle F to Fly"
+Name_3.Text = "Toggle High / might have to restart game"
 Name_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 Name_3.TextSize = 15.000
 Name_3.TextWrapped = true
 Name_3.TextXAlignment = Enum.TextXAlignment.Left
 
-TextBox_3.Parent = ToggleFLight
-TextBox_3.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
-TextBox_3.BackgroundTransparency = 0.500
-TextBox_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextBox_3.BorderSizePixel = 0
-TextBox_3.Position = UDim2.new(0.478441536, 0, 0.351020396, 0)
-TextBox_3.Size = UDim2.new(0, 63, 0, 14)
-TextBox_3.Font = Enum.Font.Unknown
-TextBox_3.PlaceholderText = "Speed"
-TextBox_3.Text = ""
-TextBox_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextBox_3.TextSize = 10.000
-TextBox_3.TextWrapped = true
+NightVision.Name = "Night Vision"
+NightVision.Parent = CS_2
+NightVision.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+NightVision.BackgroundTransparency = 0.500
+NightVision.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NightVision.BorderSizePixel = 0
+NightVision.Position = UDim2.new(-0.00144817121, 0, 0.21509549, 0)
+NightVision.Size = UDim2.new(0, 141, 0, 49)
+NightVision.Font = Enum.Font.SourceSans
+NightVision.Text = "Night Vision"
+NightVision.TextColor3 = Color3.fromRGB(255, 255, 255)
+NightVision.TextSize = 19.000
 
-UICorner_8.CornerRadius = UDim.new(0, 3)
-UICorner_8.Parent = TextBox_3
-
-ToggleNoclip.Name = "Toggle Noclip"
-ToggleNoclip.Parent = Home
-
-TextButton_2.Parent = ToggleNoclip
-TextButton_2.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
-TextButton_2.BackgroundTransparency = 0.500
-TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.BorderSizePixel = 0
-TextButton_2.Position = UDim2.new(0.0519877672, 0, 0.534693897, 0)
-TextButton_2.Size = UDim2.new(0, 203, 0, 36)
-TextButton_2.Font = Enum.Font.SourceSans
-TextButton_2.Text = "Off"
-TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.TextSize = 14.000
-
-UICorner_9.Parent = TextButton_2
+UICorner_11.Parent = NightVision
 
 Name_4.Name = "Name"
-Name_4.Parent = ToggleNoclip
+Name_4.Parent = NightVision
 Name_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Name_4.BackgroundTransparency = 1.000
 Name_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Name_4.BorderSizePixel = 0
-Name_4.Position = UDim2.new(0, 228, 0, 138)
-Name_4.Size = UDim2.new(0, 91, 0, 19)
+Name_4.Position = UDim2.new(0, 147, 0, 2)
+Name_4.Size = UDim2.new(0, 147, 0, 44)
 Name_4.Font = Enum.Font.SourceSans
-Name_4.Text = "Toggle N to Noclip"
+Name_4.Text = "Turn On/Off Night Vision"
 Name_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_4.TextScaled = true
 Name_4.TextSize = 15.000
 Name_4.TextWrapped = true
 Name_4.TextXAlignment = Enum.TextXAlignment.Left
 
-Info.Name = "Info"
-Info.Parent = Home
+ShadowRunner.Name = "Shadow Runner"
+ShadowRunner.Parent = CS_2
+ShadowRunner.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+ShadowRunner.BackgroundTransparency = 0.500
+ShadowRunner.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ShadowRunner.BorderSizePixel = 0
+ShadowRunner.Position = UDim2.new(-0.00144817121, 0, 0.0769123584, 0)
+ShadowRunner.Size = UDim2.new(0, 141, 0, 49)
+ShadowRunner.Font = Enum.Font.SourceSans
+ShadowRunner.Text = "Shadow Runner"
+ShadowRunner.TextColor3 = Color3.fromRGB(255, 255, 255)
+ShadowRunner.TextSize = 19.000
 
-Frame.Parent = Info
-Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame.BackgroundTransparency = 1.000
-Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.860419214, -125, 0.707468987, 20)
-Frame.Size = UDim2.new(0, 153, 0, 32)
-
-Hr12.Name = "Hr12"
-Hr12.Parent = Frame
-Hr12.BackgroundTransparency = 1.000
-Hr12.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Hr12.BorderSizePixel = 0
-Hr12.Position = UDim2.new(0, 0, 1, 10)
-Hr12.Size = UDim2.new(0.25, 0, 0, 20)
-Hr12.AutoButtonColor = false
-Hr12.Font = Enum.Font.ArialBold
-Hr12.Text = "12 Hr"
-Hr12.TextColor3 = Color3.fromRGB(255, 255, 255)
-Hr12.TextSize = 12.000
-Hr12.TextTransparency = 1.000
-
-Hr24.Name = "Hr24"
-Hr24.Parent = Frame
-Hr24.BackgroundTransparency = 1.000
-Hr24.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Hr24.BorderSizePixel = 0
-Hr24.Position = UDim2.new(0.25, 0, 1, 10)
-Hr24.Size = UDim2.new(0.25, 0, 0, 20)
-Hr24.AutoButtonColor = false
-Hr24.Font = Enum.Font.ArialBold
-Hr24.Text = "24 Hr"
-Hr24.TextColor3 = Color3.fromRGB(255, 255, 255)
-Hr24.TextSize = 12.000
-Hr24.TextTransparency = 1.000
-
-Sec.Name = "Sec"
-Sec.Parent = Frame
-Sec.BackgroundTransparency = 1.000
-Sec.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Sec.BorderSizePixel = 0
-Sec.Position = UDim2.new(0.75, 0, 1, 10)
-Sec.Size = UDim2.new(0.25, 0, 0, 20)
-Sec.AutoButtonColor = false
-Sec.Font = Enum.Font.ArialBold
-Sec.Text = "Seconds"
-Sec.TextColor3 = Color3.fromRGB(255, 255, 255)
-Sec.TextSize = 12.000
-Sec.TextTransparency = 1.000
-
-Date.Name = "Date"
-Date.Parent = Frame
-Date.BackgroundTransparency = 1.000
-Date.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Date.Position = UDim2.new(0.5, 0, 0.899999976, 0)
-Date.Font = Enum.Font.SourceSansBold
-Date.Text = "January 1, 1970"
-Date.TextColor3 = Color3.fromRGB(255, 255, 255)
-Date.TextSize = 14.000
-Date.TextTransparency = 1.000
-
-Time.Name = "Time"
-Time.Parent = Frame
-Time.BackgroundTransparency = 1.000
-Time.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Time.Position = UDim2.new(0.5, 0, 0.25, 0)
-Time.Font = Enum.Font.SourceSansBold
-Time.Text = "12:00:00 AM"
-Time.TextColor3 = Color3.fromRGB(255, 255, 255)
-Time.TextSize = 36.000
-Time.TextTransparency = 1.000
-
-UserProfile.Name = "UserProfile"
-UserProfile.Parent = Info
-UserProfile.BackgroundColor3 = Color3.fromRGB(154, 154, 154)
-UserProfile.BackgroundTransparency = 0.700
-UserProfile.BorderColor3 = Color3.fromRGB(0, 0, 0)
-UserProfile.BorderSizePixel = 2
-UserProfile.Position = UDim2.new(0.0219999999, 0, 0.748000026, 0)
-UserProfile.Selectable = true
-UserProfile.Size = UDim2.new(0.163766101, 0, 0.220151067, 0)
-UserProfile.ScaleType = Enum.ScaleType.Fit
-
-UICorner_10.Parent = UserProfile
+UICorner_12.Parent = ShadowRunner
 
 Name_5.Name = "Name"
-Name_5.Parent = Info
+Name_5.Parent = ShadowRunner
 Name_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Name_5.BackgroundTransparency = 1.000
 Name_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Name_5.BorderSizePixel = 0
-Name_5.Position = UDim2.new(0, 69, 0, 204)
-Name_5.Size = UDim2.new(0, 142, 0, 31)
+Name_5.Position = UDim2.new(0, 147, 0, 5)
+Name_5.Size = UDim2.new(0, 147, 0, 44)
 Name_5.Font = Enum.Font.SourceSans
-Name_5.Text = "Player"
+Name_5.Text = "R to set point and tp back - can be combined with speed "
 Name_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_5.TextSize = 20.000
+Name_5.TextScaled = true
+Name_5.TextSize = 13.000
 Name_5.TextWrapped = true
 Name_5.TextXAlignment = Enum.TextXAlignment.Left
 
-Name_6.Name = "Name"
-Name_6.Parent = Name_5
-Name_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Name_6.BackgroundTransparency = 1.000
-Name_6.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Name_6.BorderSizePixel = 0
-Name_6.Position = UDim2.new(0, 0, 0, -22)
-Name_6.Size = UDim2.new(0, 88, 0, 31)
-Name_6.Font = Enum.Font.SourceSans
-Name_6.Text = "Welcome,"
-Name_6.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_6.TextSize = 20.000
-Name_6.TextWrapped = true
-Name_6.TextXAlignment = Enum.TextXAlignment.Left
+FEB.Name = "FEB"
+FEB.Parent = csfe
+FEB.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+FEB.BackgroundTransparency = 0.600
+FEB.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FEB.BorderSizePixel = 0
+FEB.Position = UDim2.new(0.47262004, 0, 0.0469676107, 0)
+FEB.Size = UDim2.new(0, 146, 0, 25)
+FEB.Font = Enum.Font.SourceSans
+FEB.Text = "FE"
+FEB.TextColor3 = Color3.fromRGB(255, 255, 255)
+FEB.TextSize = 19.000
 
-UICorner_11.Parent = Home
+UICorner_13.Parent = FEB
 
-UICorner_12.Parent = MainFrame
+CSB.Name = "CSB"
+CSB.Parent = csfe
+CSB.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+CSB.BackgroundTransparency = 0.600
+CSB.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CSB.BorderSizePixel = 0
+CSB.Position = UDim2.new(0.018635368, 0, 0.0469676107, 0)
+CSB.Size = UDim2.new(0, 142, 0, 25)
+CSB.Font = Enum.Font.SourceSans
+CSB.Text = "Client"
+CSB.TextColor3 = Color3.fromRGB(255, 255, 255)
+CSB.TextSize = 19.000
 
-Name_7.Name = "Name"
-Name_7.Parent = MainFrame
-Name_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Name_7.BackgroundTransparency = 1.000
-Name_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Name_7.BorderSizePixel = 0
-Name_7.Position = UDim2.new(0.0179947447, 0, 0.0183720551, 0)
-Name_7.Size = UDim2.new(0, 57, 0, 26)
-Name_7.Font = Enum.Font.SourceSans
-Name_7.Text = "AEGIS"
-Name_7.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_7.TextSize = 22.000
-Name_7.TextWrapped = true
+UICorner_14.Parent = CSB
 
-Info_2.Name = "Info"
-Info_2.Parent = MainFrame
-Info_2.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
-Info_2.BackgroundTransparency = 0.700
-Info_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Info_2.BorderSizePixel = 0
-Info_2.Position = UDim2.new(0.214891866, 0, 0.0232558139, 0)
-Info_2.Size = UDim2.new(0, 327, 0, 245)
-Info_2.Visible = false
+Other.Name = "Other"
+Other.Parent = MainFrame
+Other.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+Other.BackgroundTransparency = 0.700
+Other.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Other.BorderSizePixel = 0
+Other.Position = UDim2.new(0.214891866, 0, 0.0232558139, 0)
+Other.Size = UDim2.new(0, 327, 0, 245)
+Other.Visible = false
 
-UICorner_13.Parent = Info_2
+UICorner_15.Parent = Other
 
-PressLeftAlt.Name = "Press  LeftAlt"
-PressLeftAlt.Parent = Info_2
-PressLeftAlt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PressLeftAlt.BackgroundTransparency = 1.000
-PressLeftAlt.BorderColor3 = Color3.fromRGB(0, 0, 0)
-PressLeftAlt.BorderSizePixel = 0
-PressLeftAlt.Position = UDim2.new(0.0395059846, 0, 0.00692935847, 0)
-PressLeftAlt.Size = UDim2.new(0, 178, 0, 19)
-PressLeftAlt.Font = Enum.Font.SourceSans
-PressLeftAlt.Text = "Press LeftAlt  to open / close"
-PressLeftAlt.TextColor3 = Color3.fromRGB(255, 255, 255)
-PressLeftAlt.TextSize = 15.000
-PressLeftAlt.TextWrapped = true
-PressLeftAlt.TextXAlignment = Enum.TextXAlignment.Left
+ToggleFling.Name = "Toggle Fling"
+ToggleFling.Parent = Other
+ToggleFling.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+ToggleFling.BackgroundTransparency = 0.500
+ToggleFling.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ToggleFling.BorderSizePixel = 0
+ToggleFling.Position = UDim2.new(0.0210528355, 0, 0.0350453891, 0)
+ToggleFling.Size = UDim2.new(0, 153, 0, 49)
+ToggleFling.Font = Enum.Font.SourceSans
+ToggleFling.Text = "Toggle Fling"
+ToggleFling.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleFling.TextSize = 19.000
+
+UICorner_16.Parent = ToggleFling
+
+LoadAudioLogger.Name = "Load AudioLogger"
+LoadAudioLogger.Parent = Other
+LoadAudioLogger.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+LoadAudioLogger.BackgroundTransparency = 0.500
+LoadAudioLogger.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LoadAudioLogger.BorderSizePixel = 0
+LoadAudioLogger.Position = UDim2.new(0.510349452, 0, 0.0350453891, 0)
+LoadAudioLogger.Size = UDim2.new(0, 153, 0, 49)
+LoadAudioLogger.Font = Enum.Font.SourceSans
+LoadAudioLogger.Text = "Currently Unavailable"
+LoadAudioLogger.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoadAudioLogger.TextSize = 19.000
+
+UICorner_17.Parent = LoadAudioLogger
+
+Info.Name = "Info"
+Info.Parent = MainFrame
+Info.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+Info.BackgroundTransparency = 0.700
+Info.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Info.BorderSizePixel = 0
+Info.Position = UDim2.new(0.214891866, 0, 0.0232558139, 0)
+Info.Size = UDim2.new(0, 327, 0, 245)
+Info.Visible = false
+
+UICorner_18.Parent = Info
+
+Version.Name = "Version"
+Version.Parent = Info
+Version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Version.BackgroundTransparency = 1.000
+Version.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Version.BorderSizePixel = 0
+Version.Position = UDim2.new(0.899999976, 0, 0.899999976, 0)
+Version.Size = UDim2.new(0, 27, 0, 17)
+Version.Font = Enum.Font.SourceSans
+Version.Text = "V0.9.0"
+Version.TextColor3 = Color3.fromRGB(255, 255, 255)
+Version.TextScaled = true
+Version.TextSize = 26.000
+Version.TextWrapped = true
+Version.TextXAlignment = Enum.TextXAlignment.Left
 
 credits.Name = "credits"
-credits.Parent = Info_2
+credits.Parent = Info
 credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 credits.BackgroundTransparency = 1.000
 credits.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -503,96 +528,33 @@ credits.TextSize = 15.000
 credits.TextWrapped = true
 credits.TextXAlignment = Enum.TextXAlignment.Left
 
-Version.Name = "Version"
-Version.Parent = Info_2
-Version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Version.BackgroundTransparency = 1.000
-Version.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Version.BorderSizePixel = 0
-Version.Position = UDim2.new(0.899999976, 0, 0.899999976, 0)
-Version.Size = UDim2.new(0, 27, 0, 17)
-Version.Font = Enum.Font.SourceSans
-Version.Text = "V0.8.6"
-Version.TextColor3 = Color3.fromRGB(255, 255, 255)
-Version.TextScaled = true
-Version.TextSize = 26.000
-Version.TextWrapped = true
-Version.TextXAlignment = Enum.TextXAlignment.Left
+PressLeftAlt.Name = "Press  LeftAlt"
+PressLeftAlt.Parent = Info
+PressLeftAlt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PressLeftAlt.BackgroundTransparency = 1.000
+PressLeftAlt.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PressLeftAlt.BorderSizePixel = 0
+PressLeftAlt.Position = UDim2.new(0.0395059846, 0, 0.00692935847, 0)
+PressLeftAlt.Size = UDim2.new(0, 178, 0, 19)
+PressLeftAlt.Font = Enum.Font.SourceSans
+PressLeftAlt.Text = "Press LeftAlt  to open / close"
+PressLeftAlt.TextColor3 = Color3.fromRGB(255, 255, 255)
+PressLeftAlt.TextSize = 15.000
+PressLeftAlt.TextWrapped = true
+PressLeftAlt.TextXAlignment = Enum.TextXAlignment.Left
 
-HomeButton.Name = "HomeButton"
-HomeButton.Parent = MainFrame
-HomeButton.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
-HomeButton.BackgroundTransparency = 0.600
-HomeButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-HomeButton.BorderSizePixel = 0
-HomeButton.Position = UDim2.new(0.0179948583, 0, 0.124031007, 0)
-HomeButton.Size = UDim2.new(0, 77, 0, 49)
-HomeButton.Font = Enum.Font.SourceSans
-HomeButton.Text = "Home"
-HomeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-HomeButton.TextSize = 19.000
-
-UICorner_14.Parent = HomeButton
-
-MainButton.Name = "MainButton"
-MainButton.Parent = MainFrame
-MainButton.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
-MainButton.BackgroundTransparency = 0.600
-MainButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-MainButton.BorderSizePixel = 0
-MainButton.Position = UDim2.new(0.0179948583, 0, 0.342803478, 0)
-MainButton.Size = UDim2.new(0, 77, 0, 49)
-MainButton.Font = Enum.Font.SourceSans
-MainButton.Text = "Main"
-MainButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-MainButton.TextSize = 19.000
-
-UICorner_15.Parent = MainButton
-
-OtherButton.Name = "OtherButton"
-OtherButton.Parent = MainFrame
-OtherButton.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
-OtherButton.BackgroundTransparency = 0.600
-OtherButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-OtherButton.BorderSizePixel = 0
-OtherButton.Position = UDim2.new(0.0179948583, 0, 0.561575949, 0)
-OtherButton.Size = UDim2.new(0, 77, 0, 49)
-OtherButton.Font = Enum.Font.SourceSans
-OtherButton.Text = "Other"
-OtherButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-OtherButton.TextSize = 19.000
-
-UICorner_16.Parent = OtherButton
-
-InfoButton.Name = "InfoButton"
-InfoButton.Parent = MainFrame
-InfoButton.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
-InfoButton.BackgroundTransparency = 0.600
-InfoButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-InfoButton.BorderSizePixel = 0
-InfoButton.Position = UDim2.new(0.0179948583, 0, 0.78034842, 0)
-InfoButton.Size = UDim2.new(0, 77, 0, 49)
-InfoButton.Font = Enum.Font.SourceSans
-InfoButton.Text = "Info"
-InfoButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-InfoButton.TextSize = 19.000
-
-UICorner_17.Parent = InfoButton
-
-Other.Name = "Other"
-Other.Parent = MainFrame
-Other.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
-Other.BackgroundTransparency = 0.700
-Other.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Other.BorderSizePixel = 0
-Other.Position = UDim2.new(0.214891866, 0, 0.0232558139, 0)
-Other.Size = UDim2.new(0, 327, 0, 245)
-Other.Visible = false
-
-UICorner_18.Parent = Other
+Settings.Name = "Settings"
+Settings.Parent = MainFrame
+Settings.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+Settings.BackgroundTransparency = 0.700
+Settings.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Settings.BorderSizePixel = 0
+Settings.Position = UDim2.new(0.214891866, 0, 0.0232558139, 0)
+Settings.Size = UDim2.new(0, 327, 0, 245)
+Settings.Visible = false
 
 Killgui.Name = "Kill gui"
-Killgui.Parent = Other
+Killgui.Parent = Settings
 
 KillUI.Name = "KillUI"
 KillUI.Parent = Killgui
@@ -610,22 +572,7 @@ KillUI.TextSize = 19.000
 UICorner_19.Parent = KillUI
 
 Theme.Name = "Theme"
-Theme.Parent = Other
-
-ChangeTheme.Name = "ChangeTheme"
-ChangeTheme.Parent = Theme
-ChangeTheme.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
-ChangeTheme.BackgroundTransparency = 0.500
-ChangeTheme.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ChangeTheme.BorderSizePixel = 0
-ChangeTheme.Position = UDim2.new(0.216771483, 0, 0.765657663, 0)
-ChangeTheme.Size = UDim2.new(0, 150, 0, 49)
-ChangeTheme.Font = Enum.Font.SourceSans
-ChangeTheme.Text = "Change Theme"
-ChangeTheme.TextColor3 = Color3.fromRGB(255, 255, 255)
-ChangeTheme.TextSize = 19.000
-
-UICorner_20.Parent = ChangeTheme
+Theme.Parent = Settings
 
 ThemeLabel.Name = "ThemeLabel"
 ThemeLabel.Parent = Theme
@@ -642,814 +589,806 @@ ThemeLabel.TextScaled = true
 ThemeLabel.TextSize = 26.000
 ThemeLabel.TextWrapped = true
 
-LoadAudioLogger.Name = "Load AudioLogger"
-LoadAudioLogger.Parent = Other
-LoadAudioLogger.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
-LoadAudioLogger.BackgroundTransparency = 0.500
-LoadAudioLogger.BorderColor3 = Color3.fromRGB(0, 0, 0)
-LoadAudioLogger.BorderSizePixel = 0
-LoadAudioLogger.Position = UDim2.new(0.510349452, 0, 0.0350453891, 0)
-LoadAudioLogger.Size = UDim2.new(0, 153, 0, 49)
-LoadAudioLogger.Font = Enum.Font.SourceSans
-LoadAudioLogger.Text = "Currently Unavailable"
-LoadAudioLogger.TextColor3 = Color3.fromRGB(255, 255, 255)
-LoadAudioLogger.TextSize = 19.000
+ChangeTheme.Name = "ChangeTheme"
+ChangeTheme.Parent = Theme
+ChangeTheme.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+ChangeTheme.BackgroundTransparency = 0.500
+ChangeTheme.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ChangeTheme.BorderSizePixel = 0
+ChangeTheme.Position = UDim2.new(0.216771483, 0, 0.765657663, 0)
+ChangeTheme.Size = UDim2.new(0, 150, 0, 49)
+ChangeTheme.Font = Enum.Font.SourceSans
+ChangeTheme.Text = "Change Theme"
+ChangeTheme.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChangeTheme.TextSize = 19.000
 
-UICorner_21.Parent = LoadAudioLogger
+UICorner_20.Parent = ChangeTheme
 
-ToggleFling.Name = "Toggle Fling"
-ToggleFling.Parent = Other
-ToggleFling.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
-ToggleFling.BackgroundTransparency = 0.500
-ToggleFling.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ToggleFling.BorderSizePixel = 0
-ToggleFling.Position = UDim2.new(0.0210528355, 0, 0.0350453891, 0)
-ToggleFling.Size = UDim2.new(0, 153, 0, 49)
-ToggleFling.Font = Enum.Font.SourceSans
-ToggleFling.Text = "Toggle Fling"
-ToggleFling.TextColor3 = Color3.fromRGB(255, 255, 255)
-ToggleFling.TextSize = 19.000
+UICorner_21.Parent = Settings
 
-UICorner_22.Parent = ToggleFling
+TRPRC.Name = "TRPRC"
+TRPRC.Parent = Settings
+
+SliderBar.Name = "SliderBar"
+SliderBar.Parent = TRPRC
+SliderBar.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
+SliderBar.BackgroundTransparency = 0.500
+SliderBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SliderBar.BorderSizePixel = 0
+SliderBar.Position = UDim2.new(0.548929691, -100, 0.663265288, 0)
+SliderBar.Size = UDim2.new(0, 131, 0, 10)
+
+UICorner_22.Parent = SliderBar
+
+SliderHandle.Name = "SliderHandle"
+SliderHandle.Parent = SliderBar
+SliderHandle.BackgroundColor3 = Color3.fromRGB(139, 141, 146)
+SliderHandle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SliderHandle.BorderSizePixel = 0
+SliderHandle.Position = UDim2.new(0, 0, 0.5, -7)
+SliderHandle.Size = UDim2.new(0, 15, 0, 15)
+SliderHandle.Font = Enum.Font.SourceSans
+SliderHandle.Text = ""
+SliderHandle.TextColor3 = Color3.fromRGB(0, 0, 0)
+SliderHandle.TextSize = 14.000
+
+UICorner_23.Parent = SliderHandle
+
+TBox.Name = "TBox"
+TBox.Parent = SliderBar
+TBox.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
+TBox.BackgroundTransparency = 0.500
+TBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TBox.BorderSizePixel = 0
+TBox.Position = UDim2.new(1.10745358, 0, -0.216326907, 0)
+TBox.Size = UDim2.new(0, 96, 0, 14)
+TBox.Font = Enum.Font.SourceSans
+TBox.PlaceholderText = "Default: 0.235"
+TBox.Text = ""
+TBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TBox.TextSize = 10.000
+TBox.TextWrapped = true
+
+UICorner_24.CornerRadius = UDim.new(0, 3)
+UICorner_24.Parent = TBox
+
+ThemeLabel_2.Name = "ThemeLabel"
+ThemeLabel_2.Parent = TRPRC
+ThemeLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ThemeLabel_2.BackgroundTransparency = 1.000
+ThemeLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ThemeLabel_2.BorderSizePixel = 0
+ThemeLabel_2.Position = UDim2.new(0.02038089, 0, 0.654435635, 0)
+ThemeLabel_2.Size = UDim2.new(0, 64, 0, 14)
+ThemeLabel_2.Font = Enum.Font.SourceSans
+ThemeLabel_2.Text = "Transparency "
+ThemeLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ThemeLabel_2.TextScaled = true
+ThemeLabel_2.TextSize = 26.000
+ThemeLabel_2.TextWrapped = true
+
+Home.Name = "Home"
+Home.Parent = MainFrame
+Home.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+Home.BackgroundTransparency = 0.700
+Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Home.BorderSizePixel = 0
+Home.Position = UDim2.new(0.214891866, 0, 0.0232558139, 0)
+Home.Size = UDim2.new(0, 327, 0, 245)
+
+UICorner_25.Parent = Home
+
+Info_2.Name = "Info"
+Info_2.Parent = Home
+
+Name_6.Name = "Name"
+Name_6.Parent = Info_2
+Name_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_6.BackgroundTransparency = 1.000
+Name_6.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Name_6.BorderSizePixel = 0
+Name_6.Position = UDim2.new(0, 69, 0, 204)
+Name_6.Size = UDim2.new(0, 142, 0, 31)
+Name_6.Font = Enum.Font.SourceSans
+Name_6.Text = "Player"
+Name_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_6.TextSize = 20.000
+Name_6.TextWrapped = true
+Name_6.TextXAlignment = Enum.TextXAlignment.Left
+
+Name_7.Name = "Name"
+Name_7.Parent = Name_6
+Name_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_7.BackgroundTransparency = 1.000
+Name_7.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Name_7.BorderSizePixel = 0
+Name_7.Position = UDim2.new(0, 0, 0, -22)
+Name_7.Size = UDim2.new(0, 88, 0, 31)
+Name_7.Font = Enum.Font.SourceSans
+Name_7.Text = "Welcome,"
+Name_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_7.TextSize = 20.000
+Name_7.TextWrapped = true
+Name_7.TextXAlignment = Enum.TextXAlignment.Left
+
+UserProfile.Name = "UserProfile"
+UserProfile.Parent = Info_2
+UserProfile.BackgroundColor3 = Color3.fromRGB(154, 154, 154)
+UserProfile.BackgroundTransparency = 0.700
+UserProfile.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UserProfile.BorderSizePixel = 2
+UserProfile.Position = UDim2.new(0.0219999999, 0, 0.748000026, 0)
+UserProfile.Selectable = true
+UserProfile.Size = UDim2.new(0.163766101, 0, 0.220151067, 0)
+UserProfile.ScaleType = Enum.ScaleType.Fit
+
+UICorner_26.Parent = UserProfile
+
+Frame.Parent = Info_2
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.860419214, -125, 0.707468987, 20)
+Frame.Size = UDim2.new(0, 153, 0, 32)
+
+Time.Name = "Time"
+Time.Parent = Frame
+Time.BackgroundTransparency = 1.000
+Time.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Time.Position = UDim2.new(0.5, 0, 0.25, 0)
+Time.Font = Enum.Font.SourceSansBold
+Time.Text = "12:00:00 AM"
+Time.TextColor3 = Color3.fromRGB(255, 255, 255)
+Time.TextSize = 36.000
+Time.TextTransparency = 1.000
+
+Date.Name = "Date"
+Date.Parent = Frame
+Date.BackgroundTransparency = 1.000
+Date.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Date.Position = UDim2.new(0.5, 0, 0.899999976, 0)
+Date.Font = Enum.Font.SourceSansBold
+Date.Text = "January 1, 1970"
+Date.TextColor3 = Color3.fromRGB(255, 255, 255)
+Date.TextSize = 14.000
+Date.TextTransparency = 1.000
+
+Sec.Name = "Sec"
+Sec.Parent = Frame
+Sec.BackgroundTransparency = 1.000
+Sec.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Sec.BorderSizePixel = 0
+Sec.Position = UDim2.new(0.75, 0, 1, 10)
+Sec.Size = UDim2.new(0.25, 0, 0, 20)
+Sec.AutoButtonColor = false
+Sec.Font = Enum.Font.ArialBold
+Sec.Text = "Seconds"
+Sec.TextColor3 = Color3.fromRGB(255, 255, 255)
+Sec.TextSize = 12.000
+Sec.TextTransparency = 1.000
+
+Hr24.Name = "Hr24"
+Hr24.Parent = Frame
+Hr24.BackgroundTransparency = 1.000
+Hr24.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Hr24.BorderSizePixel = 0
+Hr24.Position = UDim2.new(0.25, 0, 1, 10)
+Hr24.Size = UDim2.new(0.25, 0, 0, 20)
+Hr24.AutoButtonColor = false
+Hr24.Font = Enum.Font.ArialBold
+Hr24.Text = "24 Hr"
+Hr24.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hr24.TextSize = 12.000
+Hr24.TextTransparency = 1.000
+
+Hr12.Name = "Hr12"
+Hr12.Parent = Frame
+Hr12.BackgroundTransparency = 1.000
+Hr12.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Hr12.BorderSizePixel = 0
+Hr12.Position = UDim2.new(0, 0, 1, 10)
+Hr12.Size = UDim2.new(0.25, 0, 0, 20)
+Hr12.AutoButtonColor = false
+Hr12.Font = Enum.Font.ArialBold
+Hr12.Text = "12 Hr"
+Hr12.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hr12.TextSize = 12.000
+Hr12.TextTransparency = 1.000
+
+ToggleNoclip.Name = "Toggle Noclip"
+ToggleNoclip.Parent = Home
 
 Name_8.Name = "Name"
-Name_8.Parent = MainFrame
+Name_8.Parent = ToggleNoclip
 Name_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Name_8.BackgroundTransparency = 1.000
-Name_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Name_8.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Name_8.BorderSizePixel = 0
-Name_8.Position = UDim2.new(0.130999997, 0, 0.0299999993, 0)
-Name_8.Size = UDim2.new(0, 30, 0, 13)
+Name_8.Position = UDim2.new(0, 228, 0, 138)
+Name_8.Size = UDim2.new(0, 91, 0, 19)
 Name_8.Font = Enum.Font.SourceSans
-Name_8.Text = "beta"
+Name_8.Text = "Toggle N to Noclip"
 Name_8.TextColor3 = Color3.fromRGB(255, 255, 255)
 Name_8.TextScaled = true
-Name_8.TextSize = 22.000
+Name_8.TextSize = 15.000
 Name_8.TextWrapped = true
+Name_8.TextXAlignment = Enum.TextXAlignment.Left
 
-Main.Name = "Main"
-Main.Parent = MainFrame
-Main.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
-Main.BackgroundTransparency = 1.000
-Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.215000004, 0, 0.023, 0)
-Main.Size = UDim2.new(0, 327, 0, 245)
-Main.Visible = false
+TextButton.Parent = ToggleNoclip
+TextButton.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
+TextButton.BackgroundTransparency = 0.500
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0519877672, 0, 0.534693897, 0)
+TextButton.Size = UDim2.new(0, 203, 0, 36)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Off"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
 
-csfe.Name = "csfe"
-csfe.Parent = Main
-csfe.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
-csfe.BackgroundTransparency = 1.000
-csfe.BorderColor3 = Color3.fromRGB(0, 0, 0)
-csfe.BorderSizePixel = 0
-csfe.Position = UDim2.new(-0.00223347615, 0, -0.00531553943, 0)
-csfe.Size = UDim2.new(0, 327, 0, 245)
+UICorner_27.Parent = TextButton
 
-CSB.Name = "CSB"
-CSB.Parent = csfe
-CSB.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
-CSB.BackgroundTransparency = 0.600
-CSB.BorderColor3 = Color3.fromRGB(0, 0, 0)
-CSB.BorderSizePixel = 0
-CSB.Position = UDim2.new(0.018635368, 0, 0.0469676107, 0)
-CSB.Size = UDim2.new(0, 142, 0, 25)
-CSB.Font = Enum.Font.SourceSans
-CSB.Text = "Client"
-CSB.TextColor3 = Color3.fromRGB(255, 255, 255)
-CSB.TextSize = 19.000
+ToggleFLight.Name = "Toggle FLight"
+ToggleFLight.Parent = Home
 
-UICorner_23.Parent = CSB
+TextBox.Parent = ToggleFLight
+TextBox.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
+TextBox.BackgroundTransparency = 0.500
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.478441536, 0, 0.351020396, 0)
+TextBox.Size = UDim2.new(0, 63, 0, 14)
+TextBox.Font = Enum.Font.Unknown
+TextBox.PlaceholderText = "Speed"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 10.000
+TextBox.TextWrapped = true
 
-FEB.Name = "FEB"
-FEB.Parent = csfe
-FEB.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
-FEB.BackgroundTransparency = 0.600
-FEB.BorderColor3 = Color3.fromRGB(0, 0, 0)
-FEB.BorderSizePixel = 0
-FEB.Position = UDim2.new(0.47262004, 0, 0.0469676107, 0)
-FEB.Size = UDim2.new(0, 146, 0, 25)
-FEB.Font = Enum.Font.SourceSans
-FEB.Text = "FE"
-FEB.TextColor3 = Color3.fromRGB(255, 255, 255)
-FEB.TextSize = 19.000
-
-UICorner_24.Parent = FEB
-
-CS.Name = "CS"
-CS.Parent = csfe
-CS.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
-CS.BackgroundTransparency = 1.000
-CS.BorderColor3 = Color3.fromRGB(0, 0, 0)
-CS.BorderSizePixel = 0
-CS.Size = UDim2.new(0, 327, 0, 245)
-CS.Visible = false
-
-CS_2.Name = "CS"
-CS_2.Parent = CS
-CS_2.Active = true
-CS_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CS_2.BackgroundTransparency = 1.000
-CS_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-CS_2.BorderSizePixel = 0
-CS_2.Position = UDim2.new(0.0244648326, 0, 0.0244897958, 0)
-CS_2.Size = UDim2.new(0, 313, 0, 231)
-
-ShadowRunner.Name = "Shadow Runner"
-ShadowRunner.Parent = CS_2
-ShadowRunner.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
-ShadowRunner.BackgroundTransparency = 0.500
-ShadowRunner.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ShadowRunner.BorderSizePixel = 0
-ShadowRunner.Position = UDim2.new(-0.00144817121, 0, 0.0769123584, 0)
-ShadowRunner.Size = UDim2.new(0, 141, 0, 49)
-ShadowRunner.Font = Enum.Font.SourceSans
-ShadowRunner.Text = "Shadow Runner"
-ShadowRunner.TextColor3 = Color3.fromRGB(255, 255, 255)
-ShadowRunner.TextSize = 19.000
-
-UICorner_25.Parent = ShadowRunner
+UICorner_28.CornerRadius = UDim.new(0, 3)
+UICorner_28.Parent = TextBox
 
 Name_9.Name = "Name"
-Name_9.Parent = ShadowRunner
+Name_9.Parent = ToggleFLight
 Name_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Name_9.BackgroundTransparency = 1.000
 Name_9.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Name_9.BorderSizePixel = 0
-Name_9.Position = UDim2.new(0, 147, 0, 5)
-Name_9.Size = UDim2.new(0, 147, 0, 44)
+Name_9.Position = UDim2.new(0, 228, 0, 83)
+Name_9.Size = UDim2.new(0, 99, 0, 19)
 Name_9.Font = Enum.Font.SourceSans
-Name_9.Text = "R to set point and tp back - can be combined with speed "
+Name_9.Text = "Toggle F to Fly"
 Name_9.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_9.TextScaled = true
-Name_9.TextSize = 13.000
+Name_9.TextSize = 15.000
 Name_9.TextWrapped = true
 Name_9.TextXAlignment = Enum.TextXAlignment.Left
 
-NightVision.Name = "Night Vision"
-NightVision.Parent = CS_2
-NightVision.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
-NightVision.BackgroundTransparency = 0.500
-NightVision.BorderColor3 = Color3.fromRGB(0, 0, 0)
-NightVision.BorderSizePixel = 0
-NightVision.Position = UDim2.new(-0.00144817121, 0, 0.21509549, 0)
-NightVision.Size = UDim2.new(0, 141, 0, 49)
-NightVision.Font = Enum.Font.SourceSans
-NightVision.Text = "Night Vision"
-NightVision.TextColor3 = Color3.fromRGB(255, 255, 255)
-NightVision.TextSize = 19.000
+TextButton_2.Parent = ToggleFLight
+TextButton_2.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
+TextButton_2.BackgroundTransparency = 0.500
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.0519877672, 0, 0.306122452, 0)
+TextButton_2.Size = UDim2.new(0, 126, 0, 36)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Off"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
 
-UICorner_26.Parent = NightVision
+UICorner_29.Parent = TextButton_2
+
+jump.Name = "jump"
+jump.Parent = Home
 
 Name_10.Name = "Name"
-Name_10.Parent = NightVision
+Name_10.Parent = jump
 Name_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Name_10.BackgroundTransparency = 1.000
 Name_10.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Name_10.BorderSizePixel = 0
-Name_10.Position = UDim2.new(0, 147, 0, 2)
-Name_10.Size = UDim2.new(0, 147, 0, 44)
+Name_10.Position = UDim2.new(0, 228, 0, 44)
+Name_10.Size = UDim2.new(0, 91, 0, 13)
 Name_10.Font = Enum.Font.SourceSans
-Name_10.Text = "Turn On/Off Night Vision"
+Name_10.Text = "Change JumpHight"
 Name_10.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_10.TextSize = 15.000
+Name_10.TextScaled = true
+Name_10.TextSize = 1.000
 Name_10.TextWrapped = true
 Name_10.TextXAlignment = Enum.TextXAlignment.Left
 
-HighMode.Name = "High Mode"
-HighMode.Parent = CS_2
-HighMode.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
-HighMode.BackgroundTransparency = 0.500
-HighMode.BorderColor3 = Color3.fromRGB(0, 0, 0)
-HighMode.BorderSizePixel = 0
-HighMode.Position = UDim2.new(-0.00144817121, 0, 0.36228171, 0)
-HighMode.Size = UDim2.new(0, 141, 0, 49)
-HighMode.Font = Enum.Font.SourceSans
-HighMode.Text = "High Mode"
-HighMode.TextColor3 = Color3.fromRGB(255, 255, 255)
-HighMode.TextSize = 19.000
+SliderBar_2.Name = "SliderBar"
+SliderBar_2.Parent = jump
+SliderBar_2.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
+SliderBar_2.BackgroundTransparency = 0.500
+SliderBar_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SliderBar_2.BorderSizePixel = 0
+SliderBar_2.Position = UDim2.new(0.344036698, -100, 0.18571429, 0)
+SliderBar_2.Size = UDim2.new(0, 131, 0, 10)
 
-UICorner_27.Parent = HighMode
+UICorner_30.Parent = SliderBar_2
+
+TextBox_2.Parent = SliderBar_2
+TextBox_2.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
+TextBox_2.BackgroundTransparency = 0.500
+TextBox_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_2.BorderSizePixel = 0
+TextBox_2.Position = UDim2.new(1.09923661, 0, -0.200000003, 0)
+TextBox_2.Size = UDim2.new(0, 63, 0, 14)
+TextBox_2.Font = Enum.Font.Unknown
+TextBox_2.PlaceholderText = "AnyHeight"
+TextBox_2.Text = ""
+TextBox_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_2.TextSize = 10.000
+TextBox_2.TextWrapped = true
+
+UICorner_31.CornerRadius = UDim.new(0, 3)
+UICorner_31.Parent = TextBox_2
+
+SliderHandle_2.Name = "SliderHandle"
+SliderHandle_2.Parent = SliderBar_2
+SliderHandle_2.BackgroundColor3 = Color3.fromRGB(139, 141, 146)
+SliderHandle_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SliderHandle_2.BorderSizePixel = 0
+SliderHandle_2.Position = UDim2.new(0, 0, 0.5, -7)
+SliderHandle_2.Size = UDim2.new(0, 15, 0, 15)
+SliderHandle_2.Font = Enum.Font.SourceSans
+SliderHandle_2.Text = ""
+SliderHandle_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+SliderHandle_2.TextSize = 14.000
+
+UICorner_32.Parent = SliderHandle_2
+
+speed.Name = "speed"
+speed.Parent = Home
 
 Name_11.Name = "Name"
-Name_11.Parent = HighMode
+Name_11.Parent = speed
 Name_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Name_11.BackgroundTransparency = 1.000
 Name_11.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Name_11.BorderSizePixel = 0
-Name_11.Position = UDim2.new(0, 147, 0, 2)
-Name_11.Size = UDim2.new(0, 147, 0, 44)
+Name_11.Position = UDim2.new(0, 228, 0, 15)
+Name_11.Size = UDim2.new(0, 91, 0, 13)
 Name_11.Font = Enum.Font.SourceSans
-Name_11.Text = "Toggle High / might have to restart game"
+Name_11.Text = "Change Walkspeed"
 Name_11.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_11.TextSize = 15.000
+Name_11.TextScaled = true
+Name_11.TextSize = 13.000
 Name_11.TextWrapped = true
 Name_11.TextXAlignment = Enum.TextXAlignment.Left
 
-FE.Name = "FE"
-FE.Parent = csfe
-FE.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
-FE.BackgroundTransparency = 1.000
-FE.BorderColor3 = Color3.fromRGB(0, 0, 0)
-FE.BorderSizePixel = 0
-FE.Size = UDim2.new(0, 327, 0, 245)
+SliderBar_3.Name = "SliderBar"
+SliderBar_3.Parent = speed
+SliderBar_3.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
+SliderBar_3.BackgroundTransparency = 0.500
+SliderBar_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SliderBar_3.BorderSizePixel = 0
+SliderBar_3.Position = UDim2.new(0.344036698, -100, 0.0632653087, 0)
+SliderBar_3.Size = UDim2.new(0, 131, 0, 10)
 
-FE_2.Name = "FE"
-FE_2.Parent = FE
-FE_2.Active = true
-FE_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-FE_2.BackgroundTransparency = 1.000
-FE_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-FE_2.BorderSizePixel = 0
-FE_2.Position = UDim2.new(0.0244648326, 0, 0.0244897958, 0)
-FE_2.Size = UDim2.new(0, 313, 0, 231)
+UICorner_33.Parent = SliderBar_3
 
-Astronaut.Name = "Astronaut"
-Astronaut.Parent = FE_2
-Astronaut.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
-Astronaut.BackgroundTransparency = 0.500
-Astronaut.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Astronaut.BorderSizePixel = 0
-Astronaut.Position = UDim2.new(-0.00144817121, 0, 0.0769123584, 0)
-Astronaut.Size = UDim2.new(0, 141, 0, 49)
-Astronaut.Font = Enum.Font.SourceSans
-Astronaut.Text = "Astronaut"
-Astronaut.TextColor3 = Color3.fromRGB(255, 255, 255)
-Astronaut.TextSize = 19.000
+TextBox_3.Parent = SliderBar_3
+TextBox_3.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
+TextBox_3.BackgroundTransparency = 0.500
+TextBox_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_3.BorderSizePixel = 0
+TextBox_3.Position = UDim2.new(1.10305345, 0, -0.200000003, 0)
+TextBox_3.Size = UDim2.new(0, 63, 0, 14)
+TextBox_3.Font = Enum.Font.Unknown
+TextBox_3.PlaceholderText = "AnySpeed"
+TextBox_3.Text = ""
+TextBox_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_3.TextSize = 11.000
+TextBox_3.TextWrapped = true
 
-UICorner_28.Parent = Astronaut
+UICorner_34.CornerRadius = UDim.new(0, 3)
+UICorner_34.Parent = TextBox_3
+
+SliderHandle_3.Name = "SliderHandle"
+SliderHandle_3.Parent = SliderBar_3
+SliderHandle_3.BackgroundColor3 = Color3.fromRGB(139, 141, 146)
+SliderHandle_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SliderHandle_3.BorderSizePixel = 0
+SliderHandle_3.Position = UDim2.new(0, 0, 0.5, -7)
+SliderHandle_3.Size = UDim2.new(0, 15, 0, 15)
+SliderHandle_3.Font = Enum.Font.SourceSans
+SliderHandle_3.Text = ""
+SliderHandle_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+SliderHandle_3.TextSize = 14.000
+
+UICorner_35.Parent = SliderHandle_3
 
 Name_12.Name = "Name"
-Name_12.Parent = Astronaut
+Name_12.Parent = MainFrame
 Name_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Name_12.BackgroundTransparency = 1.000
-Name_12.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Name_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Name_12.BorderSizePixel = 0
-Name_12.Position = UDim2.new(0, 147, 0, 5)
-Name_12.Size = UDim2.new(0, 147, 0, 44)
+Name_12.Position = UDim2.new(0.0308157895, 0, 0.0155038759, 0)
+Name_12.Size = UDim2.new(0, 48, 0, 24)
 Name_12.Font = Enum.Font.SourceSans
-Name_12.Text = "Makes you float. Hold space to go upwards."
+Name_12.Text = "AEGIS"
 Name_12.TextColor3 = Color3.fromRGB(255, 255, 255)
 Name_12.TextScaled = true
-Name_12.TextSize = 13.000
+Name_12.TextSize = 22.000
 Name_12.TextWrapped = true
-Name_12.TextXAlignment = Enum.TextXAlignment.Left
-
-Beat.Name = "Beat"
-Beat.Parent = FE_2
-Beat.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
-Beat.BackgroundTransparency = 0.500
-Beat.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Beat.BorderSizePixel = 0
-Beat.Position = UDim2.new(-0.00144817121, 0, 0.210766479, 0)
-Beat.Size = UDim2.new(0, 141, 0, 49)
-Beat.Font = Enum.Font.SourceSans
-Beat.Text = "Beat"
-Beat.TextColor3 = Color3.fromRGB(255, 255, 255)
-Beat.TextSize = 19.000
-
-UICorner_29.Parent = Beat
 
 Name_13.Name = "Name"
-Name_13.Parent = Beat
+Name_13.Parent = MainFrame
 Name_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Name_13.BackgroundTransparency = 1.000
-Name_13.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Name_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Name_13.BorderSizePixel = 0
-Name_13.Position = UDim2.new(0, 147, 0, 5)
-Name_13.Size = UDim2.new(0, 147, 0, 44)
+Name_13.Position = UDim2.new(0.128708646, 0, 0.0155038759, 0)
+Name_13.Size = UDim2.new(0, 23, 0, 23)
 Name_13.Font = Enum.Font.SourceSans
-Name_13.Text = "Yes u know what it is. Click again to disable."
+Name_13.Text = "+"
 Name_13.TextColor3 = Color3.fromRGB(255, 255, 255)
 Name_13.TextScaled = true
-Name_13.TextSize = 13.000
+Name_13.TextSize = 34.000
 Name_13.TextWrapped = true
-Name_13.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_30.Parent = Main
+ResizeHandle.Name = "ResizeHandle"
+ResizeHandle.Parent = MainFrame
+ResizeHandle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ResizeHandle.BackgroundTransparency = 1.000
+ResizeHandle.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ResizeHandle.BorderSizePixel = 0
+ResizeHandle.Position = UDim2.new(0.965480089, 0, 0.934108555, 0)
+ResizeHandle.Size = UDim2.new(0, 17, 0, 17)
+ResizeHandle.Image = "http://www.roblox.com/asset/?id=6153965696"
 
 -- Scripts:
 
-local function UXOOXAI_fake_script() -- SliderHandle.LocalScript 
-	local script = Instance.new('LocalScript', SliderHandle)
+local function KQEU_fake_script() -- Aegis.ButtonClickScript 
+	local script = Instance.new('LocalScript', Aegis)
 
-	local sliderHandle = script.Parent
-	local sliderBar = sliderHandle.Parent  -- The bar that holds the handle
-	local player = game.Players.LocalPlayer
-	local char = player.Character or player.CharacterAdded:Wait()
-	local humanoid = char:WaitForChild("Humanoid")
+	-- LocalScript inside your ScreenGui
 	
-	local minSpeed, maxSpeed = 1, 300  -- Slider WalkSpeed range
-	local userInput = game:GetService("UserInputService")
-	local dragging = false
+	local TweenService = game:GetService("TweenService")
+	local MainFrame = script.Parent:WaitForChild("MainFrame") -- Ensure MainFrame exists
 	
-	-- Reference to the TextBox
-	local textBox = script.Parent.Parent:WaitForChild("TextBox") -- Assuming TextBox is in the parent frame of the slider
-	
-	-- Function to update WalkSpeed based on slider value
-	local function updateWalkSpeedFromSlider()
-		local sliderStart = sliderBar.AbsolutePosition.X
-		local sliderEnd = sliderStart + sliderBar.AbsoluteSize.X
-		local newX = sliderHandle.Position.X.Offset
-		local percent = (newX - sliderStart) / sliderBar.AbsoluteSize.X
-		humanoid.WalkSpeed = minSpeed + (maxSpeed - minSpeed) * percent
-	
-		-- Update the TextBox value to reflect the new WalkSpeed
-		textBox.Text = math.floor(humanoid.WalkSpeed)
-	end
-	
-	-- Detect when player clicks the slider
-	sliderHandle.MouseButton1Down:Connect(function()
-		dragging = true
-	end)
-	
-	-- Stop dragging when mouse is released
-	userInput.InputEnded:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 then
-			dragging = false
+	-- Function to apply the glow effect
+	local function applyGlowEffect(button)
+		-- Create a glow effect (using UIStroke)
+		local glow = button:FindFirstChild("GlowEffect")
+		if not glow then
+			-- Create a new glow if it doesn't exist
+			glow = Instance.new("UIStroke")
+			glow.Name = "GlowEffect"
+			glow.Parent = button
+			glow.Thickness = 1.4 -- Reduced thickness (about 30% less than before)
+			glow.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+			glow.Color = Color3.fromRGB(200, 200, 200) -- Greyish white color
+			glow.Transparency = 0.7 -- 0.7 transparency (more visible but not too bright)
 		end
-	end)
 	
-	game:GetService("RunService").RenderStepped:Connect(function()
-		if dragging then
-			local mousePos = userInput:GetMouseLocation().X
-			local sliderStart = sliderBar.AbsolutePosition.X
-			local sliderEnd = sliderStart + sliderBar.AbsoluteSize.X
-			local handleWidth = sliderHandle.AbsoluteSize.X  -- The handle's width
+		-- Make the glow immediately visible and then disappear with a slightly longer animation
+		local tweenGlowIn = TweenService:Create(glow, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			Transparency = 0.7, -- Slight transparency (visible but not too bright)
+			Thickness = 2 -- Slightly thicker than default
+		})
 	
-			-- Clamp the mouse position to make sure the handle doesn't go beyond the bar's edges
-			local newX = math.clamp(mousePos - handleWidth / 2, sliderStart, sliderEnd - handleWidth)
+		-- Play the glow in
+		tweenGlowIn:Play()
 	
-			local percent = (newX - sliderStart) / sliderBar.AbsoluteSize.X
-			humanoid.WalkSpeed = minSpeed + (maxSpeed - minSpeed) * percent
-	
-			-- Move the slider handle
-			sliderHandle.Position = UDim2.new(0, newX - sliderStart, 0.5, -7)
-	
-			-- Update the TextBox when the slider moves
-			textBox.Text = math.floor(humanoid.WalkSpeed)
-		end
-	end)
-	
-	-- Update slider when TextBox value changes
-	textBox.FocusLost:Connect(function()
-		local newWalkSpeed = tonumber(textBox.Text)
-		if newWalkSpeed then
-			-- Set walk speed based on the TextBox value
-			humanoid.WalkSpeed = newWalkSpeed
-	
-			-- Update the slider handle position based on the WalkSpeed (only for values within the slider limit)
-			-- Allow the WalkSpeed to exceed the slider's max speed (300) when entered manually in the TextBox
-			if newWalkSpeed <= maxSpeed then
-				local percent = (newWalkSpeed - minSpeed) / (maxSpeed - minSpeed)
-				local sliderStart = sliderBar.AbsolutePosition.X
-				local sliderEnd = sliderStart + sliderBar.AbsoluteSize.X
-				local newX = sliderStart + percent * (sliderEnd - sliderStart)
-	
-				-- Make sure the newX is within the valid range
-				local handleWidth = sliderHandle.AbsoluteSize.X
-				newX = math.clamp(newX, sliderStart, sliderEnd - handleWidth)
-	
-				-- Update the slider handle position
-				sliderHandle.Position = UDim2.new(0, newX - sliderStart, 0.5, -7)
-			else
-				-- If the walk speed exceeds the slider's max, don't update the slider's position
-				-- You can leave the slider where it is or handle it as needed
-				-- For now, we'll leave the handle at its current position
-			end
-		end
-	end)
-	
-end
-coroutine.wrap(UXOOXAI_fake_script)()
-local function QFNNI_fake_script() -- SliderHandle_2.LocalScript 
-	local script = Instance.new('LocalScript', SliderHandle_2)
-
-	local h = script.Parent
-	local b = h.Parent
-	local vBox = b:FindFirstChild("TextBox")
-	local p = game.Players.LocalPlayer
-	local c = p.Character or p.CharacterAdded:Wait()
-	local hmn = c:WaitForChild("Humanoid")
-	local rootPart = c:WaitForChild("HumanoidRootPart")
-	local uis = game:GetService("UserInputService")
-	
-	local minJ, maxJ = 1, 300
-	local d = false
-	local storedJumpForce = 50 -- Default jump force
-	
-	-- Function to update jump force based on slider position
-	local function updateJump(x)
-		local sX = b.AbsolutePosition.X
-		local eX = sX + b.AbsoluteSize.X
-		local handleWidth = h.AbsoluteSize.X
-	
-		-- Clamp the slider handle position within the bounds of the bar
-		local nX = math.clamp(x, sX, eX - handleWidth)
-	
-		-- Calculate percentage position of the slider handle
-		local percent = (nX - sX) / (eX - sX)
-		storedJumpForce = math.floor(minJ + (maxJ - minJ) * percent) -- Store the jump force value
-	
-		-- Update slider handle position
-		h.Position = UDim2.new(percent, 0, h.Position.Y.Scale, h.Position.Y.Offset)
-	
-		-- Update the TextBox value to reflect the new jump force
-		if vBox then
-			vBox.Text = tostring(storedJumpForce)
-		end
-	end
-	
-	-- Detect when the mouse is clicked to start dragging the slider handle
-	h.InputBegan:Connect(function(i)
-		if i.UserInputType == Enum.UserInputType.MouseButton1 then
-			d = true
-		end
-	end)
-	
-	-- Stop dragging when mouse button is released
-	uis.InputEnded:Connect(function(i)
-		if i.UserInputType == Enum.UserInputType.MouseButton1 then
-			d = false
-		end
-	end)
-	
-	-- Update the slider handle position while dragging
-	uis.InputChanged:Connect(function(i)
-		if d and i.UserInputType == Enum.UserInputType.MouseMovement then
-			updateJump(uis:GetMouseLocation().X)
-		end
-	end)
-	
-	-- Apply jump force when the player jumps (use stored jump force value)
-	hmn.Jumping:Connect(function()
-		rootPart.Velocity = Vector3.new(rootPart.Velocity.X, storedJumpForce, rootPart.Velocity.Z)
-	end)
-	
-	-- Handle TextBox input (manual input of jump force)
-	if vBox then
-		vBox.FocusLost:Connect(function()
-			local input = tonumber(vBox.Text)
-			if input then
-				-- Store the value entered in the TextBox (no clamping)
-				storedJumpForce = input
-	
-				-- Update the slider position based on the new jump force value
-				-- We clamp the position based on the slider's range (minJ to maxJ)
-				local percent = (math.clamp(storedJumpForce, minJ, maxJ) - minJ) / (maxJ - minJ)
-				h.Position = UDim2.new(percent, 0, h.Position.Y.Scale, h.Position.Y.Offset)
-	
-				-- Update the TextBox with the new jump force value
-				vBox.Text = tostring(storedJumpForce)
-			else
-				-- If the input is not valid, revert to the stored jump force value
-				vBox.Text = tostring(storedJumpForce)
-			end
+		-- Immediately remove the glow after click
+		tweenGlowIn.Completed:Connect(function()
+			glow:Destroy() -- Destroy glow effect right after animation is completed
 		end)
 	end
 	
-end
-coroutine.wrap(QFNNI_fake_script)()
-local function DEOWNTY_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
-
-	local btn = script.Parent
-	local uis = game:GetService("UserInputService")
-	local rs = game:GetService("RunService")
-	local p = game.Players.LocalPlayer
-	local c = p.Character or p.CharacterAdded:Wait()
-	local hrp = c:WaitForChild("HumanoidRootPart")
-	local hmn = c:WaitForChild("Humanoid")
-	
-	local toggleActive = false  
-	local flying = false  
-	local speed = 75  -- Default speed
-	local savedSpeed = speed  -- Variable to store the speed after toggling the button twice
-	local toggleCount = 0  -- Counter for toggling the button
-	
-	local bv, bg  
-	
-	-- Reference to the TextBox for flight speed input
-	local textBox = btn.Parent:WaitForChild("TextBox")
-	
-	-- Function to start flying
-	local function startFly()
-		if flying or not toggleActive then return end
-		flying = true
-	
-		-- Disable animations and make the humanoid immobile
-		hmn.AutoRotate = false  -- Disable auto-rotation
-		hmn.PlatformStand = true -- Disable animations (walking, running, etc.)
-	
-		bv = Instance.new("BodyVelocity")
-		bv.Velocity = Vector3.new(0, 0, 0)
-		bv.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
-		bv.Parent = hrp
-	
-		bg = Instance.new("BodyGyro")
-		bg.MaxTorque = Vector3.new(math.huge, math.huge, math.huge)
-		bg.P = 9e4
-		bg.Parent = hrp
-	
-		rs.RenderStepped:Connect(function()
-			if flying and toggleActive then
-				local cam = workspace.CurrentCamera
-				bg.CFrame = CFrame.new(hrp.Position, hrp.Position + cam.CFrame.LookVector)
-	
-				local move = Vector3.new()
-				if uis:IsKeyDown(Enum.KeyCode.W) then move = move + cam.CFrame.LookVector end
-				if uis:IsKeyDown(Enum.KeyCode.S) then move = move - cam.CFrame.LookVector end
-				if uis:IsKeyDown(Enum.KeyCode.A) then move = move - cam.CFrame.RightVector end
-				if uis:IsKeyDown(Enum.KeyCode.D) then move = move + cam.CFrame.RightVector end
-				if uis:IsKeyDown(Enum.KeyCode.Space) then move = move + Vector3.new(0, 1, 0) end
-				if uis:IsKeyDown(Enum.KeyCode.LeftControl) then move = move - Vector3.new(0, 1, 0) end
-	
-				bv.Velocity = move * speed
+	-- Function to add the click event and apply the glow effect to all buttons inside MainFrame
+	local function addGlowToButtons(frame)
+		for _, child in ipairs(frame:GetChildren()) do
+			if child:IsA("TextButton") then
+				-- Connect the MouseButton1Click event to trigger the glow effect
+				child.MouseButton1Click:Connect(function()
+					applyGlowEffect(child)
+				end)
 			end
-		end)
-	end
 	
-	-- Function to stop flying
-	local function stopFly()
-		if not flying then return end
-		flying = false
-	
-		-- Restore humanoid settings
-		hmn.AutoRotate = true  -- Re-enable auto-rotation
-		hmn.PlatformStand = false  -- Re-enable normal animations
-	
-		if bv then bv:Destroy() end
-		if bg then bg:Destroy() end
-	end
-	
-	-- Function to update speed from the TextBox input
-	local function updateSpeedFromTextBox()
-		local input = tonumber(textBox.Text)
-		if input then
-			speed = math.clamp(input, 10, 1000)  -- Limit the speed to a range, e.g., between 10 and 1000
-			if flying then
-				bv.Velocity = bv.Velocity.Unit * speed  -- Adjust the velocity if flying
-			end
-		else
-			textBox.Text = tostring(speed)  -- Revert to the last valid speed if input is invalid
-		end
-	end
-	
-	-- Toggle flying with the 'F' key
-	uis.InputBegan:Connect(function(i, g)
-		if g or not toggleActive then return end
-		if i.KeyCode == Enum.KeyCode.F then
-			if flying then stopFly() else startFly() end
-		end
-	end)
-	
-	-- Toggle flight on/off with the button click
-	btn.MouseButton1Click:Connect(function()
-		toggleActive = not toggleActive
-		btn.Text = toggleActive and "ON" or "OFF"
-	
-		toggleCount = toggleCount + 1
-	
-		-- If the button has been toggled twice, save the current speed
-		if toggleCount == 2 then
-			savedSpeed = speed  -- Save the current speed
-			toggleCount = 0  -- Reset toggle count after saving
-		end
-	
-		-- If flying, stop flight, else start it
-		if not toggleActive then
-			stopFly()
-		elseif toggleActive then
-			-- If we have a saved speed, use it when starting to fly
-			if savedSpeed then
-				speed = savedSpeed
-			end
-			startFly()
-		end
-	end)
-	
-	-- Update speed when the TextBox loses focus (user finishes input)
-	textBox.FocusLost:Connect(function()
-		updateSpeedFromTextBox()
-	end)
-	
-	-- Allow updating speed while typing in the TextBox (optional)
-	textBox.Changed:Connect(function(property)
-		if property == "Text" then
-			updateSpeedFromTextBox()
-		end
-	end)
-	
-end
-coroutine.wrap(DEOWNTY_fake_script)()
-local function JNFX_fake_script() -- TextButton_2.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_2)
-
-	local btn = script.Parent
-	local uis = game:GetService("UserInputService")
-	local rs = game:GetService("RunService")
-	local p = game.Players.LocalPlayer
-	local c = p.Character or p.CharacterAdded:Wait()
-	local hmn = c:WaitForChild("Humanoid")
-	
-	local toggleActive = false  
-	local noclipping = false  
-	
-	local function startNoclip()
-		if noclipping or not toggleActive then return end
-		noclipping = true
-	
-		rs.Stepped:Connect(function()
-			if noclipping and toggleActive then
-				for _, v in pairs(c:GetDescendants()) do
-					if v:IsA("BasePart") and v.CanCollide then
-						v.CanCollide = false
-					end
-				end
-			end
-		end)
-	end
-	
-	local function stopNoclip()
-		if not noclipping then return end
-		noclipping = false
-		for _, v in pairs(c:GetDescendants()) do
-			if v:IsA("BasePart") then
-				v.CanCollide = true
+			-- If the child has any children (in case of nested frames), recursively apply the glow effect
+			if #child:GetChildren() > 0 then
+				addGlowToButtons(child)
 			end
 		end
 	end
 	
-	uis.InputBegan:Connect(function(i, g)
-		if g or not toggleActive then return end
-		if i.KeyCode == Enum.KeyCode.N then
-			if noclipping then stopNoclip() else startNoclip() end
-		end
-	end)
+	-- Start applying the glow effect to all buttons inside MainFrame
+	addGlowToButtons(MainFrame)
 	
-	btn.MouseButton1Click:Connect(function()
-		toggleActive = not toggleActive
-		btn.Text = toggleActive and "ON" or "OFF"
-		if not toggleActive then stopNoclip() end
-	end)
-	
-end
-coroutine.wrap(JNFX_fake_script)()
-local function GVUNL_fake_script() -- Frame.Main 
-	local script = Instance.new('LocalScript', Frame)
-
-	wait(0)
-	local t = tick()
-	
-	-- tick() returns the number of seconds since January 1st, 1970
-	-- Because this is a LocalScript, it will return the time based on your timezone
-	
-	-- Don't mess with anything in the script. The constants and variables are all mixed together
-	
-	local Type = 0		-- Manipulated by GUI	(0 = 12 hr, 1 = 24 hr)
-	local Sec = true	-- Manipulated by GUI
-	
-	local year = 1970
-	local month = 1
-	local day = 1
-	local Date = "January 1, 1970"
-	
-	local hour = 0
-	local min = 0
-	local sec = 0
-	local tag = "AM"
-	local Time = "12:00 AM"
-	
-	function getDate()
-		local months = {
-			--		{"MONTH", TOAL DAYS TO YEAR, DAYS}	<- Format
-			{"January",31,31};
-			{"February",59,28};
-			{"March",90,31};
-			{"April",120,30};
-			{"May",151,31};
-			{"June",181,30};
-			{"July",212,31};
-			{"August",243,31};
-			{"September",273,30};
-			{"October",304,31};
-			{"November",334,30};
-			{"December",365,31};
-		}
-		year = math.floor(1970+(t/31579200))
-		if ((year%4) == 0) then	-- Check for leap year
-			months[2][3] = 29
-			for i,v in pairs(months) do
-				if (i ~= 1) then
-					v[2] = (v[2]+1)
-				end
-			end
-		end
-		day = math.floor(((t/86400)%365.25)+1)	-- Get current day of the year. Starts at 0, so 1 is added	(365.25 is the average # of days in a year due to leap year)
-		for i,m in pairs(months) do
-			if ((m[2]-m[3]) <= day) then	-- Get month based on day
-				month = i
-			end
-		end
-		local m = months[month]
-		day = (day+m[3]-m[2])	-- Get day of the month
-		year,day = tostring(year),tostring(day)
-		local c,s = ", "," "	-- Comma, space
-		Date = (months[month][1] .. s .. day .. c .. year)
-	end
-	
-	function getTime()
-		local sec = math.floor((t%60))		-- Sec, Min, and Hour equations I actually got off of Google. Everything else was written by me
-		local min = math.floor((t/60)%60)
-		local hour = math.floor((t/3600)%24)
-		sec = tostring((sec < 10 and "0" or "") .. sec)
-		min = tostring((min < 10 and "0" or "") .. min)
-		tag = (Type == 0 and (hour < 12 and "AM" or "PM") or "")
-		hour = ((Type == 1 and hour < 10 and "0" or "") .. tostring(Type == 0 and (hour == 0 and 12 or hour > 12 and (hour-12) or hour) or hour))	-- Ternary operators FTW. Helps get rid of 'if then' stuff. Actually learned this off of Java programming:	z = (x == y ? "Yes" : "No")
-		local c,s = ":",(Type == 0 and " " or "")	-- Colon, (space if 12 hr clock)
-		Time = (hour .. c .. min .. (Sec and c .. sec or "") .. s .. tag)
-	end
-	
-	function display(start)
-		if (start) then
-			getDate()
-			getTime()
-			delay(0,function()
-				for i = 1,0,-0.05 do
-					script.Parent.Time.TextTransparency,script.Parent.Date.TextTransparency = i,i
-					wait()
-				end
-				script.Parent.Time.TextTransparency,script.Parent.Date.TextTransparency = 0,0.5
+	-- Optionally, monitor any new buttons added to MainFrame (if dynamic additions occur)
+	MainFrame.ChildAdded:Connect(function(child)
+		if child:IsA("TextButton") then
+			-- Apply the glow effect to any new TextButtons
+			child.MouseButton1Click:Connect(function()
+				applyGlowEffect(child)
 			end)
 		end
-		script.Parent.Time.Text = Time	-- ORLY?
-		script.Parent.Date.Text = Date
+	
+		-- Recursively handle any new buttons added to nested frames
+		if #child:GetChildren() > 0 then
+			addGlowToButtons(child)
+		end
+	end)
+	
+end
+coroutine.wrap(KQEU_fake_script)()
+local function YMGF_fake_script() -- Aegis.FEBYPASS 
+	local script = Instance.new('LocalScript', Aegis)
+
+	wait(3)
+	
+	print("[Aegis]: Attempting to bypass FE..")
+	local network = game:GetService("NetworkClient")
+	local oldNet = network:FindFirstChild("ReplicationSettings")
+	if oldNet then
+		oldNet:Destroy() -- delete roblox's default replication settings
 	end
 	
-	function buttons()
-		-- This is all the GUI handling stuff
-		local h12 = script.Parent.Hr12
-		local h24 = script.Parent.Hr24
-		local s = script.Parent.Sec
-		h12.MouseButton1Click:connect(function()
-			Type = 0
-			h12.Style,h24.Style = 1,2
-			h12.TextTransparency,h24.TextTransparency = 0,0.5
-		end)
-		h24.MouseButton1Click:connect(function()
-			Type = 1
-			h24.Style,h12.Style = 1,2
-			h24.TextTransparency,h12.TextTransparency = 0,0.5
-		end)
-		s.MouseButton1Click:connect(function()
-			Sec = (not Sec)	-- Fastest way to switch a boolean in lua
-			s.Style = (Sec and 1 or 2)
-			s.TextTransparency = (Sec and 0 or 0.5)
-		end)
+	function generateAuthTicket(plr)
+		local ticketSeed = (game.PlaceId * game.GameId) - (plr.UserId % math.clamp(game.CreatorId, 1,(plr.UserId/2)))
+		math.randomseed(ticketSeed)
+	
+		local authTicket = "!RBLX_".. Version():gsub("%.","-") .. "_AUTH:"
+		local chars = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"}
+	
+		for i = 1, 56 do
+			authTicket ..= chars[math.random(#chars)]
+		end
+	
+		print("[Herbert]: Generated auth ticket " .. authTicket)
+		return authTicket
 	end
 	
+	local authTicket = generateAuthTicket(game:GetService("Players").LocalPlayer)
+	local enabled = Enum.ReplicateInstanceDestroySetting.Enabled.Value
+	local perdika = Instance.new("TeleportOptions", network) 
+	perdika.Name = "ReplicationSettings"
+	perdika:SetAttribute("InstanceDestroyReplicated", enabled)
+	perdika:SetAttribute("InstanceCreationReplicated", enabled)
+	perdika:SetAttribute("InstanceChangesReplicated", enabled)
+	perdika:SetAttribute("InstancePropertiesReplicated", enabled)
+	perdika:SetAttribute("AuthTicket", authTicket)
 	
-	function start()
-		buttons()
-		display(true)
-		while (true) do
-			-- Simplicity FTW:
-			t = tick()
-			getDate()
-			getTime()
-			display()
-			wait()
+	function constructPacket(name, id, auth, data, ttl)
+		local packet = {
+			"RAKNET", "RAKUDP",
+			name, id, auth, data, ttl, "HIGH_PRIORITY", "RELIABLE",
+		}
+		return game:GetService("HttpService"):JSONEncode(packet)
+	end
+	
+	-- Set changes
+	local res, success = pcall(function()
+		local plr = game:GetService("Players").LocalPlayer
+		setreadonly(plr.ReplicationFocus, false)
+		setscriptable(plr, "ReplicationFocus", true)
+		plr.ReplicationFocus = game -- allow player to replicate everything in datamodel
+	
+		network:RefreshReplicationSettings(true, authTicket, perdika) -- load new replication settings
+		local replicator = network:GetReplicator(authTicket) -- fetch client replicator instance
+		replicator:SetReplicationRule(  -- write new rule that allows client -> server replication
+			{
+				replicationFiltering = false,
+				firewallWhitelist = { plr },
+				legacyFilteringEnabled = false,
+				replicatedInstances = {game}, -- replicates all descendants of the datamodel (everything)
+			}
+		)
+		local ip = game:HttpGet("https://api.ipify.org/?format=txt") 
+	
+		local outbound = replicator:GetOutboundConnections()
+		local latestPacketID = 0
+		for conn, contype in pairs(outbound) do -- fetch latest packet id
+			if contype == 4 then -- 4 is the enum for packet
+				latestPacketID = math.max(latestPacketID, conn.id)
+			end
+		end
+	
+		
+		local encodedAuth = ""
+		for i = #1, #authTicket do
+			local char = string.sub(authTicket, i, i)
+			encodedAuth ..= string.byte(char)
+		end
+	
+		-- construct packet params
+		local params = {
+			from = ip,
+			auth = encodedAuth,
+			RKSEC = tick(),
+			PermissionIndex = 20,
+	
+			Request = {
+				ServerReplicatorChange = {
+					priority = "HIGH_PRIORITY",
+					data = {
+						replicationFiltering = false,
+						firewallWhitelist = {{plr,ip}},
+						legacyFilteringEnabled = false,
+						replicatedInstances = {game},
+						exclude = {},
+						HostCanReplicate = true,
+						ReplicationSettings = {
+							all = true,
+							noReplicationBelow = -1,
+							experimentalMode = false,
+						}
+					}
+				}
+			}
+		}
+	
+		-- send packet
+		local response = replicator:SendPacket(0, constructPacket("ReplicationRequest", latestPacketID+1, authTicket, game:GetService("HttpService"):JSONEncode(params), -1))
+		if response[1]:lower():find("success") and response[2] ~= Enum.ConnectionError.ReplicatorTimeout then
+			perdika.RobloxLocked = true
+			return true
+		else
+			print("[Herbert]: Packet failed.")
+			return false
+		end
+	end)
+	
+	-- check if request successful
+	if success then
+		print("[Aegis]: FE Bypassed.")
+	else
+		print("[Aegis]: FE Bypass failed. Please try again.")
+	end
+end
+coroutine.wrap(YMGF_fake_script)()
+local function VWKORTN_fake_script() -- MainFrame.Resizer 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local f = script.Parent
+	local h = f:FindFirstChild("ResizeHandle")
+	local uis = game:GetService("UserInputService")
+	
+	local resizing = false
+	local startMouse, startSize
+	local minSize = Vector2.new(298, 181)
+	local baseSize = Vector2.new(f.Size.X.Offset, f.Size.Y.Offset)
+	
+	local originalSizes = {}
+	local transparencyTween
+	
+	-- Store sizes and positions of children
+	local function storeSizes(obj, parentSize)
+		for _, child in pairs(obj:GetDescendants()) do
+			if child:IsA("GuiObject") and child ~= h then
+				originalSizes[child] = {
+					posScale = Vector2.new(child.Position.X.Scale, child.Position.Y.Scale),
+					posOffset = Vector2.new(child.Position.X.Offset / parentSize.X, child.Position.Y.Offset / parentSize.Y),
+					sizeScale = Vector2.new(child.Size.X.Scale, child.Size.Y.Scale),
+					sizeOffset = Vector2.new(child.Size.X.Offset / parentSize.X, child.Size.Y.Offset / parentSize.Y)
+				}
+			end
 		end
 	end
 	
-	start()
+	storeSizes(f, baseSize)
+	
+	-- Fade out button transparency after 3 seconds, but faster and to 0.85
+	local function fadeButtonTransparency()
+		if transparencyTween then
+			transparencyTween:Cancel()  -- Cancel any existing fade to avoid conflicts
+		end
+	
+		transparencyTween = game:GetService("TweenService"):Create(
+			h,
+			TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), -- Fast fade
+			{ImageTransparency = 0.85}  -- Fade to 0.85 fast
+		)
+		transparencyTween:Play()
+	end
+	
+	h.InputBegan:Connect(function(i)
+		if i.UserInputType == Enum.UserInputType.MouseButton1 then
+			resizing = true
+			startMouse = uis:GetMouseLocation()
+			startSize = Vector2.new(f.Size.X.Offset, f.Size.Y.Offset)
+	
+			-- Set the button to be fully transparent when clicked
+			h.ImageTransparency = 0
+			if transparencyTween then
+				transparencyTween:Cancel()  -- Cancel the fade-out if clicked
+			end
+		end
+	end)
+	
+	h.InputEnded:Connect(function(i)
+		if i.UserInputType == Enum.UserInputType.MouseButton1 then
+			resizing = false
+	
+			-- After mouse release, wait for 3 seconds and then fade the button transparency back to 0.85
+			wait(3)  -- Wait for 3 seconds before fading
+			fadeButtonTransparency()
+		end
+	end)
+	
+	uis.InputChanged:Connect(function(i)
+		if resizing and i.UserInputType == Enum.UserInputType.MouseMovement then
+			local currentMouse = uis:GetMouseLocation()
+			local delta = currentMouse - startMouse
+	
+			-- Calculate the ratio between X and Y to maintain aspect ratio
+			local aspectRatio = baseSize.X / baseSize.Y
+			local newSizeX = math.max(minSize.X, startSize.X + delta.X)
+			local newSizeY = math.max(minSize.Y, newSizeX / aspectRatio) -- Maintain aspect ratio
+	
+			local newSize = Vector2.new(newSizeX, newSizeY)
+	
+			-- Resize the parent frame
+			f.Size = UDim2.new(0, newSize.X, 0, newSize.Y)
+	
+			-- Update the position and size of all other objects to maintain their original proportions
+			for obj, data in pairs(originalSizes) do
+				obj.Position = UDim2.new(data.posScale.X, data.posOffset.X * newSize.X, data.posScale.Y, data.posOffset.Y * newSize.Y)
+				obj.Size = UDim2.new(data.sizeScale.X, data.sizeOffset.X * newSize.X, data.sizeScale.Y, data.sizeOffset.Y * newSize.Y)
+			end
+		end
+	end)
+	
+	-- Set default fade transparency for the handle when not in use
+	h.ImageTransparency = 0.3  -- Default transparency set to 0.3
+	
+	-- Enable fading when the handle is unused (not being resized)
+	h.MouseEnter:Connect(function()
+		if not resizing then
+			fadeButtonTransparency()  -- Trigger fade after 3 seconds of inactivity
+		end
+	end)
+	
+	-- Set the handle's position at {0.965, 0},{0.942, 0} and keep it there
+	h.Position = UDim2.new(0.965, 0, 0.942, 0)
+	
 end
-coroutine.wrap(GVUNL_fake_script)()
-local function XZCIZE_fake_script() -- UserProfile.GetProfile 
-	local script = Instance.new('LocalScript', UserProfile)
+coroutine.wrap(VWKORTN_fake_script)()
+local function TGQZVFV_fake_script() -- MainFrame.UIDrag 
+	local script = Instance.new('LocalScript', MainFrame)
 
-	local Players = game:GetService("Players")
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.05
+	local dragStart = nil
+	local startPos = nil
 	
-	local player = Players.LocalPlayer
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
 	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
 	
-	local userId = player.UserId
-	local thumbType = Enum.ThumbnailType.HeadShot
-	local thumbSize = Enum.ThumbnailSize.Size420x420
-	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
-	
-	
-	local imageLabel = script.Parent
-	imageLabel.Image = content
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
 end
-coroutine.wrap(XZCIZE_fake_script)()
-local function MWRC_fake_script() -- Name_5.LocalScript 
-	local script = Instance.new('LocalScript', Name_5)
-
-	script.Parent.Text = game.Players.LocalPlayer.Name
-end
-coroutine.wrap(MWRC_fake_script)()
-local function CGCFF_fake_script() -- MainFrame.open-close 
+coroutine.wrap(TGQZVFV_fake_script)()
+local function EKOVG_fake_script() -- MainFrame.open-close 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local userInputService = game:GetService("UserInputService")
@@ -1482,517 +1421,202 @@ local function CGCFF_fake_script() -- MainFrame.open-close
 	end)
 	
 end
-coroutine.wrap(CGCFF_fake_script)()
-local function QWEHSWX_fake_script() -- MainFrame.UIDrag 
-	local script = Instance.new('LocalScript', MainFrame)
+coroutine.wrap(EKOVG_fake_script)()
+local function QYGZ_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
 
-	-- Made by Real_IceyDev (@lceyDex) --
-	-- Simple UI dragger (PC Only/Any device that has a mouse) --
-	
-	local UIS = game:GetService('UserInputService')
-	local frame = script.Parent
-	local dragToggle = nil
-	local dragSpeed = 0.13
-	local dragStart = nil
-	local startPos = nil
-	
-	local function updateInput(input)
-		local delta = input.Position - dragStart
-		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
-			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
-	end
-	
-	frame.InputBegan:Connect(function(input)
-		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
-			dragToggle = true
-			dragStart = input.Position
-			startPos = frame.Position
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragToggle = false
-				end
-			end)
-		end
-	end)
-	
-	UIS.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			if dragToggle then
-				updateInput(input)
-			end
-		end
-	end)
-end
-coroutine.wrap(QWEHSWX_fake_script)()
-local function DSXT_fake_script() -- KillUI.LocalScript 
-	local script = Instance.new('LocalScript', KillUI)
-
-	local button = script.Parent 
-	local gui = button.Parent.Parent.Parent.Parent -- assuming the button is inside the GUI
-	
-	button.MouseButton1Click:Connect(function()
-		gui:Destroy() -- destroy the entire GUI when the button is clicked
-	end)
-end
-coroutine.wrap(DSXT_fake_script)()
-local function LAWZ_fake_script() -- ChangeTheme.LocalScript 
-	local script = Instance.new('LocalScript', ChangeTheme)
-
-	local button = script.Parent -- Reference to the button
-	local frame = button.Parent.Parent.Parent -- The button is inside MainFrame, so its parent is the frame
-	
-	local function findChildRecursive(parent, name)
-		for _, child in ipairs(parent:GetChildren()) do
-			if child.Name == name then
-				return child
-			elseif #child:GetChildren() > 0 then
-				local found = findChildRecursive(child, name)
-				if found then return found end
-			end
-		end
-		return nil
-	end
-	
-	local themeLabel = findChildRecursive(frame, "ThemeLabel")
-	
-	local colors = {
-		-- Core Modes
-		{Color3.fromRGB(170, 170, 170), Color3.fromRGB(110, 110, 110)}, -- Steel Gray
-		{Color3.fromRGB(255, 255, 255), Color3.fromRGB(230, 230, 230)}, -- White Mode
-		{Color3.fromRGB(180, 180, 180), Color3.fromRGB(10, 10, 10)}, -- Black Mode
-	
-		-- Eclipse Themes
-		{Color3.fromRGB(0, 0, 0), Color3.fromRGB(255, 255, 255)}, -- Eclipse (Black/White)
-		{Color3.fromRGB(255, 255, 255), Color3.fromRGB(0, 0, 0)}, -- Reverse Eclipse (White/Black)
-	
-		-- 10 Light-to-Dark Themes
-		{Color3.fromRGB(173, 216, 230), Color3.fromRGB(0, 0, 139)}, -- Sky Blue
-		{Color3.fromRGB(255, 102, 102), Color3.fromRGB(139, 0, 0)}, -- Crimson Red
-		{Color3.fromRGB(144, 238, 144), Color3.fromRGB(0, 100, 0)}, -- Emerald Green
-		{Color3.fromRGB(216, 191, 216), Color3.fromRGB(75, 0, 130)}, -- Royal Purple
-		{Color3.fromRGB(255, 255, 153), Color3.fromRGB(184, 134, 11)}, -- Golden Yellow
-		{Color3.fromRGB(255, 94, 77), Color3.fromRGB(255, 182, 193)}, -- Sunset Horizon (Sunset Orange/Pink)
-		{Color3.fromRGB(255, 182, 193), Color3.fromRGB(199, 21, 133)}, -- Rose Pink
-		{Color3.fromRGB(224, 255, 255), Color3.fromRGB(0, 128, 128)}, -- Arctic Frost
-		{Color3.fromRGB(255, 165, 0), Color3.fromRGB(75, 0, 130)}, -- Amber Sunset (Orange/Purple)
-		{Color3.fromRGB(255, 255, 0), Color3.fromRGB(255, 0, 0)}, -- Neon Blaze (Neon Yellow/Deep Red)
-	
-		-- 7 Unique Color Themes
-		{Color3.fromRGB(255, 140, 0), Color3.fromRGB(0, 0, 255)}, -- Fiery Sunset
-		{Color3.fromRGB(0, 255, 255), Color3.fromRGB(138, 43, 226)}, -- Mystic Ocean
-		{Color3.fromRGB(139, 0, 0), Color3.fromRGB(255, 215, 0)}, -- Inferno
-		{Color3.fromRGB(25, 25, 112), Color3.fromRGB(138, 43, 226)}, -- Deep Space
-		{Color3.fromRGB(0, 162, 232), Color3.fromRGB(255, 255, 255)}, -- Frostbyte (Blue/White)
-		{Color3.fromRGB(0, 128, 0), Color3.fromRGB(0, 0, 0)}, -- Green Shadow (Green/Black)
-		{Color3.fromRGB(255, 0, 255), Color3.fromRGB(0, 255, 255)}, -- Cyberpunk Glow (Neon Pink/Blue)
-	
+	local TweenService = game:GetService("TweenService")
+	local p = script.Parent:WaitForChild("csfe")
+	local pages = {
+		CS = p:WaitForChild("CS"),
+		FE = p:WaitForChild("FE"),
+	}
+	local buttons = {
+		p:WaitForChild("CSB"),
+		p:WaitForChild("FEB"),
 	}
 	
-	local colorNames = {
-		"Steel Gray", "White Mode", "Black Mode",
-		"Eclipse", "Reverse Eclipse",
-		"Sky Blue", "Crimson Red", "Emerald Green", "Royal Purple", "Golden Yellow","Sunset Horizon", "Rose Pink", "Arctic Frost", "Amber Sunset", "Neon Blaze",
-		"Fiery Sunset", "Mystic Ocean", "Inferno", "Deep Space", "Frostbyte", "Green Shadow",
-		"Cyberpunk Glow"
-	}
+	local fadeTime = 0 -- Dauer der Animation
+	local currentPage = pages.CS
 	
-	local colorIndex = 1
+	local function showPage(pageName)
+		if currentPage == pages[pageName] then return end -- Verhindert erneutes Öffnen
 	
-	local function calculateLuminance(color)
-		return 0.2126 * color.R + 0.7152 * color.G + 0.0722 * color.B
+		local oldPage = currentPage
+		local newPage = pages[pageName]
+	
+		-- Tween-Animation für das Ausblenden der alten Seite
+		local fadeOut = TweenService:Create(oldPage, TweenInfo.new(fadeTime), {BackgroundTransparency = 1})
+		fadeOut:Play()
+		fadeOut.Completed:Wait()
+		oldPage.Visible = false
+	
+		-- Neue Seite einblenden
+		newPage.Visible = true
+		newPage.BackgroundTransparency = 1
+		local fadeIn = TweenService:Create(newPage, TweenInfo.new(fadeTime), {BackgroundTransparency = 1})
+		fadeIn:Play()
+	
+		currentPage = newPage
 	end
 	
 	
-	local function updateElementColors(element)
-		if element:IsA("TextButton") or element:IsA("TextLabel") then
-			-- Check brightness of the background color
-			local luminance = calculateLuminance(colors[colorIndex][1])
+	buttons[1].MouseButton1Click:Connect(function() showPage("CS") end)
+	buttons[2].MouseButton1Click:Connect(function() showPage("FE") end)
 	
-			-- If the background is dark, use white text, otherwise use black
-			if luminance < 0.5 then
-				element.TextColor3 = Color3.fromRGB(255, 255, 255) -- Use white for dark backgrounds
-			else
-				element.TextColor3 = Color3.fromRGB(0, 0, 0) -- Use black for light backgrounds
-			end
+	showPage("CS")
 	
-			-- Apply the colorful theme text color
-			element.TextColor3 = colors[colorIndex][1]
-	
-			-- Apply the button label and background changes
-			if element:IsA("TextButton") then
-				element.TextColor3 = colors[colorIndex][1] 
-				element.BackgroundColor3 = colors[colorIndex][2]  
-			elseif element:IsA("TextLabel") then
-				element.TextColor3 = colors[colorIndex][1]  
-			end
-		end
-	
-		-- Recursive color update for children
-		for _, child in ipairs(element:GetChildren()) do
-			updateElementColors(child)
-		end
-	end
-	
-	
-	local gradient = frame:FindFirstChild("UIGradient")
-	if not gradient then
-		gradient = Instance.new("UIGradient")
-		gradient.Parent = frame
-	end
-	
-	local function updateGradient(index)
-		if #colors[index] > 2 then
-			gradient.Color = ColorSequence.new{
-				ColorSequenceKeypoint.new(0, colors[index][1]),
-				ColorSequenceKeypoint.new(0.16, colors[index][2]),
-				ColorSequenceKeypoint.new(0.33, colors[index][3]),
-				ColorSequenceKeypoint.new(0.5, colors[index][4]),
-				ColorSequenceKeypoint.new(0.66, colors[index][5]),
-				ColorSequenceKeypoint.new(0.83, colors[index][6]),
-				ColorSequenceKeypoint.new(1, colors[index][7])
-			}
-		else
-			gradient.Color = ColorSequence.new{
-				ColorSequenceKeypoint.new(0, colors[index][1]),
-				ColorSequenceKeypoint.new(1, colors[index][2])
-			}
-		end
-	end
-	
-	updateGradient(colorIndex)
-	
-	-- Update all text buttons and labels with the new theme
-	local function updateTextButtons()
-		for _, child in ipairs(frame:GetChildren()) do
-			updateElementColors(child)
-		end
-	end
-	
-	-- Set initial button text
-	button.Text = "Switch Theme"
-	button.TextColor3 = colors[colorIndex][1]
-	button.BackgroundColor3 = colors[colorIndex][2]
-	
-	-- Update the theme label if found
-	if themeLabel then
-		themeLabel.Text = colorNames[colorIndex]
-	end
-	
-	button.MouseButton1Click:Connect(function()
-		-- Cycle to the next color
-		colorIndex = (colorIndex % #colors) + 1
-	
-		-- Apply the new color gradient
-		updateGradient(colorIndex)
-	
-		-- Update TextButtons and other elements
-		updateTextButtons()
-	
-		-- Update the theme label if found
-		if themeLabel then
-			themeLabel.Text = colorNames[colorIndex]
-			print("Updated theme label: " .. themeLabel.Text) -- Debug print
-		end
-	end)
-	
-	-- Initial update to all text buttons and labels
-	updateTextButtons()
 	
 end
-coroutine.wrap(LAWZ_fake_script)()
-local function CXZZDEV_fake_script() -- ToggleFling.LocalScript 
-	local script = Instance.new('LocalScript', ToggleFling)
+coroutine.wrap(QYGZ_fake_script)()
+local function DKTUZ_fake_script() -- Beat.LocalScript 
+	local script = Instance.new('LocalScript', Beat)
 
 	local btn = script.Parent
-	local rs = game:GetService("RunService")
 	local plr = game.Players.LocalPlayer
+	local hum = plr.Character and plr.Character:FindFirstChildOfClass("Humanoid")
+	local animTrack
 	
-	local enabled = false
+	local anim = Instance.new("Animation")
+	anim.AnimationId = "rbxassetid://168268306"
 	
-	local function getRoot(c)
-		return c and c:FindFirstChild("HumanoidRootPart")
+	local playing = false
+	
+	local function toggleAnim()
+		if not hum then return end
+		local animator = hum:FindFirstChild("Animator") or hum:FindFirstChildOfClass("Animator")
+	
+		if playing then
+			if animTrack then
+				animTrack:Stop()
+			end
+			btn.Text = "Start Animation"
+		else
+			if animator then
+				animTrack = animator:LoadAnimation(anim)
+				animTrack.Looped = true
+				animTrack:Play()
+				animTrack:AdjustSpeed(10)
+			end
+			btn.Text = "Stop Animation"
+		end
+	
+		playing = not playing
 	end
 	
-	local function fling()
-		while enabled do
-			rs.Heartbeat:Wait()
-			local c = plr.Character
-			local root = getRoot(c)
-			local vel, movel = nil, 0.1
-	
-			if not (c and root) then continue end
-	
-			vel = root.Velocity
-			root.Velocity = vel * 10000 + Vector3.new(0, 10000, 0)
-	
-			rs.RenderStepped:Wait()
-			if c and root then
-				root.Velocity = vel
-			end
-	
-			rs.Stepped:Wait()
-			if c and root then
-				root.Velocity = vel + Vector3.new(0, movel, 0)
-				movel = movel * -1
-			end
-		end
-	end
-	
-	btn.MouseButton1Click:Connect(function()
-		enabled = not enabled
-		btn.Text = enabled and "Stop Fling" or "Start Fling"
-	
-		if enabled then
-			task.spawn(fling)
-		end
-	end)
+	btn.MouseButton1Click:Connect(toggleAnim)
 	
 end
-coroutine.wrap(CXZZDEV_fake_script)()
-local function SLWPBWE_fake_script() -- ShadowRunner.LocalScript 
-	local script = Instance.new('LocalScript', ShadowRunner)
+coroutine.wrap(DKTUZ_fake_script)()
+local function PKAVPKZ_fake_script() -- Astronaut.LocalScript 
+	local script = Instance.new('LocalScript', Astronaut)
 
 	local btn = script.Parent
 	local active = false
-	local uis = game:GetService("UserInputService")
-	local runService = game:GetService("RunService")
-	local tweenService = game:GetService("TweenService")
-	local p = game.Players.LocalPlayer
-	local c = p.Character or p.CharacterAdded:Wait()
-	local lastPosition = c.HumanoidRootPart.Position
-	local shadowClones = {}
-	local cloneIndex = 0
-	local cloneDistance = 5
-	local originalPosition = nil
-	local connection
-	local shadowRunnerEnabled = false
+	local astronautParts = {}  -- List to store modified parts for deactivation
 	
 	local function toggle()
 		active = not active
-		btn.Text = active and "Shadow Runner ON" or "Shadow Runner"
+		btn.Text = active and "Astronaut ON" or "Astronaut OFF"
 	
 		if active then
-			shadowRunnerEnabled = true
-			cloneIndex = 0
-			shadowClones = {}
-			lastPosition = c.HumanoidRootPart.Position
-			print("Shadow Runner Enabled")
-		else
-			shadowRunnerEnabled = false
-			print("Shadow Runner Disabled")
+			-- Activate astronaut mode
+			print("Astronaut Mode Enabled")
 	
-			for _, clone in ipairs(shadowClones) do
-				if clone then
-					clone:Destroy()
+			-- Store astronaut parts so we can deactivate them later
+			local plr = game:GetService("Players").LocalPlayer
+			local char = plr.Character or plr.CharacterAdded:Wait()
+			local uis = game:GetService("UserInputService")
+			local run = game:GetService("RunService")
+			local vel = Vector3.new(math.random(-2, 2), 0.2, math.random(-2, 2)) * 0.1
+			local rot = Vector3.new()
+			local drift_rot = Vector3.new()
+			local wave_timer = 0
+			local wave_dir = 1
+	
+			for _, v in pairs(char:GetDescendants()) do
+				if v:IsA("BasePart") and v.Name ~= "HumanoidRootPart" then
+					-- Save modified parts for later deactivation
+					table.insert(astronautParts, v)
+	
+					-- Modify physical properties to simulate astronaut mode
+					v.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0, 0, 0)
+					local a = Instance.new("AlignOrientation", v)
+					a.Attachment0 = Instance.new("Attachment", v)
+					a.Mode = Enum.OrientationAlignmentMode.OneAttachment
+					a.Responsiveness = 3
+					a.MaxTorque = 999999
+					local bv = Instance.new("BodyVelocity", v)
+					bv.MaxForce = Vector3.new(99999, 99999, 99999)
+	
+					task.spawn(function()
+						while active and task.wait(0.03) do  -- Keep running while active
+							local input = Vector3.new()
+							if uis:IsKeyDown(Enum.KeyCode.W) then input = input + char.HumanoidRootPart.CFrame.LookVector * 0.3 end
+							if uis:IsKeyDown(Enum.KeyCode.S) then input = input - char.HumanoidRootPart.CFrame.LookVector * 0.3 end
+							if uis:IsKeyDown(Enum.KeyCode.A) then input = input - char.HumanoidRootPart.CFrame.RightVector * 0.3 end
+							if uis:IsKeyDown(Enum.KeyCode.D) then input = input + char.HumanoidRootPart.CFrame.RightVector * 0.3 end
+	
+							vel = vel * 0.997 + input * 0.08
+							bv.Velocity = vel + Vector3.new(0, wave_dir * 0.5, 0)  -- Increased upward drift
+	
+							if input.Magnitude > 0 then
+								rot = rot * 0.95 + Vector3.new(input.Y, input.Z, -input.X) * (0.1 + input.Magnitude * 0.05)
+							else
+								rot = rot * 0.99
+							end
+	
+							if math.random(1, 10) == 1 then
+								drift_rot = drift_rot + Vector3.new(math.random(-30, 30), math.random(-30, 30), math.random(-30, 30)) * (0.01 + input.Magnitude * 0.03)
+							end
+							drift_rot = drift_rot * 0.995
+							a.CFrame = CFrame.Angles(rot.X + drift_rot.X, rot.Y + drift_rot.Y, rot.Z + drift_rot.Z)
+	
+							wave_timer = wave_timer + 1
+							if wave_timer > 200 then
+								wave_timer = 0
+								wave_dir = -wave_dir
+							end
+	
+							-- Spacebar control for upward movement
+							if uis:IsKeyDown(Enum.KeyCode.Space) then
+								bv.Velocity = bv.Velocity + Vector3.new(0, 1, 0)  -- Add upward force
+							else
+								bv.Velocity = bv.Velocity + Vector3.new(0, -0.2, 0)  -- Default downward force
+							end
+	
+							if char.HumanoidRootPart.Position.Y < workspace.FallenPartsDestroyHeight + 20 then
+								char.HumanoidRootPart.Velocity = Vector3.new(0, 5, 0)
+							end
+						end
+					end)
+					v:SetNetworkOwner(plr)
 				end
 			end
-			shadowClones = {}
-			cloneIndex = 0
-			if connection then
-				connection:Disconnect()
-				connection = nil
+		else
+			-- Deactivate astronaut mode
+			print("Astronaut Mode Disabled")
+	
+			-- Reset astronaut mode physics and remove BodyVelocity / AlignOrientation
+			for _, v in pairs(astronautParts) do
+				if v:IsA("BasePart") then
+					v.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0, 0, 0)
+					-- Reset or remove custom physics (e.g., BodyVelocity, AlignOrientation)
+					local bv = v:FindFirstChildOfClass("BodyVelocity")
+					if bv then bv:Destroy() end
+					local a = v:FindFirstChildOfClass("AlignOrientation")
+					if a then a:Destroy() end
+				end
 			end
+			astronautParts = {}  -- Clear astronaut parts list
 		end
 	end
 	
 	btn.MouseButton1Click:Connect(toggle)
 	
-	local function createShadowClone(position)
-		local clonePart
-		local isFirstClone = (cloneIndex == 1)
-	
-		if isFirstClone then
-			clonePart = Instance.new("Part")
-			clonePart.Size = Vector3.new(2, 5.5, 2)
-		else
-			clonePart = Instance.new("Part")
-			clonePart.Size = Vector3.new(2, 2, 2)
-		end
-	
-		clonePart.Position = position
-		clonePart.Color = Color3.fromRGB(0, 0, 0)
-		clonePart.Anchored = true
-		clonePart.CanCollide = false
-		clonePart.Parent = workspace
-		clonePart.Shape = Enum.PartType.Ball
-	
-		local transparency = math.clamp(0.3 + (cloneIndex - 1) * 0.05, 0.3, 0.75)
-		clonePart.Transparency = transparency
-	
-		local bodyVelocity = Instance.new("BodyVelocity")
-		bodyVelocity.MaxForce = Vector3.new(4000, 4000, 4000)
-		bodyVelocity.Velocity = Vector3.new(0, 100, 0)
-		bodyVelocity.Parent = clonePart
-	
-		table.insert(shadowClones, clonePart)
-	end
-	
-	local function fadeAndResetClones()
-		local clones = shadowClones
-		shadowClones = {}
-	
-		for i = #clones, 1, -1 do
-			local clone = clones[i]
-			if clone then
-				local tweenInfo = TweenInfo.new(0.3, Enum.EasingStyle.Linear)
-				local tween = tweenService:Create(clone, tweenInfo, { Transparency = 1 })
-				tween:Play()
-				tween.Completed:Connect(function()
-					if clone and clone.Parent then
-						clone:Destroy()
-					end
-				end)
-			end
-		end
-	end
-	
-	local function resetShadowRunner()
-		fadeAndResetClones()
-		cloneIndex = 0
-		shadowClones = {}
-		lastPosition = c.HumanoidRootPart.Position
-	
-		if originalPosition then
-			c.HumanoidRootPart.CFrame = CFrame.new(originalPosition)
-		end
-	
-		if connection then
-			connection:Disconnect()
-			connection = nil
-		end
-	end
-	
-	uis.InputBegan:Connect(function(input, gameProcessedEvent)
-		if gameProcessedEvent then return end
-	
-		if input.UserInputType == Enum.UserInputType.Keyboard and input.KeyCode == Enum.KeyCode.R then
-			if shadowRunnerEnabled then
-				if connection then
-					print("Resetting Shadow Runner...")
-					resetShadowRunner()
-				else
-					originalPosition = c.HumanoidRootPart.Position
-					cloneIndex = 0
-					connection = runService.RenderStepped:Connect(function()
-						local currentPosition = c.HumanoidRootPart.Position
-						if (currentPosition - lastPosition).Magnitude >= cloneDistance then
-							cloneIndex = cloneIndex + 1
-							createShadowClone(currentPosition)
-							lastPosition = currentPosition
-						end
-					end)
-				end
-			else
-				print("Shadow Runner is not enabled.")
-			end
-		end
-	end)
-	
 end
-coroutine.wrap(SLWPBWE_fake_script)()
-local function HFEA_fake_script() -- NightVision.LocalScript 
-	local script = Instance.new('LocalScript', NightVision)
-
-	-- Night Vision Toggle Script with Sound
-	
-	local btn = script.Parent
-	local nightVisionEnabled = false
-	local player = game.Players.LocalPlayer
-	local camera = game.Workspace.CurrentCamera
-	local lighting = game:GetService("Lighting")
-	
-	-- Create a ColorCorrectionEffect for the Night Vision
-	local colorCorrection = Instance.new("ColorCorrectionEffect")
-	colorCorrection.Parent = lighting
-	
-	-- Save original lighting settings to restore them later
-	local originalAmbient = lighting.Ambient
-	local originalOutdoorAmbient = lighting.OutdoorAmbient
-	local originalBrightness = lighting.Brightness
-	local originalExposureCompensation = lighting.ExposureCompensation
-	local originalSaturation = colorCorrection.Saturation
-	local originalContrast = colorCorrection.Contrast
-	local originalFogColor = lighting.FogColor
-	local originalFogStart = lighting.FogStart
-	local originalFogEnd = lighting.FogEnd
-	
-	-- Sounds
-	local activationSoundId = 376178316  -- Sound to play when activating night vision
-	local loopSoundId = 1253231728    -- Sound to play continuously when night vision is active
-	
-	local activationSound = Instance.new("Sound")
-	activationSound.SoundId = "rbxassetid://" .. activationSoundId
-	activationSound.Parent = camera
-	activationSound.Pitch = 1.4  -- Speed up the activation sound to 1.4x speed
-	activationSound.Volume = 0.5  -- Set volume to 0.5
-	
-	local loopSound = Instance.new("Sound")
-	loopSound.SoundId = "rbxassetid://" .. loopSoundId
-	loopSound.Parent = camera
-	loopSound.Looped = true
-	loopSound.Volume = 0.3  -- Set volume to 0.5
-	
-	-- Function to set the optimal lighting for night vision
-	local function enableNightVision()
-		colorCorrection.Enabled = true
-		colorCorrection.TintColor = Color3.fromRGB(0, 255, 0)  -- Green tint for night vision
-	
-		-- Adjust lighting settings for night vision
-		lighting.Ambient = Color3.fromRGB(255, 255, 255)  -- Increase ambient light
-		lighting.OutdoorAmbient = Color3.fromRGB(255, 255, 255)  -- Make outdoor areas brighter
-		lighting.Brightness = 2  -- Increase brightness for better visibility
-		lighting.ExposureCompensation = 0.5  -- Slight exposure compensation
-		colorCorrection.Saturation = 0.5  -- Decrease saturation for better visibility at night
-		colorCorrection.Contrast = 1.5  -- Increase contrast for more definition
-	
-		-- Play the activation sound and loop sound
-		activationSound:Play()
-		loopSound:Play()
-	end
-	
-	-- Function to reset lighting to original settings
-	local function disableNightVision()
-		colorCorrection.Enabled = false
-	
-		-- Reset all lighting settings to their original values
-		lighting.Ambient = originalAmbient
-		lighting.OutdoorAmbient = originalOutdoorAmbient
-		lighting.Brightness = originalBrightness
-		lighting.ExposureCompensation = originalExposureCompensation
-		colorCorrection.Saturation = originalSaturation
-		colorCorrection.Contrast = originalContrast
-		lighting.FogColor = originalFogColor
-		lighting.FogStart = originalFogStart
-		lighting.FogEnd = originalFogEnd
-	
-		-- Stop the sounds
-		activationSound:Stop()
-		loopSound:Stop()
-	end
-	
-	-- Toggle function to switch between enabling/disabling night vision
-	local function toggleNightVision()
-		if nightVisionEnabled then
-			-- Disable night vision
-			disableNightVision()
-			btn.Text = "Enable Night Vision"
-		else
-			-- Enable night vision
-			enableNightVision()
-			btn.Text = "Disable Night Vision"
-		end
-		nightVisionEnabled = not nightVisionEnabled
-	end
-	
-	-- Connect the button click to the toggle function
-	btn.MouseButton1Click:Connect(function()
-		toggleNightVision()
-	end)
-	
-end
-coroutine.wrap(HFEA_fake_script)()
-local function JHTQWSQ_fake_script() -- HighMode.LocalScript 
+coroutine.wrap(PKAVPKZ_fake_script)()
+local function GVPTFPI_fake_script() -- HighMode.LocalScript 
 	local script = Instance.new('LocalScript', HighMode)
 
 	local btn = script.Parent
@@ -2160,203 +1784,1127 @@ local function JHTQWSQ_fake_script() -- HighMode.LocalScript
 	btn.MouseButton1Click:Connect(toggle)
 	
 end
-coroutine.wrap(JHTQWSQ_fake_script)()
-local function UHEXZ_fake_script() -- Astronaut.LocalScript 
-	local script = Instance.new('LocalScript', Astronaut)
+coroutine.wrap(GVPTFPI_fake_script)()
+local function ITLEM_fake_script() -- NightVision.LocalScript 
+	local script = Instance.new('LocalScript', NightVision)
+
+	-- Night Vision Toggle Script with Sound
+	
+	local btn = script.Parent
+	local nightVisionEnabled = false
+	local player = game.Players.LocalPlayer
+	local camera = game.Workspace.CurrentCamera
+	local lighting = game:GetService("Lighting")
+	
+	-- Create a ColorCorrectionEffect for the Night Vision
+	local colorCorrection = Instance.new("ColorCorrectionEffect")
+	colorCorrection.Parent = lighting
+	
+	-- Save original lighting settings to restore them later
+	local originalAmbient = lighting.Ambient
+	local originalOutdoorAmbient = lighting.OutdoorAmbient
+	local originalBrightness = lighting.Brightness
+	local originalExposureCompensation = lighting.ExposureCompensation
+	local originalSaturation = colorCorrection.Saturation
+	local originalContrast = colorCorrection.Contrast
+	local originalFogColor = lighting.FogColor
+	local originalFogStart = lighting.FogStart
+	local originalFogEnd = lighting.FogEnd
+	
+	-- Sounds
+	local activationSoundId = 376178316  -- Sound to play when activating night vision
+	local loopSoundId = 1253231728    -- Sound to play continuously when night vision is active
+	
+	local activationSound = Instance.new("Sound")
+	activationSound.SoundId = "rbxassetid://" .. activationSoundId
+	activationSound.Parent = camera
+	activationSound.Pitch = 1.4  -- Speed up the activation sound to 1.4x speed
+	activationSound.Volume = 0.5  -- Set volume to 0.5
+	
+	local loopSound = Instance.new("Sound")
+	loopSound.SoundId = "rbxassetid://" .. loopSoundId
+	loopSound.Parent = camera
+	loopSound.Looped = true
+	loopSound.Volume = 0.3  -- Set volume to 0.5
+	
+	-- Function to set the optimal lighting for night vision
+	local function enableNightVision()
+		colorCorrection.Enabled = true
+		colorCorrection.TintColor = Color3.fromRGB(0, 255, 0)  -- Green tint for night vision
+	
+		-- Adjust lighting settings for night vision
+		lighting.Ambient = Color3.fromRGB(255, 255, 255)  -- Increase ambient light
+		lighting.OutdoorAmbient = Color3.fromRGB(255, 255, 255)  -- Make outdoor areas brighter
+		lighting.Brightness = 2  -- Increase brightness for better visibility
+		lighting.ExposureCompensation = 0.5  -- Slight exposure compensation
+		colorCorrection.Saturation = 0.5  -- Decrease saturation for better visibility at night
+		colorCorrection.Contrast = 1.5  -- Increase contrast for more definition
+	
+		-- Play the activation sound and loop sound
+		activationSound:Play()
+		loopSound:Play()
+	end
+	
+	-- Function to reset lighting to original settings
+	local function disableNightVision()
+		colorCorrection.Enabled = false
+	
+		-- Reset all lighting settings to their original values
+		lighting.Ambient = originalAmbient
+		lighting.OutdoorAmbient = originalOutdoorAmbient
+		lighting.Brightness = originalBrightness
+		lighting.ExposureCompensation = originalExposureCompensation
+		colorCorrection.Saturation = originalSaturation
+		colorCorrection.Contrast = originalContrast
+		lighting.FogColor = originalFogColor
+		lighting.FogStart = originalFogStart
+		lighting.FogEnd = originalFogEnd
+	
+		-- Stop the sounds
+		activationSound:Stop()
+		loopSound:Stop()
+	end
+	
+	-- Toggle function to switch between enabling/disabling night vision
+	local function toggleNightVision()
+		if nightVisionEnabled then
+			-- Disable night vision
+			disableNightVision()
+			btn.Text = "Enable Night Vision"
+		else
+			-- Enable night vision
+			enableNightVision()
+			btn.Text = "Disable Night Vision"
+		end
+		nightVisionEnabled = not nightVisionEnabled
+	end
+	
+	-- Connect the button click to the toggle function
+	btn.MouseButton1Click:Connect(function()
+		toggleNightVision()
+	end)
+	
+end
+coroutine.wrap(ITLEM_fake_script)()
+local function CXGB_fake_script() -- ShadowRunner.LocalScript 
+	local script = Instance.new('LocalScript', ShadowRunner)
 
 	local btn = script.Parent
 	local active = false
-	local astronautParts = {}  -- List to store modified parts for deactivation
+	local uis = game:GetService("UserInputService")
+	local runService = game:GetService("RunService")
+	local tweenService = game:GetService("TweenService")
+	local p = game.Players.LocalPlayer
+	local c = p.Character or p.CharacterAdded:Wait()
+	local lastPosition = c.HumanoidRootPart.Position
+	local shadowClones = {}
+	local cloneIndex = 0
+	local cloneDistance = 5
+	local originalPosition = nil
+	local connection
+	local shadowRunnerEnabled = false
 	
 	local function toggle()
 		active = not active
-		btn.Text = active and "Astronaut ON" or "Astronaut OFF"
+		btn.Text = active and "Shadow Runner ON" or "Shadow Runner"
 	
 		if active then
-			-- Activate astronaut mode
-			print("Astronaut Mode Enabled")
-	
-			-- Store astronaut parts so we can deactivate them later
-			local plr = game:GetService("Players").LocalPlayer
-			local char = plr.Character or plr.CharacterAdded:Wait()
-			local uis = game:GetService("UserInputService")
-			local run = game:GetService("RunService")
-			local vel = Vector3.new(math.random(-2, 2), 0.2, math.random(-2, 2)) * 0.1
-			local rot = Vector3.new()
-			local drift_rot = Vector3.new()
-			local wave_timer = 0
-			local wave_dir = 1
-	
-			for _, v in pairs(char:GetDescendants()) do
-				if v:IsA("BasePart") and v.Name ~= "HumanoidRootPart" then
-					-- Save modified parts for later deactivation
-					table.insert(astronautParts, v)
-	
-					-- Modify physical properties to simulate astronaut mode
-					v.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0, 0, 0)
-					local a = Instance.new("AlignOrientation", v)
-					a.Attachment0 = Instance.new("Attachment", v)
-					a.Mode = Enum.OrientationAlignmentMode.OneAttachment
-					a.Responsiveness = 3
-					a.MaxTorque = 999999
-					local bv = Instance.new("BodyVelocity", v)
-					bv.MaxForce = Vector3.new(99999, 99999, 99999)
-	
-					task.spawn(function()
-						while active and task.wait(0.03) do  -- Keep running while active
-							local input = Vector3.new()
-							if uis:IsKeyDown(Enum.KeyCode.W) then input = input + char.HumanoidRootPart.CFrame.LookVector * 0.3 end
-							if uis:IsKeyDown(Enum.KeyCode.S) then input = input - char.HumanoidRootPart.CFrame.LookVector * 0.3 end
-							if uis:IsKeyDown(Enum.KeyCode.A) then input = input - char.HumanoidRootPart.CFrame.RightVector * 0.3 end
-							if uis:IsKeyDown(Enum.KeyCode.D) then input = input + char.HumanoidRootPart.CFrame.RightVector * 0.3 end
-	
-							vel = vel * 0.997 + input * 0.08
-							bv.Velocity = vel + Vector3.new(0, wave_dir * 0.5, 0)  -- Increased upward drift
-	
-							if input.Magnitude > 0 then
-								rot = rot * 0.95 + Vector3.new(input.Y, input.Z, -input.X) * (0.1 + input.Magnitude * 0.05)
-							else
-								rot = rot * 0.99
-							end
-	
-							if math.random(1, 10) == 1 then
-								drift_rot = drift_rot + Vector3.new(math.random(-30, 30), math.random(-30, 30), math.random(-30, 30)) * (0.01 + input.Magnitude * 0.03)
-							end
-							drift_rot = drift_rot * 0.995
-							a.CFrame = CFrame.Angles(rot.X + drift_rot.X, rot.Y + drift_rot.Y, rot.Z + drift_rot.Z)
-	
-							wave_timer = wave_timer + 1
-							if wave_timer > 200 then
-								wave_timer = 0
-								wave_dir = -wave_dir
-							end
-	
-							-- Spacebar control for upward movement
-							if uis:IsKeyDown(Enum.KeyCode.Space) then
-								bv.Velocity = bv.Velocity + Vector3.new(0, 1, 0)  -- Add upward force
-							else
-								bv.Velocity = bv.Velocity + Vector3.new(0, -0.2, 0)  -- Default downward force
-							end
-	
-							if char.HumanoidRootPart.Position.Y < workspace.FallenPartsDestroyHeight + 20 then
-								char.HumanoidRootPart.Velocity = Vector3.new(0, 5, 0)
-							end
-						end
-					end)
-					v:SetNetworkOwner(plr)
-				end
-			end
+			shadowRunnerEnabled = true
+			cloneIndex = 0
+			shadowClones = {}
+			lastPosition = c.HumanoidRootPart.Position
+			print("Shadow Runner Enabled")
 		else
-			-- Deactivate astronaut mode
-			print("Astronaut Mode Disabled")
+			shadowRunnerEnabled = false
+			print("Shadow Runner Disabled")
 	
-			-- Reset astronaut mode physics and remove BodyVelocity / AlignOrientation
-			for _, v in pairs(astronautParts) do
-				if v:IsA("BasePart") then
-					v.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0, 0, 0)
-					-- Reset or remove custom physics (e.g., BodyVelocity, AlignOrientation)
-					local bv = v:FindFirstChildOfClass("BodyVelocity")
-					if bv then bv:Destroy() end
-					local a = v:FindFirstChildOfClass("AlignOrientation")
-					if a then a:Destroy() end
+			for _, clone in ipairs(shadowClones) do
+				if clone then
+					clone:Destroy()
 				end
 			end
-			astronautParts = {}  -- Clear astronaut parts list
+			shadowClones = {}
+			cloneIndex = 0
+			if connection then
+				connection:Disconnect()
+				connection = nil
+			end
 		end
 	end
 	
 	btn.MouseButton1Click:Connect(toggle)
 	
-end
-coroutine.wrap(UHEXZ_fake_script)()
-local function MPWFE_fake_script() -- Beat.LocalScript 
-	local script = Instance.new('LocalScript', Beat)
-
-	local btn = script.Parent
-	local plr = game.Players.LocalPlayer
-	local hum = plr.Character and plr.Character:FindFirstChildOfClass("Humanoid")
-	local animTrack
+	local function createShadowClone(position)
+		local clonePart
+		local isFirstClone = (cloneIndex == 1)
 	
-	local anim = Instance.new("Animation")
-	anim.AnimationId = "rbxassetid://168268306"
-	
-	local playing = false
-	
-	local function toggleAnim()
-		if not hum then return end
-		local animator = hum:FindFirstChild("Animator") or hum:FindFirstChildOfClass("Animator")
-	
-		if playing then
-			if animTrack then
-				animTrack:Stop()
-			end
-			btn.Text = "Start Animation"
+		if isFirstClone then
+			clonePart = Instance.new("Part")
+			clonePart.Size = Vector3.new(2, 5.5, 2)
 		else
-			if animator then
-				animTrack = animator:LoadAnimation(anim)
-				animTrack.Looped = true
-				animTrack:Play()
-				animTrack:AdjustSpeed(10)
-			end
-			btn.Text = "Stop Animation"
+			clonePart = Instance.new("Part")
+			clonePart.Size = Vector3.new(2, 2, 2)
 		end
 	
-		playing = not playing
+		clonePart.Position = position
+		clonePart.Color = Color3.fromRGB(0, 0, 0)
+		clonePart.Anchored = true
+		clonePart.CanCollide = false
+		clonePart.Parent = workspace
+		clonePart.Shape = Enum.PartType.Ball
+	
+		local transparency = math.clamp(0.3 + (cloneIndex - 1) * 0.05, 0.3, 0.75)
+		clonePart.Transparency = transparency
+	
+		local bodyVelocity = Instance.new("BodyVelocity")
+		bodyVelocity.MaxForce = Vector3.new(4000, 4000, 4000)
+		bodyVelocity.Velocity = Vector3.new(0, 100, 0)
+		bodyVelocity.Parent = clonePart
+	
+		table.insert(shadowClones, clonePart)
 	end
 	
-	btn.MouseButton1Click:Connect(toggleAnim)
+	local function fadeAndResetClones()
+		local clones = shadowClones
+		shadowClones = {}
+	
+		for i = #clones, 1, -1 do
+			local clone = clones[i]
+			if clone then
+				local tweenInfo = TweenInfo.new(0.3, Enum.EasingStyle.Linear)
+				local tween = tweenService:Create(clone, tweenInfo, { Transparency = 1 })
+				tween:Play()
+				tween.Completed:Connect(function()
+					if clone and clone.Parent then
+						clone:Destroy()
+					end
+				end)
+			end
+		end
+	end
+	
+	local function resetShadowRunner()
+		fadeAndResetClones()
+		cloneIndex = 0
+		shadowClones = {}
+		lastPosition = c.HumanoidRootPart.Position
+	
+		if originalPosition then
+			c.HumanoidRootPart.CFrame = CFrame.new(originalPosition)
+		end
+	
+		if connection then
+			connection:Disconnect()
+			connection = nil
+		end
+	end
+	
+	uis.InputBegan:Connect(function(input, gameProcessedEvent)
+		if gameProcessedEvent then return end
+	
+		if input.UserInputType == Enum.UserInputType.Keyboard and input.KeyCode == Enum.KeyCode.R then
+			if shadowRunnerEnabled then
+				if connection then
+					print("Resetting Shadow Runner...")
+					resetShadowRunner()
+				else
+					originalPosition = c.HumanoidRootPart.Position
+					cloneIndex = 0
+					connection = runService.RenderStepped:Connect(function()
+						local currentPosition = c.HumanoidRootPart.Position
+						if (currentPosition - lastPosition).Magnitude >= cloneDistance then
+							cloneIndex = cloneIndex + 1
+							createShadowClone(currentPosition)
+							lastPosition = currentPosition
+						end
+					end)
+				end
+			else
+				print("Shadow Runner is not enabled.")
+			end
+		end
+	end)
 	
 end
-coroutine.wrap(MPWFE_fake_script)()
-local function HLPDS_fake_script() -- Main.LocalScript 
-	local script = Instance.new('LocalScript', Main)
+coroutine.wrap(CXGB_fake_script)()
+local function WVQRZOP_fake_script() -- ToggleFling.LocalScript 
+	local script = Instance.new('LocalScript', ToggleFling)
 
-	local TweenService = game:GetService("TweenService")
-	local p = script.Parent:WaitForChild("csfe")
-	local pages = {
-		CS = p:WaitForChild("CS"),
-		FE = p:WaitForChild("FE"),
+	local btn = script.Parent
+	local rs = game:GetService("RunService")
+	local plr = game.Players.LocalPlayer
+	
+	local enabled = false
+	
+	local function getRoot(c)
+		return c and c:FindFirstChild("HumanoidRootPart")
+	end
+	
+	local function fling()
+		while enabled do
+			rs.Heartbeat:Wait()
+			local c = plr.Character
+			local root = getRoot(c)
+			local vel, movel = nil, 0.1
+	
+			if not (c and root) then continue end
+	
+			vel = root.Velocity
+			root.Velocity = vel * 10000 + Vector3.new(0, 10000, 0)
+	
+			rs.RenderStepped:Wait()
+			if c and root then
+				root.Velocity = vel
+			end
+	
+			rs.Stepped:Wait()
+			if c and root then
+				root.Velocity = vel + Vector3.new(0, movel, 0)
+				movel = movel * -1
+			end
+		end
+	end
+	
+	btn.MouseButton1Click:Connect(function()
+		enabled = not enabled
+		btn.Text = enabled and "Stop Fling" or "Start Fling"
+	
+		if enabled then
+			task.spawn(fling)
+		end
+	end)
+	
+end
+coroutine.wrap(WVQRZOP_fake_script)()
+local function SQDWCZ_fake_script() -- KillUI.LocalScript 
+	local script = Instance.new('LocalScript', KillUI)
+
+	local button = script.Parent 
+	local gui = button.Parent.Parent.Parent.Parent -- assuming the button is inside the GUI
+	
+	button.MouseButton1Click:Connect(function()
+		gui:Destroy() -- destroy the entire GUI when the button is clicked
+	end)
+end
+coroutine.wrap(SQDWCZ_fake_script)()
+local function AVKGLR_fake_script() -- ChangeTheme.LocalScript 
+	local script = Instance.new('LocalScript', ChangeTheme)
+
+	local button = script.Parent -- Reference to the button
+	local frame = button.Parent.Parent.Parent -- The button is inside Settingsframe, so its parent is the frame
+	
+	local function findChildRecursive(parent, name)
+		for _, child in ipairs(parent:GetChildren()) do
+			if child.Name == name then
+				return child
+			elseif #child:GetChildren() > 0 then
+				local found = findChildRecursive(child, name)
+				if found then return found end
+			end
+		end
+		return nil
+	end
+	
+	local themeLabel = findChildRecursive(frame, "ThemeLabel")
+	
+	local colors = {
+		-- Core Modes
+		{Color3.fromRGB(170, 170, 170), Color3.fromRGB(110, 110, 110)}, -- Steel Gray
+		{Color3.fromRGB(255, 255, 255), Color3.fromRGB(230, 230, 230)}, -- White Mode
+		{Color3.fromRGB(180, 180, 180), Color3.fromRGB(10, 10, 10)}, -- Black Mode
+	
+		-- Eclipse Themes
+		{Color3.fromRGB(0, 0, 0), Color3.fromRGB(255, 255, 255)}, -- Eclipse (Black/White)
+		{Color3.fromRGB(255, 255, 255), Color3.fromRGB(0, 0, 0)}, -- Reverse Eclipse (White/Black)
+	
+		-- 10 Light-to-Dark Themes
+		{Color3.fromRGB(173, 216, 230), Color3.fromRGB(0, 0, 139)}, -- Sky Blue
+		{Color3.fromRGB(255, 102, 102), Color3.fromRGB(139, 0, 0)}, -- Crimson Red
+		{Color3.fromRGB(144, 238, 144), Color3.fromRGB(0, 100, 0)}, -- Emerald Green
+		{Color3.fromRGB(216, 191, 216), Color3.fromRGB(75, 0, 130)}, -- Royal Purple
+		{Color3.fromRGB(255, 255, 153), Color3.fromRGB(184, 134, 11)}, -- Golden Yellow
+		{Color3.fromRGB(255, 94, 77), Color3.fromRGB(255, 182, 193)}, -- Sunset Horizon (Sunset Orange/Pink)
+		{Color3.fromRGB(255, 182, 193), Color3.fromRGB(199, 21, 133)}, -- Rose Pink
+		{Color3.fromRGB(224, 255, 255), Color3.fromRGB(0, 128, 128)}, -- Arctic Frost
+		{Color3.fromRGB(255, 165, 0), Color3.fromRGB(75, 0, 130)}, -- Amber Sunset (Orange/Purple)
+		{Color3.fromRGB(255, 255, 0), Color3.fromRGB(255, 0, 0)}, -- Neon Blaze (Neon Yellow/Deep Red)
+	
+		-- 7 Unique Color Themes
+		{Color3.fromRGB(255, 140, 0), Color3.fromRGB(0, 0, 255)}, -- Fiery Sunset
+		{Color3.fromRGB(0, 255, 255), Color3.fromRGB(138, 43, 226)}, -- Mystic Ocean
+		{Color3.fromRGB(139, 0, 0), Color3.fromRGB(255, 215, 0)}, -- Inferno
+		{Color3.fromRGB(25, 25, 112), Color3.fromRGB(138, 43, 226)}, -- Deep Space
+		{Color3.fromRGB(0, 162, 232), Color3.fromRGB(255, 255, 255)}, -- Frostbyte (Blue/White)
+		{Color3.fromRGB(0, 128, 0), Color3.fromRGB(0, 0, 0)}, -- Green Shadow (Green/Black)
+		{Color3.fromRGB(255, 0, 255), Color3.fromRGB(0, 255, 255)}, -- Cyberpunk Glow (Neon Pink/Blue)
+	
 	}
-	local buttons = {
-		p:WaitForChild("CSB"),
-		p:WaitForChild("FEB"),
+	
+	local colorNames = {
+		"Steel Gray", "White Mode", "Black Mode",
+		"Eclipse", "Reverse Eclipse",
+		"Sky Blue", "Crimson Red", "Emerald Green", "Royal Purple", "Golden Yellow","Sunset Horizon", "Rose Pink", "Arctic Frost", "Amber Sunset", "Neon Blaze",
+		"Fiery Sunset", "Mystic Ocean", "Inferno", "Deep Space", "Frostbyte", "Green Shadow",
+		"Cyberpunk Glow"
 	}
 	
-	local fadeTime = 0.18 -- Dauer der Animation
-	local currentPage = pages.CS
+	local colorIndex = 1
 	
-	local function showPage(pageName)
-		if currentPage == pages[pageName] then return end -- Verhindert erneutes Öffnen
-	
-		local oldPage = currentPage
-		local newPage = pages[pageName]
-	
-		-- Tween-Animation für das Ausblenden der alten Seite
-		local fadeOut = TweenService:Create(oldPage, TweenInfo.new(fadeTime), {BackgroundTransparency = 1})
-		fadeOut:Play()
-		fadeOut.Completed:Wait()
-		oldPage.Visible = false
-	
-		-- Neue Seite einblenden
-		newPage.Visible = true
-		newPage.BackgroundTransparency = 1
-		local fadeIn = TweenService:Create(newPage, TweenInfo.new(fadeTime), {BackgroundTransparency = 1})
-		fadeIn:Play()
-	
-		currentPage = newPage
+	local function calculateLuminance(color)
+		return 0.2126 * color.R + 0.7152 * color.G + 0.0722 * color.B
 	end
 	
 	
-	buttons[1].MouseButton1Click:Connect(function() showPage("CS") end)
-	buttons[2].MouseButton1Click:Connect(function() showPage("FE") end)
+	local function updateElementColors(element)
+		if element:IsA("TextButton") or element:IsA("TextLabel") then
+			-- Check brightness of the background color
+			local luminance = calculateLuminance(colors[colorIndex][1])
 	
-	showPage("CS")
+			-- If the background is dark, use white text, otherwise use black
+			if luminance < 0.5 then
+				element.TextColor3 = Color3.fromRGB(255, 255, 255) -- Use white for dark backgrounds
+			else
+				element.TextColor3 = Color3.fromRGB(0, 0, 0) -- Use black for light backgrounds
+			end
 	
+			-- Apply the colorful theme text color
+			element.TextColor3 = colors[colorIndex][1]
+	
+			-- Apply the button label and background changes
+			if element:IsA("TextButton") then
+				element.TextColor3 = colors[colorIndex][1] 
+				element.BackgroundColor3 = colors[colorIndex][2]  
+			elseif element:IsA("TextLabel") then
+				element.TextColor3 = colors[colorIndex][1]  
+			end
+		end
+	
+		-- Recursive color update for children
+		for _, child in ipairs(element:GetChildren()) do
+			updateElementColors(child)
+		end
+	end
+	
+	
+	local gradient = frame:FindFirstChild("UIGradient")
+	if not gradient then
+		gradient = Instance.new("UIGradient")
+		gradient.Parent = frame
+	end
+	
+	local function updateGradient(index)
+		if #colors[index] > 2 then
+			gradient.Color = ColorSequence.new{
+				ColorSequenceKeypoint.new(0, colors[index][1]),
+				ColorSequenceKeypoint.new(0.16, colors[index][2]),
+				ColorSequenceKeypoint.new(0.33, colors[index][3]),
+				ColorSequenceKeypoint.new(0.5, colors[index][4]),
+				ColorSequenceKeypoint.new(0.66, colors[index][5]),
+				ColorSequenceKeypoint.new(0.83, colors[index][6]),
+				ColorSequenceKeypoint.new(1, colors[index][7])
+			}
+		else
+			gradient.Color = ColorSequence.new{
+				ColorSequenceKeypoint.new(0, colors[index][1]),
+				ColorSequenceKeypoint.new(1, colors[index][2])
+			}
+		end
+	end
+	
+	updateGradient(colorIndex)
+	
+	-- Update all text buttons and labels with the new theme
+	local function updateTextButtons()
+		for _, child in ipairs(frame:GetChildren()) do
+			updateElementColors(child)
+		end
+	end
+	
+	-- Set initial button text
+	button.Text = "Switch Theme"
+	button.TextColor3 = colors[colorIndex][1]
+	button.BackgroundColor3 = colors[colorIndex][2]
+	
+	-- Update the theme label if found
+	if themeLabel then
+		themeLabel.Text = colorNames[colorIndex]
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		-- Cycle to the next color
+		colorIndex = (colorIndex % #colors) + 1
+	
+		-- Apply the new color gradient
+		updateGradient(colorIndex)
+	
+		-- Update TextButtons and other elements
+		updateTextButtons()
+	
+		-- Update the theme label if found
+		if themeLabel then
+			themeLabel.Text = colorNames[colorIndex]
+			print("Updated theme label: " .. themeLabel.Text) -- Debug print
+		end
+	end)
+	
+	-- Initial update to all text buttons and labels
+	updateTextButtons()
 	
 end
-coroutine.wrap(HLPDS_fake_script)()
-local function EZCZ_fake_script() -- ScreenGui.SwitchPage 
-	local script = Instance.new('LocalScript', ScreenGui)
+coroutine.wrap(AVKGLR_fake_script)()
+local function JIOXS_fake_script() -- SliderHandle.LocalScript 
+	local script = Instance.new('LocalScript', SliderHandle)
+
+	local sliderHandle = script.Parent -- Reference to the slider handle
+	local sliderBar = sliderHandle.Parent -- Reference to the slider bar
+	local textBox = sliderBar:FindFirstChild("TBox") -- Reference to the TextBox
+	local userInput = game:GetService("UserInputService")
+	local dragging = false
+	
+	local minTransparency, maxTransparency = 0, 0.9 -- Transparency range (0 = fully transparent, 0.9 = nearly opaque)
+	local defaultTransparency = 0.235 -- Default transparency value
+	local frame = sliderBar.Parent.Parent.Parent.Parent -- Parent frame where transparency will be applied
+	
+	-- Function to update transparency of all frames and buttons
+	local function updateTransparency(x)
+		local sliderStart = sliderBar.AbsolutePosition.X
+		local sliderEnd = sliderStart + sliderBar.AbsoluteSize.X
+		local handleWidth = sliderHandle.AbsoluteSize.X
+	
+		-- Clamp the mouse position to make sure the handle doesn't go beyond the bar's edges
+		local newX = math.clamp(x - handleWidth / 2, sliderStart, sliderEnd - handleWidth)
+	
+		-- Calculate percentage position of the slider handle
+		local percent = (newX - sliderStart) / sliderBar.AbsoluteSize.X
+		local transparency = minTransparency + (maxTransparency - minTransparency) * percent
+	
+		-- Apply the transparency to all Frames and TextButtons
+		for _, child in ipairs(frame:GetChildren()) do
+			if child:IsA("Frame") or child:IsA("TextButton") then
+				child.BackgroundTransparency = transparency
+				if child:IsA("TextButton") then
+					child.TextTransparency = transparency -- Adjust text transparency for buttons too
+				end
+			end
+		end
+	
+		-- Update the slider handle position
+		sliderHandle.Position = UDim2.new(percent, 0, sliderHandle.Position.Y.Scale, sliderHandle.Position.Y.Offset)
+	
+		-- Update the TextBox with the new transparency value
+		if textBox then
+			textBox.Text = math.floor(transparency * 100) / 100 -- To keep the value in the correct decimal format
+		end
+	end
+	
+	-- Detect when player clicks the slider to start dragging
+	sliderHandle.MouseButton1Down:Connect(function()
+		dragging = true
+	end)
+	
+	-- Stop dragging when mouse button is released
+	userInput.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = false
+		end
+	end)
+	
+	-- Update the transparency in real-time while dragging the slider
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if dragging then
+			local mousePos = userInput:GetMouseLocation().X
+			updateTransparency(mousePos)
+		end
+	end)
+	
+	-- Update slider when TextBox value changes (manual input of transparency)
+	textBox.FocusLost:Connect(function()
+		local newTransparency = tonumber(textBox.Text)
+		if newTransparency then
+			-- Clamp transparency value and apply it
+			local transparency = math.clamp(newTransparency, minTransparency, maxTransparency)
+	
+			-- Apply the transparency to all Frames and TextButtons
+			for _, child in ipairs(frame:GetChildren()) do
+				if child:IsA("Frame") or child:IsA("TextButton") then
+					child.BackgroundTransparency = transparency
+					if child:IsA("TextButton") then
+						child.TextTransparency = transparency -- Adjust text transparency for buttons too
+					end
+				end
+			end
+	
+			-- Update the slider handle position based on the new transparency value
+			local percent = (transparency - minTransparency) / (maxTransparency - minTransparency)
+			local sliderStart = sliderBar.AbsolutePosition.X
+			local sliderEnd = sliderStart + sliderBar.AbsoluteSize.X
+			local newX = sliderStart + percent * (sliderEnd - sliderStart)
+	
+			-- Ensure the new position is within bounds
+			local handleWidth = sliderHandle.AbsoluteSize.X
+			newX = math.clamp(newX, sliderStart, sliderEnd - handleWidth)
+	
+			-- Update the slider handle position
+			sliderHandle.Position = UDim2.new(0, newX - sliderStart, 0.5, -7)
+		else
+			-- If the input is not valid, revert to the default transparency value
+			textBox.Text = tostring(defaultTransparency)
+		end
+	end)
+	
+	-- Set the initial transparency and position for the slider handle based on default value
+	local initialPercent = (defaultTransparency - minTransparency) / (maxTransparency - minTransparency)
+	sliderHandle.Position = UDim2.new(initialPercent, 0, sliderHandle.Position.Y.Scale, sliderHandle.Position.Y.Offset)
+	
+	-- Apply default transparency to all UI elements
+	for _, child in ipairs(frame:GetChildren()) do
+		if child:IsA("Frame") or child:IsA("TextButton") then
+			child.BackgroundTransparency = defaultTransparency
+			if child:IsA("TextButton") then
+				child.TextTransparency = defaultTransparency -- Adjust text transparency for buttons too
+			end
+		end
+	end
+	
+end
+coroutine.wrap(JIOXS_fake_script)()
+local function RQKMN_fake_script() -- Name_6.LocalScript 
+	local script = Instance.new('LocalScript', Name_6)
+
+	script.Parent.Text = game.Players.LocalPlayer.Name
+end
+coroutine.wrap(RQKMN_fake_script)()
+local function AZDOKLL_fake_script() -- UserProfile.GetProfile 
+	local script = Instance.new('LocalScript', UserProfile)
+
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	
+	
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	
+	local imageLabel = script.Parent
+	imageLabel.Image = content
+end
+coroutine.wrap(AZDOKLL_fake_script)()
+local function UAOFKI_fake_script() -- Frame.Main 
+	local script = Instance.new('LocalScript', Frame)
+
+	wait(0)
+	local t = tick()
+	
+	-- tick() returns the number of seconds since January 1st, 1970
+	-- Because this is a LocalScript, it will return the time based on your timezone
+	
+	-- Don't mess with anything in the script. The constants and variables are all mixed together
+	
+	local Type = 0		-- Manipulated by GUI	(0 = 12 hr, 1 = 24 hr)
+	local Sec = true	-- Manipulated by GUI
+	
+	local year = 1970
+	local month = 1
+	local day = 1
+	local Date = "January 1, 1970"
+	
+	local hour = 0
+	local min = 0
+	local sec = 0
+	local tag = "AM"
+	local Time = "12:00 AM"
+	
+	function getDate()
+		local months = {
+			--		{"MONTH", TOAL DAYS TO YEAR, DAYS}	<- Format
+			{"January",31,31};
+			{"February",59,28};
+			{"March",90,31};
+			{"April",120,30};
+			{"May",151,31};
+			{"June",181,30};
+			{"July",212,31};
+			{"August",243,31};
+			{"September",273,30};
+			{"October",304,31};
+			{"November",334,30};
+			{"December",365,31};
+		}
+		year = math.floor(1970+(t/31579200))
+		if ((year%4) == 0) then	-- Check for leap year
+			months[2][3] = 29
+			for i,v in pairs(months) do
+				if (i ~= 1) then
+					v[2] = (v[2]+1)
+				end
+			end
+		end
+		day = math.floor(((t/86400)%365.25)+1)	-- Get current day of the year. Starts at 0, so 1 is added	(365.25 is the average # of days in a year due to leap year)
+		for i,m in pairs(months) do
+			if ((m[2]-m[3]) <= day) then	-- Get month based on day
+				month = i
+			end
+		end
+		local m = months[month]
+		day = (day+m[3]-m[2])	-- Get day of the month
+		year,day = tostring(year),tostring(day)
+		local c,s = ", "," "	-- Comma, space
+		Date = (months[month][1] .. s .. day .. c .. year)
+	end
+	
+	function getTime()
+		local sec = math.floor((t%60))		-- Sec, Min, and Hour equations I actually got off of Google. Everything else was written by me
+		local min = math.floor((t/60)%60)
+		local hour = math.floor((t/3600)%24)
+		sec = tostring((sec < 10 and "0" or "") .. sec)
+		min = tostring((min < 10 and "0" or "") .. min)
+		tag = (Type == 0 and (hour < 12 and "AM" or "PM") or "")
+		hour = ((Type == 1 and hour < 10 and "0" or "") .. tostring(Type == 0 and (hour == 0 and 12 or hour > 12 and (hour-12) or hour) or hour))	-- Ternary operators FTW. Helps get rid of 'if then' stuff. Actually learned this off of Java programming:	z = (x == y ? "Yes" : "No")
+		local c,s = ":",(Type == 0 and " " or "")	-- Colon, (space if 12 hr clock)
+		Time = (hour .. c .. min .. (Sec and c .. sec or "") .. s .. tag)
+	end
+	
+	function display(start)
+		if (start) then
+			getDate()
+			getTime()
+			delay(0,function()
+				for i = 1,0,-0.05 do
+					script.Parent.Time.TextTransparency,script.Parent.Date.TextTransparency = i,i
+					wait()
+				end
+				script.Parent.Time.TextTransparency,script.Parent.Date.TextTransparency = 0,0.5
+			end)
+		end
+		script.Parent.Time.Text = Time	-- ORLY?
+		script.Parent.Date.Text = Date
+	end
+	
+	function buttons()
+		-- This is all the GUI handling stuff
+		local h12 = script.Parent.Hr12
+		local h24 = script.Parent.Hr24
+		local s = script.Parent.Sec
+		h12.MouseButton1Click:connect(function()
+			Type = 0
+			h12.Style,h24.Style = 1,2
+			h12.TextTransparency,h24.TextTransparency = 0,0.5
+		end)
+		h24.MouseButton1Click:connect(function()
+			Type = 1
+			h24.Style,h12.Style = 1,2
+			h24.TextTransparency,h12.TextTransparency = 0,0.5
+		end)
+		s.MouseButton1Click:connect(function()
+			Sec = (not Sec)	-- Fastest way to switch a boolean in lua
+			s.Style = (Sec and 1 or 2)
+			s.TextTransparency = (Sec and 0 or 0.5)
+		end)
+	end
+	
+	
+	function start()
+		buttons()
+		display(true)
+		while (true) do
+			-- Simplicity FTW:
+			t = tick()
+			getDate()
+			getTime()
+			display()
+			wait()
+		end
+	end
+	
+	start()
+end
+coroutine.wrap(UAOFKI_fake_script)()
+local function FXMASS_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local btn = script.Parent
+	local uis = game:GetService("UserInputService")
+	local rs = game:GetService("RunService")
+	local p = game.Players.LocalPlayer
+	local c = p.Character or p.CharacterAdded:Wait()
+	local hmn = c:WaitForChild("Humanoid")
+	
+	local toggleActive = false  
+	local noclipping = false  
+	
+	local function startNoclip()
+		if noclipping or not toggleActive then return end
+		noclipping = true
+	
+		rs.Stepped:Connect(function()
+			if noclipping and toggleActive then
+				for _, v in pairs(c:GetDescendants()) do
+					if v:IsA("BasePart") and v.CanCollide then
+						v.CanCollide = false
+					end
+				end
+			end
+		end)
+	end
+	
+	local function stopNoclip()
+		if not noclipping then return end
+		noclipping = false
+		for _, v in pairs(c:GetDescendants()) do
+			if v:IsA("BasePart") then
+				v.CanCollide = true
+			end
+		end
+	end
+	
+	uis.InputBegan:Connect(function(i, g)
+		if g or not toggleActive then return end
+		if i.KeyCode == Enum.KeyCode.N then
+			if noclipping then stopNoclip() else startNoclip() end
+		end
+	end)
+	
+	btn.MouseButton1Click:Connect(function()
+		toggleActive = not toggleActive
+		btn.Text = toggleActive and "ON" or "OFF"
+		if not toggleActive then stopNoclip() end
+	end)
+	
+end
+coroutine.wrap(FXMASS_fake_script)()
+local function DOYCOGT_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local btn = script.Parent
+	local uis = game:GetService("UserInputService")
+	local rs = game:GetService("RunService")
+	local p = game.Players.LocalPlayer
+	local c = p.Character or p.CharacterAdded:Wait()
+	local hrp = c:WaitForChild("HumanoidRootPart")
+	local hmn = c:WaitForChild("Humanoid")
+	
+	local toggleActive = false
+	local flying = false
+	local speed = 75  -- Default speed
+	local savedSpeed = speed  -- Variable to store the speed after toggling the button twice
+	local toggleCount = 0  -- Counter for toggling the button
+	
+	local bv, bg  -- BodyVelocity and BodyGyro instances
+	
+	-- Reference to the TextBox for flight speed input
+	local textBox = btn.Parent:WaitForChild("TextBox")
+	
+	-- Function to start flying
+	local function startFly()
+		if flying or not toggleActive then return end
+		flying = true
+	
+		-- Disable animations and make the humanoid immobile
+		hmn.AutoRotate = false  -- Disable auto-rotation
+		hmn.PlatformStand = true -- Disable animations (walking, running, etc.)
+	
+		-- Only create BodyVelocity and BodyGyro once to prevent unnecessary updates
+		if not bv then
+			bv = Instance.new("BodyVelocity")
+			bv.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
+			bv.Parent = hrp
+		end
+	
+		if not bg then
+			bg = Instance.new("BodyGyro")
+			bg.MaxTorque = Vector3.new(math.huge, math.huge, math.huge)
+			bg.P = 9e4
+			bg.Parent = hrp
+		end
+	
+		-- Flight control loop
+		rs.RenderStepped:Connect(function()
+			if flying and toggleActive then
+				local cam = workspace.CurrentCamera
+				bg.CFrame = CFrame.new(hrp.Position, hrp.Position + cam.CFrame.LookVector)
+	
+				local move = Vector3.new()
+				if uis:IsKeyDown(Enum.KeyCode.W) then move = move + cam.CFrame.LookVector end
+				if uis:IsKeyDown(Enum.KeyCode.S) then move = move - cam.CFrame.LookVector end
+				if uis:IsKeyDown(Enum.KeyCode.A) then move = move - cam.CFrame.RightVector end
+				if uis:IsKeyDown(Enum.KeyCode.D) then move = move + cam.CFrame.RightVector end
+				if uis:IsKeyDown(Enum.KeyCode.Space) then move = move + Vector3.new(0, 1, 0) end
+				if uis:IsKeyDown(Enum.KeyCode.LeftControl) then move = move - Vector3.new(0, 1, 0) end
+	
+				-- Set the BodyVelocity based on movement and speed
+				bv.Velocity = move * speed
+			end
+		end)
+	end
+	
+	-- Function to stop flying
+	local function stopFly()
+		if not flying then return end
+		flying = false
+	
+		-- Restore humanoid settings
+		hmn.AutoRotate = true  -- Re-enable auto-rotation
+		hmn.PlatformStand = false  -- Re-enable normal animations
+	
+		-- Destroy BodyVelocity and BodyGyro only when flight ends
+		if bv then bv:Destroy() end
+		if bg then bg:Destroy() end
+	end
+	
+	-- Function to update speed from the TextBox input
+	local function updateSpeedFromTextBox()
+		local input = tonumber(textBox.Text)
+		if input then
+			speed = math.clamp(input, 10, 1000)  -- Limit the speed to a range, e.g., between 10 and 1000
+			if flying then
+				bv.Velocity = bv.Velocity.Unit * speed  -- Adjust the velocity if flying
+			end
+		else
+			textBox.Text = tostring(speed)  -- Revert to the last valid speed if input is invalid
+		end
+	end
+	
+	-- Toggle flying with the 'F' key, only if button has been pressed
+	uis.InputBegan:Connect(function(i, g)
+		if g or not toggleActive then return end  -- Ignore input if the button is not active
+		if i.KeyCode == Enum.KeyCode.F then
+			if flying then stopFly() else startFly() end
+		end
+	end)
+	
+	-- Toggle flight on/off with the button click
+	btn.MouseButton1Click:Connect(function()
+		toggleActive = not toggleActive
+		btn.Text = toggleActive and "ON" or "OFF"
+	
+		toggleCount = toggleCount + 1
+	
+		-- If the button has been toggled twice, save the current speed
+		if toggleCount == 2 then
+			savedSpeed = speed  -- Save the current speed
+			toggleCount = 0  -- Reset toggle count after saving
+		end
+	
+		-- If button is toggled off, stop flying if active
+		if not toggleActive then
+			stopFly()
+			flying = false  -- Ensure flying is off if the button is deactivated
+		end
+	end)
+	
+	-- Update speed when the TextBox loses focus (user finishes input)
+	textBox.FocusLost:Connect(function()
+		updateSpeedFromTextBox()
+	end)
+	
+	-- Allow updating speed while typing in the TextBox (optional)
+	textBox.Changed:Connect(function(property)
+		if property == "Text" then
+			updateSpeedFromTextBox()
+		end
+	end)
+	
+end
+coroutine.wrap(DOYCOGT_fake_script)()
+local function JMRXXJY_fake_script() -- SliderHandle_2.LocalScript 
+	local script = Instance.new('LocalScript', SliderHandle_2)
+
+	local h = script.Parent
+	local b = h.Parent
+	local vBox = b:FindFirstChild("TextBox")
+	local p = game.Players.LocalPlayer
+	local c = p.Character or p.CharacterAdded:Wait()
+	local hmn = c:WaitForChild("Humanoid")
+	local rootPart = c:WaitForChild("HumanoidRootPart")
+	local uis = game:GetService("UserInputService")
+	
+	local minJ, maxJ = 1, 300
+	local d = false
+	local storedJumpForce = 50 -- Default jump force
+	
+	-- Function to update jump force based on slider position
+	local function updateJump(x)
+		local sX = b.AbsolutePosition.X
+		local eX = sX + b.AbsoluteSize.X
+		local handleWidth = h.AbsoluteSize.X
+	
+		-- Clamp the slider handle position within the bounds of the bar
+		local nX = math.clamp(x, sX, eX - handleWidth)
+	
+		-- Calculate percentage position of the slider handle
+		local percent = (nX - sX) / (eX - sX)
+		storedJumpForce = math.floor(minJ + (maxJ - minJ) * percent) -- Store the jump force value
+	
+		-- Update slider handle position
+		h.Position = UDim2.new(percent, 0, h.Position.Y.Scale, h.Position.Y.Offset)
+	
+		-- Update the TextBox value to reflect the new jump force
+		if vBox then
+			vBox.Text = tostring(storedJumpForce)
+		end
+	end
+	
+	-- Detect when the mouse is clicked to start dragging the slider handle
+	h.InputBegan:Connect(function(i)
+		if i.UserInputType == Enum.UserInputType.MouseButton1 then
+			d = true
+		end
+	end)
+	
+	-- Stop dragging when mouse button is released
+	uis.InputEnded:Connect(function(i)
+		if i.UserInputType == Enum.UserInputType.MouseButton1 then
+			d = false
+		end
+	end)
+	
+	-- Update the slider handle position while dragging
+	uis.InputChanged:Connect(function(i)
+		if d and i.UserInputType == Enum.UserInputType.MouseMovement then
+			updateJump(uis:GetMouseLocation().X)
+		end
+	end)
+	
+	-- Apply jump force when the player jumps (use stored jump force value)
+	hmn.Jumping:Connect(function()
+		rootPart.Velocity = Vector3.new(rootPart.Velocity.X, storedJumpForce, rootPart.Velocity.Z)
+	end)
+	
+	-- Handle TextBox input (manual input of jump force)
+	if vBox then
+		vBox.FocusLost:Connect(function()
+			local input = tonumber(vBox.Text)
+			if input then
+				-- Store the value entered in the TextBox (no clamping)
+				storedJumpForce = input
+	
+				-- Update the slider position based on the new jump force value
+				-- We clamp the position based on the slider's range (minJ to maxJ)
+				local percent = (math.clamp(storedJumpForce, minJ, maxJ) - minJ) / (maxJ - minJ)
+				h.Position = UDim2.new(percent, 0, h.Position.Y.Scale, h.Position.Y.Offset)
+	
+				-- Update the TextBox with the new jump force value
+				vBox.Text = tostring(storedJumpForce)
+			else
+				-- If the input is not valid, revert to the stored jump force value
+				vBox.Text = tostring(storedJumpForce)
+			end
+		end)
+	end
+	
+end
+coroutine.wrap(JMRXXJY_fake_script)()
+local function SEMYXR_fake_script() -- SliderHandle_3.LocalScript 
+	local script = Instance.new('LocalScript', SliderHandle_3)
+
+	local sliderHandle = script.Parent
+	local sliderBar = sliderHandle.Parent  -- The bar that holds the handle
+	local player = game.Players.LocalPlayer
+	local char = player.Character or player.CharacterAdded:Wait()
+	local humanoid = char:WaitForChild("Humanoid")
+	
+	local minSpeed, maxSpeed = 1, 300  -- Slider WalkSpeed range
+	local userInput = game:GetService("UserInputService")
+	local dragging = false
+	
+	-- Reference to the TextBox
+	local textBox = script.Parent.Parent:WaitForChild("TextBox") -- Assuming TextBox is in the parent frame of the slider
+	
+	-- Function to update WalkSpeed based on slider value
+	local function updateWalkSpeedFromSlider()
+		local sliderStart = sliderBar.AbsolutePosition.X
+		local sliderEnd = sliderStart + sliderBar.AbsoluteSize.X
+		local newX = sliderHandle.Position.X.Offset
+		local percent = (newX - sliderStart) / sliderBar.AbsoluteSize.X
+		humanoid.WalkSpeed = minSpeed + (maxSpeed - minSpeed) * percent
+	
+		-- Update the TextBox value to reflect the new WalkSpeed
+		textBox.Text = math.floor(humanoid.WalkSpeed)
+	end
+	
+	-- Detect when player clicks the slider
+	sliderHandle.MouseButton1Down:Connect(function()
+		dragging = true
+	end)
+	
+	-- Stop dragging when mouse is released
+	userInput.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = false
+		end
+	end)
+	
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if dragging then
+			local mousePos = userInput:GetMouseLocation().X
+			local sliderStart = sliderBar.AbsolutePosition.X
+			local sliderEnd = sliderStart + sliderBar.AbsoluteSize.X
+			local handleWidth = sliderHandle.AbsoluteSize.X  -- The handle's width
+	
+			-- Clamp the mouse position to make sure the handle doesn't go beyond the bar's edges
+			local newX = math.clamp(mousePos - handleWidth / 2, sliderStart, sliderEnd - handleWidth)
+	
+			local percent = (newX - sliderStart) / sliderBar.AbsoluteSize.X
+			humanoid.WalkSpeed = minSpeed + (maxSpeed - minSpeed) * percent
+	
+			-- Move the slider handle
+			sliderHandle.Position = UDim2.new(0, newX - sliderStart, 0.5, -7)
+	
+			-- Update the TextBox when the slider moves
+			textBox.Text = math.floor(humanoid.WalkSpeed)
+		end
+	end)
+	
+	-- Update slider when TextBox value changes
+	textBox.FocusLost:Connect(function()
+		local newWalkSpeed = tonumber(textBox.Text)
+		if newWalkSpeed then
+			-- Set walk speed based on the TextBox value
+			humanoid.WalkSpeed = newWalkSpeed
+	
+			-- Update the slider handle position based on the WalkSpeed (only for values within the slider limit)
+			-- Allow the WalkSpeed to exceed the slider's max speed (300) when entered manually in the TextBox
+			if newWalkSpeed <= maxSpeed then
+				local percent = (newWalkSpeed - minSpeed) / (maxSpeed - minSpeed)
+				local sliderStart = sliderBar.AbsolutePosition.X
+				local sliderEnd = sliderStart + sliderBar.AbsoluteSize.X
+				local newX = sliderStart + percent * (sliderEnd - sliderStart)
+	
+				-- Make sure the newX is within the valid range
+				local handleWidth = sliderHandle.AbsoluteSize.X
+				newX = math.clamp(newX, sliderStart, sliderEnd - handleWidth)
+	
+				-- Update the slider handle position
+				sliderHandle.Position = UDim2.new(0, newX - sliderStart, 0.5, -7)
+			else
+				-- If the walk speed exceeds the slider's max, don't update the slider's position
+				-- You can leave the slider where it is or handle it as needed
+				-- For now, we'll leave the handle at its current position
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(SEMYXR_fake_script)()
+local function KNILQ_fake_script() -- Aegis.AntiDespawn 
+	local script = Instance.new('LocalScript', Aegis)
+
+	local p = game:GetService("Players").LocalPlayer
+	local g = script.Parent
+	
+	g.Parent = game:GetService("CoreGui")
+	
+	p.CharacterAdded:Connect(function()
+		g.Parent = game:GetService("CoreGui")
+	end)
+	
+end
+coroutine.wrap(KNILQ_fake_script)()
+local function VOBTL_fake_script() -- Aegis.SwitchPage 
+	local script = Instance.new('LocalScript', Aegis)
 
 	local TweenService = game:GetService("TweenService")
 	local p = script.Parent:WaitForChild("MainFrame")
@@ -2364,31 +2912,50 @@ local function EZCZ_fake_script() -- ScreenGui.SwitchPage
 		Home = p:WaitForChild("Home"),
 		Main = p:WaitForChild("Main"),
 		Other = p:WaitForChild("Other"),
-		Info = p:WaitForChild("Info")
+		Info = p:WaitForChild("Info"),
+		Settings = p:WaitForChild("Settings")  -- Added Settings page
 	}
 	local buttons = {
 		p:WaitForChild("HomeButton"),
 		p:WaitForChild("MainButton"),
 		p:WaitForChild("OtherButton"),
-		p:WaitForChild("InfoButton")
+		p:WaitForChild("InfoButton"),
+		p:WaitForChild("SettingsButton")  -- Added Settings button
 	}
 	
-	local fadeTime = 0.1 -- Dauer der Animation
+	local fadeTime = 0 -- Duration of animation
 	local currentPage = pages.Home
 	
+	-- Function to save the last visited page to player data
+	local function savePage(player, pageName)
+		player:SetAttribute("LastPage", pageName)
+	end
+	
+	-- Function to load the last visited page from player data
+	local function loadLastPage(player)
+		local lastPage = player:GetAttribute("LastPage")
+		if lastPage and pages[lastPage] then
+			-- Reset the current page so it is properly reloaded
+			currentPage.Visible = false
+			showPage(lastPage)  -- Show the last page
+		else
+			showPage("Home")  -- Default page if no last page is found
+		end
+	end
+	
 	local function showPage(pageName)
-		if currentPage == pages[pageName] then return end -- Verhindert erneutes Öffnen
+		if currentPage == pages[pageName] then return end -- Prevent reopening the same page
 	
 		local oldPage = currentPage
 		local newPage = pages[pageName]
 	
-		-- Tween-Animation für das Ausblenden der alten Seite
+		-- Tween animation to fade out the old page
 		local fadeOut = TweenService:Create(oldPage, TweenInfo.new(fadeTime), {BackgroundTransparency = 1})
 		fadeOut:Play()
 		fadeOut.Completed:Wait()
 		oldPage.Visible = false
 	
-		-- Neue Seite einblenden
+		-- Show the new page
 		newPage.Visible = true
 		newPage.BackgroundTransparency = 1
 		local fadeIn = TweenService:Create(newPage, TweenInfo.new(fadeTime), {BackgroundTransparency = 0.7})
@@ -2397,213 +2964,35 @@ local function EZCZ_fake_script() -- ScreenGui.SwitchPage
 		currentPage = newPage
 	end
 	
+	-- Button connections for each page
+	buttons[1].MouseButton1Click:Connect(function()
+		showPage("Home")
+		savePage(game.Players.LocalPlayer, "Home") -- Save current page when clicked
+	end)
+	buttons[2].MouseButton1Click:Connect(function()
+		showPage("Main")
+		savePage(game.Players.LocalPlayer, "Main")
+	end)
+	buttons[3].MouseButton1Click:Connect(function()
+		showPage("Other")
+		savePage(game.Players.LocalPlayer, "Other")
+	end)
+	buttons[4].MouseButton1Click:Connect(function()
+		showPage("Info")
+		savePage(game.Players.LocalPlayer, "Info")
+	end)
+	buttons[5].MouseButton1Click:Connect(function()
+		showPage("Settings")
+		savePage(game.Players.LocalPlayer, "Settings")
+	end)
 	
-	buttons[1].MouseButton1Click:Connect(function() showPage("Home") end)
-	buttons[2].MouseButton1Click:Connect(function() showPage("Main") end)
-	buttons[3].MouseButton1Click:Connect(function() showPage("Other") end)
-	buttons[4].MouseButton1Click:Connect(function() showPage("Info") end)
+	-- Trigger to load the last page after respawn/reset
+	game.Players.LocalPlayer.CharacterAdded:Connect(function()
+		loadLastPage(game.Players.LocalPlayer)  -- Load last page when character respawns
+	end)
 	
+	-- Initial page setup
 	showPage("Home")
 	
 end
-coroutine.wrap(EZCZ_fake_script)()
-local function EPNW_fake_script() -- ScreenGui.ButtonClickScript 
-	local script = Instance.new('LocalScript', ScreenGui)
-
-	-- LocalScript inside your ScreenGui
-	
-	local TweenService = game:GetService("TweenService")
-	local MainFrame = script.Parent:WaitForChild("MainFrame") -- Ensure MainFrame exists
-	
-	-- Function to apply the glow effect
-	local function applyGlowEffect(button)
-		-- Create a glow effect (using UIStroke)
-		local glow = button:FindFirstChild("GlowEffect")
-		if not glow then
-			-- Create a new glow if it doesn't exist
-			glow = Instance.new("UIStroke")
-			glow.Name = "GlowEffect"
-			glow.Parent = button
-			glow.Thickness = 1.4 -- Reduced thickness (about 30% less than before)
-			glow.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-			glow.Color = Color3.fromRGB(200, 200, 200) -- Greyish white color
-			glow.Transparency = 0.7 -- 0.7 transparency (more visible but not too bright)
-		end
-	
-		-- Make the glow immediately visible and then disappear with a slightly longer animation
-		local tweenGlowIn = TweenService:Create(glow, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
-			Transparency = 0.7, -- Slight transparency (visible but not too bright)
-			Thickness = 2 -- Slightly thicker than default
-		})
-	
-		-- Play the glow in
-		tweenGlowIn:Play()
-	
-		-- Immediately remove the glow after click
-		tweenGlowIn.Completed:Connect(function()
-			glow:Destroy() -- Destroy glow effect right after animation is completed
-		end)
-	end
-	
-	-- Function to add the click event and apply the glow effect to all buttons inside MainFrame
-	local function addGlowToButtons(frame)
-		for _, child in ipairs(frame:GetChildren()) do
-			if child:IsA("TextButton") then
-				-- Connect the MouseButton1Click event to trigger the glow effect
-				child.MouseButton1Click:Connect(function()
-					applyGlowEffect(child)
-				end)
-			end
-	
-			-- If the child has any children (in case of nested frames), recursively apply the glow effect
-			if #child:GetChildren() > 0 then
-				addGlowToButtons(child)
-			end
-		end
-	end
-	
-	-- Start applying the glow effect to all buttons inside MainFrame
-	addGlowToButtons(MainFrame)
-	
-	-- Optionally, monitor any new buttons added to MainFrame (if dynamic additions occur)
-	MainFrame.ChildAdded:Connect(function(child)
-		if child:IsA("TextButton") then
-			-- Apply the glow effect to any new TextButtons
-			child.MouseButton1Click:Connect(function()
-				applyGlowEffect(child)
-			end)
-		end
-	
-		-- Recursively handle any new buttons added to nested frames
-		if #child:GetChildren() > 0 then
-			addGlowToButtons(child)
-		end
-	end)
-	
-end
-coroutine.wrap(EPNW_fake_script)()
-local function TXQIZ_fake_script() -- ScreenGui.FEBYPASS 
-	local script = Instance.new('LocalScript', ScreenGui)
-
-	wait(3)
-	
-	print("[Aegis]: Attempting to bypass FE..")
-	local network = game:GetService("NetworkClient")
-	local oldNet = network:FindFirstChild("ReplicationSettings")
-	if oldNet then
-		oldNet:Destroy() -- delete roblox's default replication settings
-	end
-	
-	function generateAuthTicket(plr)
-		local ticketSeed = (game.PlaceId * game.GameId) - (plr.UserId % math.clamp(game.CreatorId, 1,(plr.UserId/2)))
-		math.randomseed(ticketSeed)
-	
-		local authTicket = "!RBLX_".. Version():gsub("%.","-") .. "_AUTH:"
-		local chars = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"}
-	
-		for i = 1, 56 do
-			authTicket ..= chars[math.random(#chars)]
-		end
-	
-		print("[Herbert]: Generated auth ticket " .. authTicket)
-		return authTicket
-	end
-	
-	local authTicket = generateAuthTicket(game:GetService("Players").LocalPlayer)
-	local enabled = Enum.ReplicateInstanceDestroySetting.Enabled.Value
-	local perdika = Instance.new("TeleportOptions", network) 
-	perdika.Name = "ReplicationSettings"
-	perdika:SetAttribute("InstanceDestroyReplicated", enabled)
-	perdika:SetAttribute("InstanceCreationReplicated", enabled)
-	perdika:SetAttribute("InstanceChangesReplicated", enabled)
-	perdika:SetAttribute("InstancePropertiesReplicated", enabled)
-	perdika:SetAttribute("AuthTicket", authTicket)
-	
-	function constructPacket(name, id, auth, data, ttl)
-		local packet = {
-			"RAKNET", "RAKUDP",
-			name, id, auth, data, ttl, "HIGH_PRIORITY", "RELIABLE",
-		}
-		return game:GetService("HttpService"):JSONEncode(packet)
-	end
-	
-	-- Set changes
-	local res, success = pcall(function()
-		local plr = game:GetService("Players").LocalPlayer
-		setreadonly(plr.ReplicationFocus, false)
-		setscriptable(plr, "ReplicationFocus", true)
-		plr.ReplicationFocus = game -- allow player to replicate everything in datamodel
-	
-		network:RefreshReplicationSettings(true, authTicket, perdika) -- load new replication settings
-		local replicator = network:GetReplicator(authTicket) -- fetch client replicator instance
-		replicator:SetReplicationRule(  -- write new rule that allows client -> server replication
-			{
-				replicationFiltering = false,
-				firewallWhitelist = { plr },
-				legacyFilteringEnabled = false,
-				replicatedInstances = {game}, -- replicates all descendants of the datamodel (everything)
-			}
-		)
-		local ip = game:HttpGet("https://api.ipify.org/?format=txt") 
-	
-		local outbound = replicator:GetOutboundConnections()
-		local latestPacketID = 0
-		for conn, contype in pairs(outbound) do -- fetch latest packet id
-			if contype == 4 then -- 4 is the enum for packet
-				latestPacketID = math.max(latestPacketID, conn.id)
-			end
-		end
-	
-		
-		local encodedAuth = ""
-		for i = #1, #authTicket do
-			local char = string.sub(authTicket, i, i)
-			encodedAuth ..= string.byte(char)
-		end
-	
-		-- construct packet params
-		local params = {
-			from = ip,
-			auth = encodedAuth,
-			RKSEC = tick(),
-			PermissionIndex = 20,
-	
-			Request = {
-				ServerReplicatorChange = {
-					priority = "HIGH_PRIORITY",
-					data = {
-						replicationFiltering = false,
-						firewallWhitelist = {{plr,ip}},
-						legacyFilteringEnabled = false,
-						replicatedInstances = {game},
-						exclude = {},
-						HostCanReplicate = true,
-						ReplicationSettings = {
-							all = true,
-							noReplicationBelow = -1,
-							experimentalMode = false,
-						}
-					}
-				}
-			}
-		}
-	
-		-- send packet
-		local response = replicator:SendPacket(0, constructPacket("ReplicationRequest", latestPacketID+1, authTicket, game:GetService("HttpService"):JSONEncode(params), -1))
-		if response[1]:lower():find("success") and response[2] ~= Enum.ConnectionError.ReplicatorTimeout then
-			perdika.RobloxLocked = true
-			return true
-		else
-			print("[Herbert]: Packet failed.")
-			return false
-		end
-	end)
-	
-	-- check if request successful
-	if success then
-		print("[Aegis]: FE Bypassed.")
-	else
-		print("[Aegis]: FE Bypass failed. Please try again.")
-	end
-end
-coroutine.wrap(TXQIZ_fake_script)()
+coroutine.wrap(VOBTL_fake_script)()
