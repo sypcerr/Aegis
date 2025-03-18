@@ -1478,7 +1478,7 @@ local function DKTUZ_fake_script() -- Beat.LocalScript
 	local animTrack
 	
 	local anim = Instance.new("Animation")
-	anim.AnimationId = "rbxassetid://125750544"
+	anim.AnimationId = "rbxassetid://168268306"
 	
 	local playing = false
 	
