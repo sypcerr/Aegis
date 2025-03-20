@@ -1,4 +1,4 @@
--- Aegis Version 0.9.0 Beta
+-- Aegis+ Version 0.9.1 BETA
 
 local Aegis = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
@@ -24,56 +24,59 @@ local Name = Instance.new("TextLabel")
 local Astronaut = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
 local Name_2 = Instance.new("TextLabel")
+local Flips = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Name_3 = Instance.new("TextLabel")
 local CS = Instance.new("Frame")
 local CS_2 = Instance.new("ScrollingFrame")
 local HighMode = Instance.new("TextButton")
-local UICorner_10 = Instance.new("UICorner")
-local Name_3 = Instance.new("TextLabel")
-local NightVision = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
 local Name_4 = Instance.new("TextLabel")
-local ShadowRunner = Instance.new("TextButton")
+local NightVision = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
 local Name_5 = Instance.new("TextLabel")
-local FEB = Instance.new("TextButton")
+local ShadowRunner = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
-local CSB = Instance.new("TextButton")
+local Name_6 = Instance.new("TextLabel")
+local FEB = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
-local Other = Instance.new("Frame")
+local CSB = Instance.new("TextButton")
 local UICorner_15 = Instance.new("UICorner")
-local ToggleFling = Instance.new("TextButton")
+local Other = Instance.new("Frame")
 local UICorner_16 = Instance.new("UICorner")
-local LoadAudioLogger = Instance.new("TextButton")
+local ToggleFling = Instance.new("TextButton")
 local UICorner_17 = Instance.new("UICorner")
-local Info = Instance.new("Frame")
+local LoadAudioLogger = Instance.new("TextButton")
 local UICorner_18 = Instance.new("UICorner")
+local Info = Instance.new("Frame")
+local UICorner_19 = Instance.new("UICorner")
 local Version = Instance.new("TextLabel")
 local credits = Instance.new("TextLabel")
 local PressLeftAlt = Instance.new("TextLabel")
 local Settings = Instance.new("Frame")
 local Killgui = Instance.new("Folder")
 local KillUI = Instance.new("TextButton")
-local UICorner_19 = Instance.new("UICorner")
+local UICorner_20 = Instance.new("UICorner")
 local Theme = Instance.new("Folder")
 local ThemeLabel = Instance.new("TextLabel")
 local ChangeTheme = Instance.new("TextButton")
-local UICorner_20 = Instance.new("UICorner")
 local UICorner_21 = Instance.new("UICorner")
+local UICorner_22 = Instance.new("UICorner")
 local TRPRC = Instance.new("Folder")
 local SliderBar = Instance.new("Frame")
-local UICorner_22 = Instance.new("UICorner")
-local SliderHandle = Instance.new("TextButton")
 local UICorner_23 = Instance.new("UICorner")
-local TBox = Instance.new("TextBox")
+local SliderHandle = Instance.new("TextButton")
 local UICorner_24 = Instance.new("UICorner")
+local TBox = Instance.new("TextBox")
+local UICorner_25 = Instance.new("UICorner")
 local ThemeLabel_2 = Instance.new("TextLabel")
 local Home = Instance.new("Frame")
-local UICorner_25 = Instance.new("UICorner")
-local Info_2 = Instance.new("Folder")
-local Name_6 = Instance.new("TextLabel")
-local Name_7 = Instance.new("TextLabel")
-local UserProfile = Instance.new("ImageLabel")
 local UICorner_26 = Instance.new("UICorner")
+local Info_2 = Instance.new("Folder")
+local Name_7 = Instance.new("TextLabel")
+local Name_8 = Instance.new("TextLabel")
+local UserProfile = Instance.new("ImageLabel")
+local UICorner_27 = Instance.new("UICorner")
 local Frame = Instance.new("Frame")
 local Time = Instance.new("TextLabel")
 local Date = Instance.new("TextLabel")
@@ -81,33 +84,33 @@ local Sec = Instance.new("TextButton")
 local Hr24 = Instance.new("TextButton")
 local Hr12 = Instance.new("TextButton")
 local ToggleNoclip = Instance.new("Folder")
-local Name_8 = Instance.new("TextLabel")
+local Name_9 = Instance.new("TextLabel")
 local TextButton = Instance.new("TextButton")
-local UICorner_27 = Instance.new("UICorner")
+local UICorner_28 = Instance.new("UICorner")
 local ToggleFLight = Instance.new("Folder")
 local TextBox = Instance.new("TextBox")
-local UICorner_28 = Instance.new("UICorner")
-local Name_9 = Instance.new("TextLabel")
-local TextButton_2 = Instance.new("TextButton")
 local UICorner_29 = Instance.new("UICorner")
-local jump = Instance.new("Folder")
 local Name_10 = Instance.new("TextLabel")
-local SliderBar_2 = Instance.new("Frame")
+local TextButton_2 = Instance.new("TextButton")
 local UICorner_30 = Instance.new("UICorner")
-local TextBox_2 = Instance.new("TextBox")
-local UICorner_31 = Instance.new("UICorner")
-local SliderHandle_2 = Instance.new("TextButton")
-local UICorner_32 = Instance.new("UICorner")
-local speed = Instance.new("Folder")
+local jump = Instance.new("Folder")
 local Name_11 = Instance.new("TextLabel")
-local SliderBar_3 = Instance.new("Frame")
+local SliderBar_2 = Instance.new("Frame")
+local UICorner_31 = Instance.new("UICorner")
+local TextBox_2 = Instance.new("TextBox")
+local UICorner_32 = Instance.new("UICorner")
+local SliderHandle_2 = Instance.new("TextButton")
 local UICorner_33 = Instance.new("UICorner")
-local TextBox_3 = Instance.new("TextBox")
-local UICorner_34 = Instance.new("UICorner")
-local SliderHandle_3 = Instance.new("TextButton")
-local UICorner_35 = Instance.new("UICorner")
+local speed = Instance.new("Folder")
 local Name_12 = Instance.new("TextLabel")
+local SliderBar_3 = Instance.new("Frame")
+local UICorner_34 = Instance.new("UICorner")
+local TextBox_3 = Instance.new("TextBox")
+local UICorner_35 = Instance.new("UICorner")
+local SliderHandle_3 = Instance.new("TextButton")
+local UICorner_36 = Instance.new("UICorner")
 local Name_13 = Instance.new("TextLabel")
+local Name_14 = Instance.new("TextLabel")
 local ResizeHandle = Instance.new("ImageButton")
 
 --Properties:
@@ -248,7 +251,7 @@ Beat.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
 Beat.BackgroundTransparency = 0.500
 Beat.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Beat.BorderSizePixel = 0
-Beat.Position = UDim2.new(-0.00144817121, 0, 0.210766479, 0)
+Beat.Position = UDim2.new(-0.00800000038, 0, 0.219999999, 0)
 Beat.Size = UDim2.new(0, 141, 0, 49)
 Beat.Font = Enum.Font.SourceSans
 Beat.Text = "Beat"
@@ -279,7 +282,7 @@ Astronaut.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
 Astronaut.BackgroundTransparency = 0.500
 Astronaut.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Astronaut.BorderSizePixel = 0
-Astronaut.Position = UDim2.new(-0.00144817121, 0, 0.0769123584, 0)
+Astronaut.Position = UDim2.new(-0.00800000038, 0, 0.340000004, 0)
 Astronaut.Size = UDim2.new(0, 141, 0, 49)
 Astronaut.Font = Enum.Font.SourceSans
 Astronaut.Text = "Astronaut"
@@ -303,6 +306,37 @@ Name_2.TextScaled = true
 Name_2.TextSize = 13.000
 Name_2.TextWrapped = true
 Name_2.TextXAlignment = Enum.TextXAlignment.Left
+
+Flips.Name = "Flips"
+Flips.Parent = FE_2
+Flips.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+Flips.BackgroundTransparency = 0.500
+Flips.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Flips.BorderSizePixel = 0
+Flips.Position = UDim2.new(-0.00100000005, 0, 0.100000001, 0)
+Flips.Size = UDim2.new(0, 138, 0, 49)
+Flips.Font = Enum.Font.SourceSans
+Flips.Text = "Flips"
+Flips.TextColor3 = Color3.fromRGB(255, 255, 255)
+Flips.TextSize = 19.000
+
+UICorner_10.Parent = Flips
+
+Name_3.Name = "Name"
+Name_3.Parent = Flips
+Name_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_3.BackgroundTransparency = 1.000
+Name_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Name_3.BorderSizePixel = 0
+Name_3.Position = UDim2.new(0, 146, 0, 0)
+Name_3.Size = UDim2.new(0, 147, 0, 44)
+Name_3.Font = Enum.Font.SourceSans
+Name_3.Text = "Toggle flips & airjump (Z, X, B)."
+Name_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_3.TextScaled = true
+Name_3.TextSize = 13.000
+Name_3.TextWrapped = true
+Name_3.TextXAlignment = Enum.TextXAlignment.Left
 
 CS.Name = "CS"
 CS.Parent = csfe
@@ -335,22 +369,22 @@ HighMode.Text = "High Mode"
 HighMode.TextColor3 = Color3.fromRGB(255, 255, 255)
 HighMode.TextSize = 19.000
 
-UICorner_10.Parent = HighMode
+UICorner_11.Parent = HighMode
 
-Name_3.Name = "Name"
-Name_3.Parent = HighMode
-Name_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Name_3.BackgroundTransparency = 1.000
-Name_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Name_3.BorderSizePixel = 0
-Name_3.Position = UDim2.new(0, 147, 0, 2)
-Name_3.Size = UDim2.new(0, 147, 0, 44)
-Name_3.Font = Enum.Font.SourceSans
-Name_3.Text = "Toggle High / might have to restart game"
-Name_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_3.TextSize = 15.000
-Name_3.TextWrapped = true
-Name_3.TextXAlignment = Enum.TextXAlignment.Left
+Name_4.Name = "Name"
+Name_4.Parent = HighMode
+Name_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_4.BackgroundTransparency = 1.000
+Name_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Name_4.BorderSizePixel = 0
+Name_4.Position = UDim2.new(0, 147, 0, 2)
+Name_4.Size = UDim2.new(0, 147, 0, 44)
+Name_4.Font = Enum.Font.SourceSans
+Name_4.Text = "Toggle High / might have to restart game"
+Name_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_4.TextSize = 15.000
+Name_4.TextWrapped = true
+Name_4.TextXAlignment = Enum.TextXAlignment.Left
 
 NightVision.Name = "Night Vision"
 NightVision.Parent = CS_2
@@ -365,22 +399,22 @@ NightVision.Text = "Night Vision"
 NightVision.TextColor3 = Color3.fromRGB(255, 255, 255)
 NightVision.TextSize = 19.000
 
-UICorner_11.Parent = NightVision
+UICorner_12.Parent = NightVision
 
-Name_4.Name = "Name"
-Name_4.Parent = NightVision
-Name_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Name_4.BackgroundTransparency = 1.000
-Name_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Name_4.BorderSizePixel = 0
-Name_4.Position = UDim2.new(0, 147, 0, 2)
-Name_4.Size = UDim2.new(0, 147, 0, 44)
-Name_4.Font = Enum.Font.SourceSans
-Name_4.Text = "Turn On/Off Night Vision"
-Name_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_4.TextSize = 15.000
-Name_4.TextWrapped = true
-Name_4.TextXAlignment = Enum.TextXAlignment.Left
+Name_5.Name = "Name"
+Name_5.Parent = NightVision
+Name_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_5.BackgroundTransparency = 1.000
+Name_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Name_5.BorderSizePixel = 0
+Name_5.Position = UDim2.new(0, 147, 0, 2)
+Name_5.Size = UDim2.new(0, 147, 0, 44)
+Name_5.Font = Enum.Font.SourceSans
+Name_5.Text = "Turn On/Off Night Vision"
+Name_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_5.TextSize = 15.000
+Name_5.TextWrapped = true
+Name_5.TextXAlignment = Enum.TextXAlignment.Left
 
 ShadowRunner.Name = "Shadow Runner"
 ShadowRunner.Parent = CS_2
@@ -395,23 +429,23 @@ ShadowRunner.Text = "Shadow Runner"
 ShadowRunner.TextColor3 = Color3.fromRGB(255, 255, 255)
 ShadowRunner.TextSize = 19.000
 
-UICorner_12.Parent = ShadowRunner
+UICorner_13.Parent = ShadowRunner
 
-Name_5.Name = "Name"
-Name_5.Parent = ShadowRunner
-Name_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Name_5.BackgroundTransparency = 1.000
-Name_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Name_5.BorderSizePixel = 0
-Name_5.Position = UDim2.new(0, 147, 0, 5)
-Name_5.Size = UDim2.new(0, 147, 0, 44)
-Name_5.Font = Enum.Font.SourceSans
-Name_5.Text = "R to set point and tp back - can be combined with speed "
-Name_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_5.TextScaled = true
-Name_5.TextSize = 13.000
-Name_5.TextWrapped = true
-Name_5.TextXAlignment = Enum.TextXAlignment.Left
+Name_6.Name = "Name"
+Name_6.Parent = ShadowRunner
+Name_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_6.BackgroundTransparency = 1.000
+Name_6.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Name_6.BorderSizePixel = 0
+Name_6.Position = UDim2.new(0, 147, 0, 5)
+Name_6.Size = UDim2.new(0, 147, 0, 44)
+Name_6.Font = Enum.Font.SourceSans
+Name_6.Text = "R to set point and tp back - can be combined with speed "
+Name_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_6.TextScaled = true
+Name_6.TextSize = 13.000
+Name_6.TextWrapped = true
+Name_6.TextXAlignment = Enum.TextXAlignment.Left
 
 FEB.Name = "FEB"
 FEB.Parent = csfe
@@ -426,7 +460,7 @@ FEB.Text = "FE"
 FEB.TextColor3 = Color3.fromRGB(255, 255, 255)
 FEB.TextSize = 19.000
 
-UICorner_13.Parent = FEB
+UICorner_14.Parent = FEB
 
 CSB.Name = "CSB"
 CSB.Parent = csfe
@@ -441,7 +475,7 @@ CSB.Text = "Client"
 CSB.TextColor3 = Color3.fromRGB(255, 255, 255)
 CSB.TextSize = 19.000
 
-UICorner_14.Parent = CSB
+UICorner_15.Parent = CSB
 
 Other.Name = "Other"
 Other.Parent = MainFrame
@@ -453,7 +487,7 @@ Other.Position = UDim2.new(0.214891866, 0, 0.0232558139, 0)
 Other.Size = UDim2.new(0, 327, 0, 245)
 Other.Visible = false
 
-UICorner_15.Parent = Other
+UICorner_16.Parent = Other
 
 ToggleFling.Name = "Toggle Fling"
 ToggleFling.Parent = Other
@@ -467,8 +501,9 @@ ToggleFling.Font = Enum.Font.SourceSans
 ToggleFling.Text = "Toggle Fling"
 ToggleFling.TextColor3 = Color3.fromRGB(255, 255, 255)
 ToggleFling.TextSize = 19.000
+ToggleFling.TextWrapped = true
 
-UICorner_16.Parent = ToggleFling
+UICorner_17.Parent = ToggleFling
 
 LoadAudioLogger.Name = "Load AudioLogger"
 LoadAudioLogger.Parent = Other
@@ -482,8 +517,9 @@ LoadAudioLogger.Font = Enum.Font.SourceSans
 LoadAudioLogger.Text = "Currently Unavailable"
 LoadAudioLogger.TextColor3 = Color3.fromRGB(255, 255, 255)
 LoadAudioLogger.TextSize = 19.000
+LoadAudioLogger.TextWrapped = true
 
-UICorner_17.Parent = LoadAudioLogger
+UICorner_18.Parent = LoadAudioLogger
 
 Info.Name = "Info"
 Info.Parent = MainFrame
@@ -495,7 +531,7 @@ Info.Position = UDim2.new(0.214891866, 0, 0.0232558139, 0)
 Info.Size = UDim2.new(0, 327, 0, 245)
 Info.Visible = false
 
-UICorner_18.Parent = Info
+UICorner_19.Parent = Info
 
 Version.Name = "Version"
 Version.Parent = Info
@@ -569,7 +605,7 @@ KillUI.Text = "KillUI"
 KillUI.TextColor3 = Color3.fromRGB(255, 255, 255)
 KillUI.TextSize = 19.000
 
-UICorner_19.Parent = KillUI
+UICorner_20.Parent = KillUI
 
 Theme.Name = "Theme"
 Theme.Parent = Settings
@@ -602,9 +638,9 @@ ChangeTheme.Text = "Change Theme"
 ChangeTheme.TextColor3 = Color3.fromRGB(255, 255, 255)
 ChangeTheme.TextSize = 19.000
 
-UICorner_20.Parent = ChangeTheme
+UICorner_21.Parent = ChangeTheme
 
-UICorner_21.Parent = Settings
+UICorner_22.Parent = Settings
 
 TRPRC.Name = "TRPRC"
 TRPRC.Parent = Settings
@@ -618,7 +654,7 @@ SliderBar.BorderSizePixel = 0
 SliderBar.Position = UDim2.new(0.548929691, -100, 0.663265288, 0)
 SliderBar.Size = UDim2.new(0, 131, 0, 10)
 
-UICorner_22.Parent = SliderBar
+UICorner_23.Parent = SliderBar
 
 SliderHandle.Name = "SliderHandle"
 SliderHandle.Parent = SliderBar
@@ -632,7 +668,7 @@ SliderHandle.Text = ""
 SliderHandle.TextColor3 = Color3.fromRGB(0, 0, 0)
 SliderHandle.TextSize = 14.000
 
-UICorner_23.Parent = SliderHandle
+UICorner_24.Parent = SliderHandle
 
 TBox.Name = "TBox"
 TBox.Parent = SliderBar
@@ -649,8 +685,8 @@ TBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 TBox.TextSize = 10.000
 TBox.TextWrapped = true
 
-UICorner_24.CornerRadius = UDim.new(0, 3)
-UICorner_24.Parent = TBox
+UICorner_25.CornerRadius = UDim.new(0, 3)
+UICorner_25.Parent = TBox
 
 ThemeLabel_2.Name = "ThemeLabel"
 ThemeLabel_2.Parent = TRPRC
@@ -676,40 +712,40 @@ Home.BorderSizePixel = 0
 Home.Position = UDim2.new(0.214891866, 0, 0.0232558139, 0)
 Home.Size = UDim2.new(0, 327, 0, 245)
 
-UICorner_25.Parent = Home
+UICorner_26.Parent = Home
 
 Info_2.Name = "Info"
 Info_2.Parent = Home
 
-Name_6.Name = "Name"
-Name_6.Parent = Info_2
-Name_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Name_6.BackgroundTransparency = 1.000
-Name_6.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Name_6.BorderSizePixel = 0
-Name_6.Position = UDim2.new(0, 69, 0, 204)
-Name_6.Size = UDim2.new(0, 142, 0, 31)
-Name_6.Font = Enum.Font.SourceSans
-Name_6.Text = "Player"
-Name_6.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_6.TextSize = 20.000
-Name_6.TextWrapped = true
-Name_6.TextXAlignment = Enum.TextXAlignment.Left
-
 Name_7.Name = "Name"
-Name_7.Parent = Name_6
+Name_7.Parent = Info_2
 Name_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Name_7.BackgroundTransparency = 1.000
 Name_7.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Name_7.BorderSizePixel = 0
-Name_7.Position = UDim2.new(0, 0, 0, -22)
-Name_7.Size = UDim2.new(0, 88, 0, 31)
+Name_7.Position = UDim2.new(0, 69, 0, 204)
+Name_7.Size = UDim2.new(0, 142, 0, 31)
 Name_7.Font = Enum.Font.SourceSans
-Name_7.Text = "Welcome,"
+Name_7.Text = "Player"
 Name_7.TextColor3 = Color3.fromRGB(255, 255, 255)
 Name_7.TextSize = 20.000
 Name_7.TextWrapped = true
 Name_7.TextXAlignment = Enum.TextXAlignment.Left
+
+Name_8.Name = "Name"
+Name_8.Parent = Name_7
+Name_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_8.BackgroundTransparency = 1.000
+Name_8.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Name_8.BorderSizePixel = 0
+Name_8.Position = UDim2.new(0, 0, 0, -22)
+Name_8.Size = UDim2.new(0, 88, 0, 31)
+Name_8.Font = Enum.Font.SourceSans
+Name_8.Text = "Welcome,"
+Name_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_8.TextSize = 20.000
+Name_8.TextWrapped = true
+Name_8.TextXAlignment = Enum.TextXAlignment.Left
 
 UserProfile.Name = "UserProfile"
 UserProfile.Parent = Info_2
@@ -722,7 +758,7 @@ UserProfile.Selectable = true
 UserProfile.Size = UDim2.new(0.163766101, 0, 0.220151067, 0)
 UserProfile.ScaleType = Enum.ScaleType.Fit
 
-UICorner_26.Parent = UserProfile
+UICorner_27.Parent = UserProfile
 
 Frame.Parent = Info_2
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -736,18 +772,22 @@ Time.Name = "Time"
 Time.Parent = Frame
 Time.BackgroundTransparency = 1.000
 Time.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Time.Position = UDim2.new(0.5, 0, 0.25, 0)
+Time.Position = UDim2.new(0.000609354232, 0, -0.0635147095, 0)
+Time.Size = UDim2.new(1.06241584, 0, 1.12186241, 0)
 Time.Font = Enum.Font.SourceSansBold
 Time.Text = "12:00:00 AM"
 Time.TextColor3 = Color3.fromRGB(255, 255, 255)
+Time.TextScaled = true
 Time.TextSize = 36.000
 Time.TextTransparency = 1.000
+Time.TextWrapped = true
 
 Date.Name = "Date"
 Date.Parent = Frame
 Date.BackgroundTransparency = 1.000
 Date.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Date.Position = UDim2.new(0.5, 0, 0.899999976, 0)
+Date.Position = UDim2.new(-0.0840330422, 0, 0.806249619, 0)
+Date.Size = UDim2.new(1.14705884, 0, 0.564598083, 0)
 Date.Font = Enum.Font.SourceSansBold
 Date.Text = "January 1, 1970"
 Date.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -799,21 +839,21 @@ Hr12.TextTransparency = 1.000
 ToggleNoclip.Name = "Toggle Noclip"
 ToggleNoclip.Parent = Home
 
-Name_8.Name = "Name"
-Name_8.Parent = ToggleNoclip
-Name_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Name_8.BackgroundTransparency = 1.000
-Name_8.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Name_8.BorderSizePixel = 0
-Name_8.Position = UDim2.new(0, 228, 0, 138)
-Name_8.Size = UDim2.new(0, 91, 0, 19)
-Name_8.Font = Enum.Font.SourceSans
-Name_8.Text = "Toggle N to Noclip"
-Name_8.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_8.TextScaled = true
-Name_8.TextSize = 15.000
-Name_8.TextWrapped = true
-Name_8.TextXAlignment = Enum.TextXAlignment.Left
+Name_9.Name = "Name"
+Name_9.Parent = ToggleNoclip
+Name_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_9.BackgroundTransparency = 1.000
+Name_9.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Name_9.BorderSizePixel = 0
+Name_9.Position = UDim2.new(0, 228, 0, 138)
+Name_9.Size = UDim2.new(0, 91, 0, 19)
+Name_9.Font = Enum.Font.SourceSans
+Name_9.Text = "Toggle N to Noclip"
+Name_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_9.TextScaled = true
+Name_9.TextSize = 15.000
+Name_9.TextWrapped = true
+Name_9.TextXAlignment = Enum.TextXAlignment.Left
 
 TextButton.Parent = ToggleNoclip
 TextButton.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
@@ -827,7 +867,7 @@ TextButton.Text = "Off"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 14.000
 
-UICorner_27.Parent = TextButton
+UICorner_28.Parent = TextButton
 
 ToggleFLight.Name = "Toggle FLight"
 ToggleFLight.Parent = Home
@@ -846,23 +886,23 @@ TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBox.TextSize = 10.000
 TextBox.TextWrapped = true
 
-UICorner_28.CornerRadius = UDim.new(0, 3)
-UICorner_28.Parent = TextBox
+UICorner_29.CornerRadius = UDim.new(0, 3)
+UICorner_29.Parent = TextBox
 
-Name_9.Name = "Name"
-Name_9.Parent = ToggleFLight
-Name_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Name_9.BackgroundTransparency = 1.000
-Name_9.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Name_9.BorderSizePixel = 0
-Name_9.Position = UDim2.new(0, 228, 0, 83)
-Name_9.Size = UDim2.new(0, 99, 0, 19)
-Name_9.Font = Enum.Font.SourceSans
-Name_9.Text = "Toggle F to Fly"
-Name_9.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_9.TextSize = 15.000
-Name_9.TextWrapped = true
-Name_9.TextXAlignment = Enum.TextXAlignment.Left
+Name_10.Name = "Name"
+Name_10.Parent = ToggleFLight
+Name_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_10.BackgroundTransparency = 1.000
+Name_10.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Name_10.BorderSizePixel = 0
+Name_10.Position = UDim2.new(0, 228, 0, 83)
+Name_10.Size = UDim2.new(0, 99, 0, 19)
+Name_10.Font = Enum.Font.SourceSans
+Name_10.Text = "Toggle F to Fly"
+Name_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_10.TextSize = 15.000
+Name_10.TextWrapped = true
+Name_10.TextXAlignment = Enum.TextXAlignment.Left
 
 TextButton_2.Parent = ToggleFLight
 TextButton_2.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
@@ -876,26 +916,26 @@ TextButton_2.Text = "Off"
 TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_2.TextSize = 14.000
 
-UICorner_29.Parent = TextButton_2
+UICorner_30.Parent = TextButton_2
 
 jump.Name = "jump"
 jump.Parent = Home
 
-Name_10.Name = "Name"
-Name_10.Parent = jump
-Name_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Name_10.BackgroundTransparency = 1.000
-Name_10.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Name_10.BorderSizePixel = 0
-Name_10.Position = UDim2.new(0, 228, 0, 44)
-Name_10.Size = UDim2.new(0, 91, 0, 13)
-Name_10.Font = Enum.Font.SourceSans
-Name_10.Text = "Change JumpHight"
-Name_10.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_10.TextScaled = true
-Name_10.TextSize = 1.000
-Name_10.TextWrapped = true
-Name_10.TextXAlignment = Enum.TextXAlignment.Left
+Name_11.Name = "Name"
+Name_11.Parent = jump
+Name_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_11.BackgroundTransparency = 1.000
+Name_11.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Name_11.BorderSizePixel = 0
+Name_11.Position = UDim2.new(0, 228, 0, 44)
+Name_11.Size = UDim2.new(0, 91, 0, 13)
+Name_11.Font = Enum.Font.SourceSans
+Name_11.Text = "Change JumpHight"
+Name_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_11.TextScaled = true
+Name_11.TextSize = 1.000
+Name_11.TextWrapped = true
+Name_11.TextXAlignment = Enum.TextXAlignment.Left
 
 SliderBar_2.Name = "SliderBar"
 SliderBar_2.Parent = jump
@@ -906,7 +946,7 @@ SliderBar_2.BorderSizePixel = 0
 SliderBar_2.Position = UDim2.new(0.344036698, -100, 0.18571429, 0)
 SliderBar_2.Size = UDim2.new(0, 131, 0, 10)
 
-UICorner_30.Parent = SliderBar_2
+UICorner_31.Parent = SliderBar_2
 
 TextBox_2.Parent = SliderBar_2
 TextBox_2.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
@@ -922,8 +962,8 @@ TextBox_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBox_2.TextSize = 10.000
 TextBox_2.TextWrapped = true
 
-UICorner_31.CornerRadius = UDim.new(0, 3)
-UICorner_31.Parent = TextBox_2
+UICorner_32.CornerRadius = UDim.new(0, 3)
+UICorner_32.Parent = TextBox_2
 
 SliderHandle_2.Name = "SliderHandle"
 SliderHandle_2.Parent = SliderBar_2
@@ -937,26 +977,26 @@ SliderHandle_2.Text = ""
 SliderHandle_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 SliderHandle_2.TextSize = 14.000
 
-UICorner_32.Parent = SliderHandle_2
+UICorner_33.Parent = SliderHandle_2
 
 speed.Name = "speed"
 speed.Parent = Home
 
-Name_11.Name = "Name"
-Name_11.Parent = speed
-Name_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Name_11.BackgroundTransparency = 1.000
-Name_11.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Name_11.BorderSizePixel = 0
-Name_11.Position = UDim2.new(0, 228, 0, 15)
-Name_11.Size = UDim2.new(0, 91, 0, 13)
-Name_11.Font = Enum.Font.SourceSans
-Name_11.Text = "Change Walkspeed"
-Name_11.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_11.TextScaled = true
-Name_11.TextSize = 13.000
-Name_11.TextWrapped = true
-Name_11.TextXAlignment = Enum.TextXAlignment.Left
+Name_12.Name = "Name"
+Name_12.Parent = speed
+Name_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_12.BackgroundTransparency = 1.000
+Name_12.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Name_12.BorderSizePixel = 0
+Name_12.Position = UDim2.new(0, 228, 0, 15)
+Name_12.Size = UDim2.new(0, 91, 0, 13)
+Name_12.Font = Enum.Font.SourceSans
+Name_12.Text = "Change Walkspeed"
+Name_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_12.TextScaled = true
+Name_12.TextSize = 13.000
+Name_12.TextWrapped = true
+Name_12.TextXAlignment = Enum.TextXAlignment.Left
 
 SliderBar_3.Name = "SliderBar"
 SliderBar_3.Parent = speed
@@ -967,7 +1007,7 @@ SliderBar_3.BorderSizePixel = 0
 SliderBar_3.Position = UDim2.new(0.344036698, -100, 0.0632653087, 0)
 SliderBar_3.Size = UDim2.new(0, 131, 0, 10)
 
-UICorner_33.Parent = SliderBar_3
+UICorner_34.Parent = SliderBar_3
 
 TextBox_3.Parent = SliderBar_3
 TextBox_3.BackgroundColor3 = Color3.fromRGB(157, 157, 157)
@@ -983,8 +1023,8 @@ TextBox_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBox_3.TextSize = 11.000
 TextBox_3.TextWrapped = true
 
-UICorner_34.CornerRadius = UDim.new(0, 3)
-UICorner_34.Parent = TextBox_3
+UICorner_35.CornerRadius = UDim.new(0, 3)
+UICorner_35.Parent = TextBox_3
 
 SliderHandle_3.Name = "SliderHandle"
 SliderHandle_3.Parent = SliderBar_3
@@ -998,22 +1038,7 @@ SliderHandle_3.Text = ""
 SliderHandle_3.TextColor3 = Color3.fromRGB(0, 0, 0)
 SliderHandle_3.TextSize = 14.000
 
-UICorner_35.Parent = SliderHandle_3
-
-Name_12.Name = "Name"
-Name_12.Parent = MainFrame
-Name_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Name_12.BackgroundTransparency = 1.000
-Name_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Name_12.BorderSizePixel = 0
-Name_12.Position = UDim2.new(0.0308157895, 0, 0.0155038759, 0)
-Name_12.Size = UDim2.new(0, 48, 0, 24)
-Name_12.Font = Enum.Font.SourceSans
-Name_12.Text = "AEGIS"
-Name_12.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_12.TextScaled = true
-Name_12.TextSize = 22.000
-Name_12.TextWrapped = true
+UICorner_36.Parent = SliderHandle_3
 
 Name_13.Name = "Name"
 Name_13.Parent = MainFrame
@@ -1021,14 +1046,29 @@ Name_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Name_13.BackgroundTransparency = 1.000
 Name_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Name_13.BorderSizePixel = 0
-Name_13.Position = UDim2.new(0.128708646, 0, 0.0155038759, 0)
-Name_13.Size = UDim2.new(0, 23, 0, 23)
+Name_13.Position = UDim2.new(0.0308157895, 0, 0.0155038759, 0)
+Name_13.Size = UDim2.new(0, 48, 0, 24)
 Name_13.Font = Enum.Font.SourceSans
-Name_13.Text = "+"
+Name_13.Text = "AEGIS"
 Name_13.TextColor3 = Color3.fromRGB(255, 255, 255)
 Name_13.TextScaled = true
-Name_13.TextSize = 34.000
+Name_13.TextSize = 22.000
 Name_13.TextWrapped = true
+
+Name_14.Name = "Name"
+Name_14.Parent = MainFrame
+Name_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name_14.BackgroundTransparency = 1.000
+Name_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Name_14.BorderSizePixel = 0
+Name_14.Position = UDim2.new(0.128708646, 0, 0.0155038759, 0)
+Name_14.Size = UDim2.new(0, 23, 0, 23)
+Name_14.Font = Enum.Font.SourceSans
+Name_14.Text = "+"
+Name_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name_14.TextScaled = true
+Name_14.TextSize = 34.000
+Name_14.TextWrapped = true
 
 ResizeHandle.Name = "ResizeHandle"
 ResizeHandle.Parent = MainFrame
@@ -1038,14 +1078,14 @@ ResizeHandle.BorderColor3 = Color3.fromRGB(255, 255, 255)
 ResizeHandle.BorderSizePixel = 0
 ResizeHandle.Position = UDim2.new(0.965480089, 0, 0.934108555, 0)
 ResizeHandle.Size = UDim2.new(0, 17, 0, 17)
-ResizeHandle.Image = "http://www.roblox.com/asset/?id=6153965696"
+ResizeHandle.Image = "http://www.roblox.com/asset/?id=15928997778"
 
 -- Scripts:
 
-local function KQEU_fake_script() -- Aegis.ButtonClickScript 
+local function OLBABGM_fake_script() -- Aegis.ButtonClickScript 
 	local script = Instance.new('LocalScript', Aegis)
 
-	-- LocalScript inside your ScreenGui
+	
 	
 	local TweenService = game:GetService("TweenService")
 	local MainFrame = script.Parent:WaitForChild("MainFrame") -- Ensure MainFrame exists
@@ -1116,133 +1156,8 @@ local function KQEU_fake_script() -- Aegis.ButtonClickScript
 	end)
 	
 end
-coroutine.wrap(KQEU_fake_script)()
-local function YMGF_fake_script() -- Aegis.FEBYPASS 
-	local script = Instance.new('LocalScript', Aegis)
-
-	wait(3)
-	
-	print("[Aegis]: Attempting to bypass FE..")
-	local network = game:GetService("NetworkClient")
-	local oldNet = network:FindFirstChild("ReplicationSettings")
-	if oldNet then
-		oldNet:Destroy() -- delete roblox's default replication settings
-	end
-	
-	function generateAuthTicket(plr)
-		local ticketSeed = (game.PlaceId * game.GameId) - (plr.UserId % math.clamp(game.CreatorId, 1,(plr.UserId/2)))
-		math.randomseed(ticketSeed)
-	
-		local authTicket = "!RBLX_".. Version():gsub("%.","-") .. "_AUTH:"
-		local chars = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"}
-	
-		for i = 1, 56 do
-			authTicket ..= chars[math.random(#chars)]
-		end
-	
-		print("[Herbert]: Generated auth ticket " .. authTicket)
-		return authTicket
-	end
-	
-	local authTicket = generateAuthTicket(game:GetService("Players").LocalPlayer)
-	local enabled = Enum.ReplicateInstanceDestroySetting.Enabled.Value
-	local perdika = Instance.new("TeleportOptions", network) 
-	perdika.Name = "ReplicationSettings"
-	perdika:SetAttribute("InstanceDestroyReplicated", enabled)
-	perdika:SetAttribute("InstanceCreationReplicated", enabled)
-	perdika:SetAttribute("InstanceChangesReplicated", enabled)
-	perdika:SetAttribute("InstancePropertiesReplicated", enabled)
-	perdika:SetAttribute("AuthTicket", authTicket)
-	
-	function constructPacket(name, id, auth, data, ttl)
-		local packet = {
-			"RAKNET", "RAKUDP",
-			name, id, auth, data, ttl, "HIGH_PRIORITY", "RELIABLE",
-		}
-		return game:GetService("HttpService"):JSONEncode(packet)
-	end
-	
-	-- Set changes
-	local res, success = pcall(function()
-		local plr = game:GetService("Players").LocalPlayer
-		setreadonly(plr.ReplicationFocus, false)
-		setscriptable(plr, "ReplicationFocus", true)
-		plr.ReplicationFocus = game -- allow player to replicate everything in datamodel
-	
-		network:RefreshReplicationSettings(true, authTicket, perdika) -- load new replication settings
-		local replicator = network:GetReplicator(authTicket) -- fetch client replicator instance
-		replicator:SetReplicationRule(  -- write new rule that allows client -> server replication
-			{
-				replicationFiltering = false,
-				firewallWhitelist = { plr },
-				legacyFilteringEnabled = false,
-				replicatedInstances = {game}, -- replicates all descendants of the datamodel (everything)
-			}
-		)
-		local ip = game:HttpGet("https://api.ipify.org/?format=txt") 
-	
-		local outbound = replicator:GetOutboundConnections()
-		local latestPacketID = 0
-		for conn, contype in pairs(outbound) do -- fetch latest packet id
-			if contype == 4 then -- 4 is the enum for packet
-				latestPacketID = math.max(latestPacketID, conn.id)
-			end
-		end
-	
-		
-		local encodedAuth = ""
-		for i = #1, #authTicket do
-			local char = string.sub(authTicket, i, i)
-			encodedAuth ..= string.byte(char)
-		end
-	
-		-- construct packet params
-		local params = {
-			from = ip,
-			auth = encodedAuth,
-			RKSEC = tick(),
-			PermissionIndex = 20,
-	
-			Request = {
-				ServerReplicatorChange = {
-					priority = "HIGH_PRIORITY",
-					data = {
-						replicationFiltering = false,
-						firewallWhitelist = {{plr,ip}},
-						legacyFilteringEnabled = false,
-						replicatedInstances = {game},
-						exclude = {},
-						HostCanReplicate = true,
-						ReplicationSettings = {
-							all = true,
-							noReplicationBelow = -1,
-							experimentalMode = false,
-						}
-					}
-				}
-			}
-		}
-	
-		-- send packet
-		local response = replicator:SendPacket(0, constructPacket("ReplicationRequest", latestPacketID+1, authTicket, game:GetService("HttpService"):JSONEncode(params), -1))
-		if response[1]:lower():find("success") and response[2] ~= Enum.ConnectionError.ReplicatorTimeout then
-			perdika.RobloxLocked = true
-			return true
-		else
-			print("[Herbert]: Packet failed.")
-			return false
-		end
-	end)
-	
-	-- check if request successful
-	if success then
-		print("[Aegis]: FE Bypassed.")
-	else
-		print("[Aegis]: FE Bypass failed. Please try again.")
-	end
-end
-coroutine.wrap(YMGF_fake_script)()
-local function VWKORTN_fake_script() -- MainFrame.Resizer 
+coroutine.wrap(OLBABGM_fake_script)()
+local function IMHCGKH_fake_script() -- MainFrame.Resizer 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local f = script.Parent
@@ -1348,8 +1263,8 @@ local function VWKORTN_fake_script() -- MainFrame.Resizer
 	h.Position = UDim2.new(0.965, 0, 0.942, 0)
 	
 end
-coroutine.wrap(VWKORTN_fake_script)()
-local function TGQZVFV_fake_script() -- MainFrame.UIDrag 
+coroutine.wrap(IMHCGKH_fake_script)()
+local function TFNA_fake_script() -- MainFrame.UIDrag 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local UIS = game:GetService('UserInputService')
@@ -1387,8 +1302,8 @@ local function TGQZVFV_fake_script() -- MainFrame.UIDrag
 		end
 	end)
 end
-coroutine.wrap(TGQZVFV_fake_script)()
-local function EKOVG_fake_script() -- MainFrame.open-close 
+coroutine.wrap(TFNA_fake_script)()
+local function WYRXST_fake_script() -- MainFrame.open-close 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local userInputService = game:GetService("UserInputService")
@@ -1421,8 +1336,8 @@ local function EKOVG_fake_script() -- MainFrame.open-close
 	end)
 	
 end
-coroutine.wrap(EKOVG_fake_script)()
-local function QYGZ_fake_script() -- Main.LocalScript 
+coroutine.wrap(WYRXST_fake_script)()
+local function ZLTDAT_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	local TweenService = game:GetService("TweenService")
@@ -1468,8 +1383,8 @@ local function QYGZ_fake_script() -- Main.LocalScript
 	
 	
 end
-coroutine.wrap(QYGZ_fake_script)()
-local function DKTUZ_fake_script() -- Beat.LocalScript 
+coroutine.wrap(ZLTDAT_fake_script)()
+local function KZEKGAI_fake_script() -- Beat.LocalScript 
 	local script = Instance.new('LocalScript', Beat)
 
 	local btn = script.Parent
@@ -1507,8 +1422,8 @@ local function DKTUZ_fake_script() -- Beat.LocalScript
 	btn.MouseButton1Click:Connect(toggleAnim)
 	
 end
-coroutine.wrap(DKTUZ_fake_script)()
-local function PKAVPKZ_fake_script() -- Astronaut.LocalScript 
+coroutine.wrap(KZEKGAI_fake_script)()
+local function HYDFELH_fake_script() -- Astronaut.LocalScript 
 	local script = Instance.new('LocalScript', Astronaut)
 
 	local btn = script.Parent
@@ -1615,8 +1530,89 @@ local function PKAVPKZ_fake_script() -- Astronaut.LocalScript
 	btn.MouseButton1Click:Connect(toggle)
 	
 end
-coroutine.wrap(PKAVPKZ_fake_script)()
-local function GVPTFPI_fake_script() -- HighMode.LocalScript 
+coroutine.wrap(HYDFELH_fake_script)()
+local function RURXA_fake_script() -- Flips.LocalScript 
+	local script = Instance.new('LocalScript', Flips)
+
+	local btn = script.Parent
+	local plr = game.Players.LocalPlayer
+	local hum = plr.Character and plr.Character:FindFirstChildOfClass("Humanoid")
+	local ca = game:GetService("ContextActionService")
+	local h = 0.0174533
+	local scriptActive = false
+	
+	local FrontflipKey = Enum.KeyCode.Z
+	local BackflipKey = Enum.KeyCode.X
+	local AirjumpKey = Enum.KeyCode.B
+	
+	--[[ Functions ]]--
+	
+	function frontflip(act, inp, obj)
+		if inp == Enum.UserInputState.Begin and scriptActive then
+			hum:ChangeState("Jumping")
+			wait()
+			hum.Sit = true
+			for i = 1, 360 do
+				delay(i / 720, function()
+					hum.Sit = true
+					plr.Character.HumanoidRootPart.CFrame = plr.Character.HumanoidRootPart.CFrame * CFrame.Angles(-h, 0, 0)
+				end)
+			end
+			wait(0.55)
+			hum.Sit = false
+		end
+	end
+	
+	function backflip(act, inp, obj)
+		if inp == Enum.UserInputState.Begin and scriptActive then
+			hum:ChangeState("Jumping")
+			wait()
+			hum.Sit = true
+			for i = 1, 360 do
+				delay(i / 720, function()
+					hum.Sit = true
+					plr.Character.HumanoidRootPart.CFrame = plr.Character.HumanoidRootPart.CFrame * CFrame.Angles(h, 0, 0)
+				end)
+			end
+			wait(0.55)
+			hum.Sit = false
+		end
+	end
+	
+	function airjump(act, inp, obj)
+		if inp == Enum.UserInputState.Begin and scriptActive then
+			hum:ChangeState("Seated")
+			wait()
+			hum:ChangeState("Jumping")
+		end
+	end
+	
+	--[[ Toggle Function ]]--
+	
+	local function toggleScript()
+		scriptActive = not scriptActive
+		if scriptActive then
+			-- Bind actions to the keys
+			ca:BindAction("frontflip", frontflip, false, FrontflipKey)
+			ca:BindAction("backflip", backflip, false, BackflipKey)
+			ca:BindAction("airjump", airjump, false, AirjumpKey)
+			btn.Text = "Flip ON"
+		else
+			-- Unbind actions when deactivated
+			ca:UnbindAction("frontflip")
+			ca:UnbindAction("backflip")
+			ca:UnbindAction("airjump")
+			btn.Text = "Flip OFF"
+		end
+	end
+	
+	--[[ Button Click Event ]]--
+	
+	btn.MouseButton1Click:Connect(toggleScript)
+	
+end
+coroutine.wrap(RURXA_fake_script)()
+local function EQQUKHA_fake_script() -- HighMode.LocalScript 
 	local script = Instance.new('LocalScript', HighMode)
 
 	local btn = script.Parent
@@ -1784,8 +1780,8 @@ local function GVPTFPI_fake_script() -- HighMode.LocalScript
 	btn.MouseButton1Click:Connect(toggle)
 	
 end
-coroutine.wrap(GVPTFPI_fake_script)()
-local function ITLEM_fake_script() -- NightVision.LocalScript 
+coroutine.wrap(EQQUKHA_fake_script)()
+local function HTBSL_fake_script() -- NightVision.LocalScript 
 	local script = Instance.new('LocalScript', NightVision)
 
 	-- Night Vision Toggle Script with Sound
@@ -1885,8 +1881,8 @@ local function ITLEM_fake_script() -- NightVision.LocalScript
 	end)
 	
 end
-coroutine.wrap(ITLEM_fake_script)()
-local function CXGB_fake_script() -- ShadowRunner.LocalScript 
+coroutine.wrap(HTBSL_fake_script)()
+local function KYXS_fake_script() -- ShadowRunner.LocalScript 
 	local script = Instance.new('LocalScript', ShadowRunner)
 
 	local btn = script.Parent
@@ -2026,8 +2022,8 @@ local function CXGB_fake_script() -- ShadowRunner.LocalScript
 	end)
 	
 end
-coroutine.wrap(CXGB_fake_script)()
-local function WVQRZOP_fake_script() -- ToggleFling.LocalScript 
+coroutine.wrap(KYXS_fake_script)()
+local function ZZZFYPP_fake_script() -- ToggleFling.LocalScript 
 	local script = Instance.new('LocalScript', ToggleFling)
 
 	local btn = script.Parent
@@ -2075,8 +2071,8 @@ local function WVQRZOP_fake_script() -- ToggleFling.LocalScript
 	end)
 	
 end
-coroutine.wrap(WVQRZOP_fake_script)()
-local function SQDWCZ_fake_script() -- KillUI.LocalScript 
+coroutine.wrap(ZZZFYPP_fake_script)()
+local function PCBHIR_fake_script() -- KillUI.LocalScript 
 	local script = Instance.new('LocalScript', KillUI)
 
 	local button = script.Parent 
@@ -2086,8 +2082,8 @@ local function SQDWCZ_fake_script() -- KillUI.LocalScript
 		gui:Destroy() -- destroy the entire GUI when the button is clicked
 	end)
 end
-coroutine.wrap(SQDWCZ_fake_script)()
-local function AVKGLR_fake_script() -- ChangeTheme.LocalScript 
+coroutine.wrap(PCBHIR_fake_script)()
+local function KYDTJ_fake_script() -- ChangeTheme.LocalScript 
 	local script = Instance.new('LocalScript', ChangeTheme)
 
 	local button = script.Parent -- Reference to the button
@@ -2251,8 +2247,8 @@ local function AVKGLR_fake_script() -- ChangeTheme.LocalScript
 	updateTextButtons()
 	
 end
-coroutine.wrap(AVKGLR_fake_script)()
-local function JIOXS_fake_script() -- SliderHandle.LocalScript 
+coroutine.wrap(KYDTJ_fake_script)()
+local function YEIIIJ_fake_script() -- SliderHandle.LocalScript 
 	local script = Instance.new('LocalScript', SliderHandle)
 
 	local sliderHandle = script.Parent -- Reference to the slider handle
@@ -2367,14 +2363,14 @@ local function JIOXS_fake_script() -- SliderHandle.LocalScript
 	end
 	
 end
-coroutine.wrap(JIOXS_fake_script)()
-local function RQKMN_fake_script() -- Name_6.LocalScript 
-	local script = Instance.new('LocalScript', Name_6)
+coroutine.wrap(YEIIIJ_fake_script)()
+local function QOSAF_fake_script() -- Name_7.LocalScript 
+	local script = Instance.new('LocalScript', Name_7)
 
 	script.Parent.Text = game.Players.LocalPlayer.Name
 end
-coroutine.wrap(RQKMN_fake_script)()
-local function AZDOKLL_fake_script() -- UserProfile.GetProfile 
+coroutine.wrap(QOSAF_fake_script)()
+local function FDXN_fake_script() -- UserProfile.GetProfile 
 	local script = Instance.new('LocalScript', UserProfile)
 
 	local Players = game:GetService("Players")
@@ -2391,8 +2387,8 @@ local function AZDOKLL_fake_script() -- UserProfile.GetProfile
 	local imageLabel = script.Parent
 	imageLabel.Image = content
 end
-coroutine.wrap(AZDOKLL_fake_script)()
-local function UAOFKI_fake_script() -- Frame.Main 
+coroutine.wrap(FDXN_fake_script)()
+local function ARTE_fake_script() -- Frame.Main 
 	local script = Instance.new('LocalScript', Frame)
 
 	wait(0)
@@ -2521,8 +2517,8 @@ local function UAOFKI_fake_script() -- Frame.Main
 	
 	start()
 end
-coroutine.wrap(UAOFKI_fake_script)()
-local function FXMASS_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(ARTE_fake_script)()
+local function SXGBOM_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local btn = script.Parent
@@ -2574,8 +2570,8 @@ local function FXMASS_fake_script() -- TextButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(FXMASS_fake_script)()
-local function DOYCOGT_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(SXGBOM_fake_script)()
+local function DCQJFY_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local btn = script.Parent
@@ -2586,13 +2582,13 @@ local function DOYCOGT_fake_script() -- TextButton_2.LocalScript
 	local hrp = c:WaitForChild("HumanoidRootPart")
 	local hmn = c:WaitForChild("Humanoid")
 	
-	local toggleActive = false
-	local flying = false
+	local toggleActive = false  
+	local flying = false  
 	local speed = 75  -- Default speed
 	local savedSpeed = speed  -- Variable to store the speed after toggling the button twice
 	local toggleCount = 0  -- Counter for toggling the button
 	
-	local bv, bg  -- BodyVelocity and BodyGyro instances
+	local bv, bg  
 	
 	-- Reference to the TextBox for flight speed input
 	local textBox = btn.Parent:WaitForChild("TextBox")
@@ -2606,21 +2602,16 @@ local function DOYCOGT_fake_script() -- TextButton_2.LocalScript
 		hmn.AutoRotate = false  -- Disable auto-rotation
 		hmn.PlatformStand = true -- Disable animations (walking, running, etc.)
 	
-		-- Only create BodyVelocity and BodyGyro once to prevent unnecessary updates
-		if not bv then
-			bv = Instance.new("BodyVelocity")
-			bv.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
-			bv.Parent = hrp
-		end
+		bv = Instance.new("BodyVelocity")
+		bv.Velocity = Vector3.new(0, 0, 0)
+		bv.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
+		bv.Parent = hrp
 	
-		if not bg then
-			bg = Instance.new("BodyGyro")
-			bg.MaxTorque = Vector3.new(math.huge, math.huge, math.huge)
-			bg.P = 9e4
-			bg.Parent = hrp
-		end
+		bg = Instance.new("BodyGyro")
+		bg.MaxTorque = Vector3.new(math.huge, math.huge, math.huge)
+		bg.P = 9e4
+		bg.Parent = hrp
 	
-		-- Flight control loop
 		rs.RenderStepped:Connect(function()
 			if flying and toggleActive then
 				local cam = workspace.CurrentCamera
@@ -2634,7 +2625,6 @@ local function DOYCOGT_fake_script() -- TextButton_2.LocalScript
 				if uis:IsKeyDown(Enum.KeyCode.Space) then move = move + Vector3.new(0, 1, 0) end
 				if uis:IsKeyDown(Enum.KeyCode.LeftControl) then move = move - Vector3.new(0, 1, 0) end
 	
-				-- Set the BodyVelocity based on movement and speed
 				bv.Velocity = move * speed
 			end
 		end)
@@ -2649,7 +2639,10 @@ local function DOYCOGT_fake_script() -- TextButton_2.LocalScript
 		hmn.AutoRotate = true  -- Re-enable auto-rotation
 		hmn.PlatformStand = false  -- Re-enable normal animations
 	
-		-- Destroy BodyVelocity and BodyGyro only when flight ends
+		-- Reset the orientation immediately (fixing spinning)
+		hrp.CFrame = CFrame.new(hrp.Position)
+	
+		-- Destroy the BodyVelocity and BodyGyro to stop any applied forces
 		if bv then bv:Destroy() end
 		if bg then bg:Destroy() end
 	end
@@ -2667,15 +2660,19 @@ local function DOYCOGT_fake_script() -- TextButton_2.LocalScript
 		end
 	end
 	
-	-- Toggle flying with the 'F' key, only if button has been pressed
+	-- Toggle flight on/off with the 'F' key
 	uis.InputBegan:Connect(function(i, g)
-		if g or not toggleActive then return end  -- Ignore input if the button is not active
+		if g or not toggleActive then return end
 		if i.KeyCode == Enum.KeyCode.F then
-			if flying then stopFly() else startFly() end
+			if flying then 
+				stopFly() 
+			else 
+				startFly() 
+			end
 		end
 	end)
 	
-	-- Toggle flight on/off with the button click
+	-- Toggle active state on/off with the button click
 	btn.MouseButton1Click:Connect(function()
 		toggleActive = not toggleActive
 		btn.Text = toggleActive and "ON" or "OFF"
@@ -2688,10 +2685,9 @@ local function DOYCOGT_fake_script() -- TextButton_2.LocalScript
 			toggleCount = 0  -- Reset toggle count after saving
 		end
 	
-		-- If button is toggled off, stop flying if active
+		-- If flying, stop flight, else start it only when F key is pressed (not immediately)
 		if not toggleActive then
 			stopFly()
-			flying = false  -- Ensure flying is off if the button is deactivated
 		end
 	end)
 	
@@ -2708,8 +2704,8 @@ local function DOYCOGT_fake_script() -- TextButton_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(DOYCOGT_fake_script)()
-local function JMRXXJY_fake_script() -- SliderHandle_2.LocalScript 
+coroutine.wrap(DCQJFY_fake_script)()
+local function ZORJ_fake_script() -- SliderHandle_2.LocalScript 
 	local script = Instance.new('LocalScript', SliderHandle_2)
 
 	local h = script.Parent
@@ -2796,8 +2792,8 @@ local function JMRXXJY_fake_script() -- SliderHandle_2.LocalScript
 	end
 	
 end
-coroutine.wrap(JMRXXJY_fake_script)()
-local function SEMYXR_fake_script() -- SliderHandle_3.LocalScript 
+coroutine.wrap(ZORJ_fake_script)()
+local function VKXOA_fake_script() -- SliderHandle_3.LocalScript 
 	local script = Instance.new('LocalScript', SliderHandle_3)
 
 	local sliderHandle = script.Parent
@@ -2888,74 +2884,55 @@ local function SEMYXR_fake_script() -- SliderHandle_3.LocalScript
 	end)
 	
 end
-coroutine.wrap(SEMYXR_fake_script)()
-local function KNILQ_fake_script() -- Aegis.AntiDespawn 
-	local script = Instance.new('LocalScript', Aegis)
-
-	local p = game:GetService("Players").LocalPlayer
-	local g = script.Parent
-	
-	g.Parent = game:GetService("CoreGui")
-	
-	p.CharacterAdded:Connect(function()
-		g.Parent = game:GetService("CoreGui")
-	end)
-	
-end
-coroutine.wrap(KNILQ_fake_script)()
-local function VOBTL_fake_script() -- Aegis.SwitchPage 
+coroutine.wrap(VKXOA_fake_script)()
+local function HXHYTR_fake_script() -- Aegis.SwitchPage 
 	local script = Instance.new('LocalScript', Aegis)
 
 	local TweenService = game:GetService("TweenService")
+	local player = game.Players.LocalPlayer
 	local p = script.Parent:WaitForChild("MainFrame")
+	
+	-- Save the UI and clone it before the player dies
+	local function cloneUI()
+		local clonedUI = p:Clone()
+		clonedUI.Parent = game.Players.LocalPlayer.PlayerGui
+		return clonedUI
+	end
+	
+	-- A table to store the cloned UI
+	local clonedUI
+	
 	local pages = {
 		Home = p:WaitForChild("Home"),
 		Main = p:WaitForChild("Main"),
 		Other = p:WaitForChild("Other"),
 		Info = p:WaitForChild("Info"),
-		Settings = p:WaitForChild("Settings")  -- Added Settings page
+		Settings = p:WaitForChild("Settings")
 	}
 	local buttons = {
 		p:WaitForChild("HomeButton"),
 		p:WaitForChild("MainButton"),
 		p:WaitForChild("OtherButton"),
 		p:WaitForChild("InfoButton"),
-		p:WaitForChild("SettingsButton")  -- Added Settings button
+		p:WaitForChild("SettingsButton")
 	}
 	
-	local fadeTime = 0 -- Duration of animation
+	local fadeTime = 0 -- Dauer der Animation
 	local currentPage = pages.Home
 	
-	-- Function to save the last visited page to player data
-	local function savePage(player, pageName)
-		player:SetAttribute("LastPage", pageName)
-	end
-	
-	-- Function to load the last visited page from player data
-	local function loadLastPage(player)
-		local lastPage = player:GetAttribute("LastPage")
-		if lastPage and pages[lastPage] then
-			-- Reset the current page so it is properly reloaded
-			currentPage.Visible = false
-			showPage(lastPage)  -- Show the last page
-		else
-			showPage("Home")  -- Default page if no last page is found
-		end
-	end
-	
 	local function showPage(pageName)
-		if currentPage == pages[pageName] then return end -- Prevent reopening the same page
+		if currentPage == pages[pageName] then return end -- Verhindert erneutes Öffnen
 	
 		local oldPage = currentPage
 		local newPage = pages[pageName]
 	
-		-- Tween animation to fade out the old page
+		-- Tween-Animation für das Ausblenden der alten Seite
 		local fadeOut = TweenService:Create(oldPage, TweenInfo.new(fadeTime), {BackgroundTransparency = 1})
 		fadeOut:Play()
 		fadeOut.Completed:Wait()
 		oldPage.Visible = false
 	
-		-- Show the new page
+		-- Neue Seite einblenden
 		newPage.Visible = true
 		newPage.BackgroundTransparency = 1
 		local fadeIn = TweenService:Create(newPage, TweenInfo.new(fadeTime), {BackgroundTransparency = 0.7})
@@ -2965,34 +2942,34 @@ local function VOBTL_fake_script() -- Aegis.SwitchPage
 	end
 	
 	-- Button connections for each page
-	buttons[1].MouseButton1Click:Connect(function()
+	buttons[1].MouseButton1Click:Connect(function() showPage("Home") end)
+	buttons[2].MouseButton1Click:Connect(function() showPage("Main") end)
+	buttons[3].MouseButton1Click:Connect(function() showPage("Other") end)
+	buttons[4].MouseButton1Click:Connect(function() showPage("Info") end)
+	buttons[5].MouseButton1Click:Connect(function() showPage("Settings") end)
+	
+	-- Function to initialize the UI at the start
+	local function initializeUI()
+		clonedUI = cloneUI() -- Clone the UI initially
 		showPage("Home")
-		savePage(game.Players.LocalPlayer, "Home") -- Save current page when clicked
-	end)
-	buttons[2].MouseButton1Click:Connect(function()
-		showPage("Main")
-		savePage(game.Players.LocalPlayer, "Main")
-	end)
-	buttons[3].MouseButton1Click:Connect(function()
-		showPage("Other")
-		savePage(game.Players.LocalPlayer, "Other")
-	end)
-	buttons[4].MouseButton1Click:Connect(function()
-		showPage("Info")
-		savePage(game.Players.LocalPlayer, "Info")
-	end)
-	buttons[5].MouseButton1Click:Connect(function()
-		showPage("Settings")
-		savePage(game.Players.LocalPlayer, "Settings")
-	end)
+	end
 	
-	-- Trigger to load the last page after respawn/reset
-	game.Players.LocalPlayer.CharacterAdded:Connect(function()
-		loadLastPage(game.Players.LocalPlayer)  -- Load last page when character respawns
-	end)
+	-- Initialize the UI when the script runs
+	initializeUI()
 	
-	-- Initial page setup
-	showPage("Home")
+	-- Reset the UI when the player respawns (i.e., when the character is added)
+	player.CharacterAdded:Connect(function()
+		-- Clear previous UI if any
+		if clonedUI then
+			clonedUI:Destroy()
+		end
+	
+		-- Clone and restore the UI
+		clonedUI = cloneUI()
+	
+		-- Reset to "Home" page
+		showPage("Home")
+	end)
 	
 end
-coroutine.wrap(VOBTL_fake_script)()
+coroutine.wrap(HXHYTR_fake_script)()
