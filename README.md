@@ -9,15 +9,16 @@ Aegis is my current project, a roblox script, with an amazing UI and multiple Cl
 ```lua
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/sypcerr/Aegis/refs/heads/main/script'),true))()
 ```
-# Aegis+ - Version 0.9.0
+# Aegis+ - Version 0.9.1
 
-## New Features:
-- **UI Persistence:** UI stays on the last page after resetting or dying.
-- **Settings Tab:** Added a new settings menu.
-- **Rescale UI Dragger:** Rescale UI with a draggable element.
-- **UI Transparency Slider:** Adjust transparency in settings.
-- **Smooth Drag Speed Adjusted:** Slightly faster feel for smooth drag.
-- **Fly/ Fling Fixes:** Fling disables after death, fly now requires button click.
+**Version 0.9.1 – Update Notes**  
+
+- **Added:** Fully FE-compatible flips, including backflips, frontflips, and air jumps.  
+- **Fixed:** Respawn UI now correctly resets all elements after dying, ensuring proper functionality.  
+- **Fixed:** Flight mechanics—no more falling through the ground after activating twice, and spinning upon deactivation has been eliminated.  
+- **Updated:** Resize icon redesigned for improved clarity.  
+- **Fixed:** Various text corrections for the resize feature.  
+
 
 ## Changes:
 - Removed "Beta" from the top-right title.
