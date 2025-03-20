@@ -20,9 +20,6 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/sypcerr/Aegis/refs/h
 - **Fixed:** Various text corrections for the resize feature.  
 
 
-## Changes:
-- Removed "Beta" from the top-right title.
-- Removed PageSwitch Animation for faster feel.
 
 
 ## Outro:
