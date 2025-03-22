@@ -1,5 +1,5 @@
 ![gif](https://github.com/sypcerr/Aegis/blob/main/Pictures/standard%20(2).gif)
-(Current latest Version: 0.9.0 BETA) - please scroll down for updates
+(Current latest Version: 0.9.2 BETA) - please scroll down for updates
 # Welcome to my script, AegisLite.
 
 ### What is Aegis?
@@ -9,17 +9,14 @@ Aegis is my current project, a roblox script, with an amazing UI and multiple Cl
 ```lua
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/sypcerr/Aegis/refs/heads/main/script'),true))()
 ```
-# Aegis+ - Version 0.9.1
+# Aegis+ - Version 0.9.2
 
-**Version 0.9.1 – Update Notes**  
+## Changelog
 
-- **Added:** Fully FE-compatible flips, including backflips, frontflips, and air jumps.  
-- **Fixed:** Respawn UI now correctly resets all elements after dying, ensuring proper functionality.  
-- **Fixed:** Flight mechanics—no more falling through the ground after activating twice, and spinning upon deactivation has been eliminated.  
-- **Updated:** Resize icon redesigned for improved clarity.  
-- **Fixed:** Various text corrections for the resize feature.  
-
-
+### Version 0.9.2
+- **Improved Beat Animation**: Enhanced the animation for better performance.
+- **Rearranged HomePage**: Updated the layout and organization of the homepage for a cleaner interface.
+- **Fixed Main Tabs**: Adjusted the sizes and positions of buttons and frames in the main tabs to ensure proper alignment and appearance.
 
 
 ## Outro:
