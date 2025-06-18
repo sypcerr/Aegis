@@ -1,6 +1,6 @@
 ![gif](https://github.com/sypcerr/Aegis/blob/main/Pictures/standard%20(2).gif)
 (Current latest Version: 0.9.2 BETA) - please scroll down for updates
-# Welcome to my script, AegisLite.
+# Welcome to my script, Aegis.
 
 ### What is Aegis?
 Aegis is a roblox script, with an amazing UI and multiple ClientSided and FilteringEnabled Scripts. 
